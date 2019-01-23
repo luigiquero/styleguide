@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "doc:dev": "docz dev",
+    "doc": "docz dev",
     "doc:build": "docz build"
   },
   "eslintConfig": {
