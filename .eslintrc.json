@@ -3,6 +3,7 @@
   "rules": {
     "keyword-spacing": ["error", { "after": true }],
     "space-before-blocks": ["error", "always"],
-    "space-before-function-paren": ["error", "never"]
+    "space-before-function-paren": ["error", "never"],
+    "import/prefer-default-export": "off"
   }
 }
