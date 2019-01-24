@@ -1,9 +1,3 @@
-import React from 'react';
-import styled from 'styled-components';
-
-const Button = styled.button`
-  background-color: red;
-  color: white;
-`;
+import Button from '@vtex/styleguide/lib/Button/index';
 
 export default Button;
