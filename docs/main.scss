@@ -1,0 +1,24 @@
+@import "~tetris-grid/dist/tetris.css";
+
+.column {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.vertical-spacing {
+  > div,
+  > section,
+  > button {
+    margin-top: 12px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
