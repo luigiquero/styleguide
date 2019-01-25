@@ -12745,6 +12745,11 @@ test-exclude@^4.2.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
+tetris-grid@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/tetris-grid/-/tetris-grid-1.1.4.tgz#ff02ec1238aabc46dcfd85e69d681bcaeda15ae7"
+  integrity sha512-Cltpdswv85itW293kFPi+ltbmKROSIO8uiAFqy+e1HEOrXTstuTBIsMOybaCfXlv87Cq4kv/mm8OQ5aAE0VHeg==
+
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -13445,6 +13450,11 @@ vtex-tachyons@^2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/vtex-tachyons/-/vtex-tachyons-2.10.0.tgz#d72363dcd77d0960cb23efc82e0e8d168714f153"
   integrity sha512-WWEOR4iyrMQ2fzp+EActa5ZLaYSMdPk2yxP8XQRhg+q+QnbFH2EKGayjkea4okXRDE7KTKQZdLF3GlB/HaXOow==
+
+vtex-tachyons@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/vtex-tachyons/-/vtex-tachyons-3.0.1.tgz#a3f7888c13ef24c18eb71e2c9f374be150014193"
+  integrity sha512-3gHJStTg0/HmSpPED3+s8UWvWxY1LD8GRPSBwom3cLSa22/qaOehoCmdgnBMHkZglB48qoRXmHr9FR9dYeqbqw==
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
