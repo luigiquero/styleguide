@@ -3,13 +3,34 @@ name: Button
 route: /button
 ---
 
-import Button from '../../src/lib/components/button';
-import { Playground } from 'docz';
+import { Button } from '../../src/lib';
+import { Playground, PropsTable } from 'docz';
+import '../main.scss';
 
 # Button Component
 
 This button is awesome.
 
-<Playground>
-  <Button>Hello</Button>
+### Playground
+
+<Playground className="row colapse">
+  <div className="column vertical-spacing">
+    <Button mod="button--primary">Primary</Button>
+    <Button mod="button--primary button--medium">Primary Medium</Button>
+    <Button mod="button--primary button--large">Primary Large</Button>
+  </div>
+  <div className="column vertical-spacing">
+    <Button mod="button--secondary">Secondary</Button>
+    <Button mod="button--secondary button--medium">Secondary Medium</Button>
+    <Button mod="button--secondary button--large">Secondary Large</Button>
+  </div>
+  <div className="column vertical-spacing">
+    <Button mod="button--tertiary">Tertiary</Button>
+    <Button mod="button--tertiary button--medium">Tertiary Medium</Button>
+    <Button mod="button--tertiary button--large">Tertiary Large</Button>
+  </div>
 </Playground>
+
+### Properties Table
+
+<PropsTable of={Button} />
