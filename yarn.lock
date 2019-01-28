@@ -4759,6 +4759,11 @@ eslint-plugin-import@^2.15.0:
     read-pkg-up "^2.0.0"
     resolve "^1.9.0"
 
+eslint-plugin-jest@^22.1.3:
+  version "22.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.1.3.tgz#4444108dfcddc5d2117ed6dc551f529d7e73a99e"
+  integrity sha512-JTZTI6WQoNruAugNyCO8fXfTONVcDd5i6dMRFA5g3rUFn1UDDLILY1bTL6alvNXbW2U7Sc2OSpi8m08pInnq0A==
+
 eslint-plugin-jsx-a11y@6.1.2, eslint-plugin-jsx-a11y@^6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.1.2.tgz#69bca4890b36dcf0fe16dd2129d2d88b98f33f88"
@@ -13450,11 +13455,6 @@ vtex-tachyons@^2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/vtex-tachyons/-/vtex-tachyons-2.10.0.tgz#d72363dcd77d0960cb23efc82e0e8d168714f153"
   integrity sha512-WWEOR4iyrMQ2fzp+EActa5ZLaYSMdPk2yxP8XQRhg+q+QnbFH2EKGayjkea4okXRDE7KTKQZdLF3GlB/HaXOow==
-
-vtex-tachyons@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/vtex-tachyons/-/vtex-tachyons-3.0.1.tgz#a3f7888c13ef24c18eb71e2c9f374be150014193"
-  integrity sha512-3gHJStTg0/HmSpPED3+s8UWvWxY1LD8GRPSBwom3cLSa22/qaOehoCmdgnBMHkZglB48qoRXmHr9FR9dYeqbqw==
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"

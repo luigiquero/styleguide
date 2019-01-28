@@ -1,5 +1,6 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb", "plugin:jest/recommended"],
+  "plugins": ["jest"],
   "rules": {
     "keyword-spacing": ["error", { "after": true }],
     "space-before-blocks": ["error", "always"],
