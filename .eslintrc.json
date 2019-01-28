@@ -4,6 +4,7 @@
     "keyword-spacing": ["error", { "after": true }],
     "space-before-blocks": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }
