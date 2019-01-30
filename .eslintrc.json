@@ -1,11 +1,12 @@
 {
-  "extends": ["airbnb", "plugin:jest/recommended"],
+  "extends": ["react-app", "airbnb", "plugin:jest/recommended"],
   "plugins": ["jest"],
   "rules": {
     "keyword-spacing": ["error", { "after": true }],
     "space-before-blocks": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "import/prefer-default-export": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jest/no-identical-title": "off"
   }
 }
