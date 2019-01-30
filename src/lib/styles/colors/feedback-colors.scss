@@ -1,0 +1,24 @@
+$success: #63c674;
+$danger: #e45048;
+$warning: #f3c333;
+
+// Success variations
+$success-darker-40: darken($success, 40%);
+$success-darker-20: darken($success, 20%);
+$success-lighter-20: lighten($success, 20%);
+$success-lighter-80: lighten($success, 80%);
+$success-lighter-90: lighten($success, 90%);
+
+// Danger variations
+$danger-darker-40: darken($danger, 40%);
+$danger-darker-20: darken($danger, 20%);
+$danger-lighter-20: lighten($danger, 20%);
+$danger-lighter-80: lighten($danger, 80%);
+$danger-lighter-90: lighten($danger, 90%);
+
+// Warning variations
+$warning-darker-40: darken($warning, 40%);
+$warning-darker-20: darken($warning, 20%);
+$warning-lighter-20: lighten($warning, 20%);
+$warning-lighter-80: lighten($warning, 80%);
+$warning-lighter-90: lighten($warning, 90%);
