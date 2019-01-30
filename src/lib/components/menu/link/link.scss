@@ -1,0 +1,20 @@
+.link {
+  color: #768196;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  outline: 0;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+
+  &:hover {
+    color: #54627c;
+  }
+
+  &:active {
+    color: #f47d35;
+    font-weight: 500;
+  }
+}
