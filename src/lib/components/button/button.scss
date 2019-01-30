@@ -1,0 +1,64 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  outline: 0;
+  padding: 8px 16px;
+  text-align: center;
+
+  &--primary {
+    background-color: #2463d0;
+    border-color: #2463d0;
+    color: #fff;
+
+    &:hover {
+      background-color: #5082d9;
+      border-color: #5082d9;
+    }
+
+    &:active {
+      background-color: #1d4fa6;
+      border-color: #1d4fa6;
+    }
+  }
+
+  &--secondary {
+    background-color: #fff;
+    border-color: #dde0e5;
+    color: #54627c;
+
+    &:hover {
+      border-color: #5082d9;
+      color: #2463d0;
+    }
+
+    &:active {
+      border-color: #1d4fa6;
+      color: #1d4fa6;
+    }
+  }
+
+  &--tertiary {
+    color: #54627c;
+
+    &:hover {
+      color: #2463d0;
+    }
+
+    &:active {
+      color: #1d4fa6;
+    }
+  }
+
+  &--medium {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  &--large {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+}

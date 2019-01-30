@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<button
+  className="button"
+  type="submit"
+>
+  Test
+</button>
+`;
+
+exports[` 2`] = `
+<button
+  className="button"
+  type="reset"
+>
+  Test
+</button>
+`;
+
+exports[`Button should render button properly 1`] = `
+<button
+  className="button"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier compose by primary and large should render button properly 1`] = `
+<button
+  className="button button--primary button--medium"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier large should render button properly 1`] = `
+<button
+  className="button button--large"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier medium should render button properly 1`] = `
+<button
+  className="button button--medium"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier primary should render button properly 1`] = `
+<button
+  className="button button--primary"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier secondary should render button properly 1`] = `
+<button
+  className="button button--secondary"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier tertiary should render button properly 1`] = `
+<button
+  className="button button--tertiary"
+  type="button"
+>
+  Test
+</button>
+`;

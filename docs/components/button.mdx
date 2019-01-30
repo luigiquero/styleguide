@@ -1,0 +1,42 @@
+---
+name: Button
+route: /button
+---
+
+import { Button } from '../../src/lib';
+import { Playground, PropsTable } from 'docz';
+import '../main.scss';
+
+# Button Component
+
+This is the button component.
+
+## Playground
+
+<Playground className="row colapse">
+  <div className="column vertical-spacing">
+    <Button primary>Primary</Button>
+    <Button primary medium>Primary Medium</Button>
+    <Button primary large>Primary Large</Button>
+  </div>
+
+  <div className="column vertical-spacing">
+    <Button secondary>Secondary</Button>
+    <Button secondary medium>Secondary Medium</Button>
+    <Button secondary large>Secondary Large</Button>
+  </div>
+
+  <div className="column vertical-spacing">
+    <Button tertiary>Tertiary</Button>
+    <Button tertiary medium>Tertiary Medium</Button>
+    <Button tertiary large>Tertiary Large</Button>
+  </div>
+</Playground>
+
+## Properties Table
+
+<PropsTable of={Button} />
+
+## About button `type`
+
+You can set with the values `button`, `submit` or `reset`, same as `<button type="">` HTML tag attr.
