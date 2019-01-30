@@ -20,7 +20,6 @@
     "ansi-styles": "^3.2.0"
   },
   "dependencies": {
-    "@vtex/styleguide": "8.x",
     "classnames": "^2.2.6",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
