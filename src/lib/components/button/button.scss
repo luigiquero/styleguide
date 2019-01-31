@@ -1,3 +1,6 @@
+@import '../../styles/colors.scss';
+@import '../../styles/spacement.scss';
+
 .button {
   border: 1px solid transparent;
   border-radius: 6px;
@@ -5,60 +8,60 @@
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
   outline: 0;
-  padding: 8px 16px;
+  padding: $space-8 $space-16;
   text-align: center;
 
   &--primary {
-    background-color: #2463d0;
-    border-color: #2463d0;
-    color: #fff;
+    background-color: $action;
+    border-color: $action;
+    color: $white;
 
     &:hover {
-      background-color: #5082d9;
-      border-color: #5082d9;
+      background-color: $action-lighten-1;
+      border-color: $action-lighten-1;
     }
 
     &:active {
-      background-color: #1d4fa6;
-      border-color: #1d4fa6;
+      background-color: $action-darken-1;
+      border-color: $action-darken-1;
     }
   }
 
   &--secondary {
-    background-color: #fff;
-    border-color: #dde0e5;
-    color: #54627c;
+    background-color: $white;
+    border-color: $neutral-lighten-3;
+    color: $neutral;
 
     &:hover {
-      border-color: #5082d9;
-      color: #2463d0;
+      border-color: $action-lighten-1;
+      color: $action;
     }
 
     &:active {
-      border-color: #1d4fa6;
-      color: #1d4fa6;
+      border-color: $action-darken-1;
+      color: $action-darken-1;
     }
   }
 
   &--tertiary {
-    color: #54627c;
+    color: $neutral;
 
     &:hover {
-      color: #2463d0;
+      color: $action;
     }
 
     &:active {
-      color: #1d4fa6;
+      color: $action-darken-1;
     }
   }
 
   &--medium {
     font-size: 16px;
-    padding: 12px 24px;
+    padding: $space-12 $space-24;
   }
 
   &--large {
     font-size: 20px;
-    padding: 16px 32px;
+    padding: $space-12 $space-32;
   }
 }
