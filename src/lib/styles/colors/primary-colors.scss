@@ -1,51 +1,39 @@
+$white: #fff;
+
+// primary colors
 $neutral: #54627c;
 $brand: #f47d35;
 $action: #2463d0;
 
 // neutral variations
-$neutral-darker-50: darken($neutral, 50%);
-$neutral-darker-40: darken($neutral, 40%);
-$neutral-darker-30: darken($neutral, 30%);
-$neutral-darker-20: darken($neutral, 20%);
-$neutral-darker-10: darken($neutral, 10%);
-$neutral-lighter-10: lighten($neutral, 10%);
-$neutral-lighter-20: lighten($neutral, 20%);
-$neutral-lighter-30: lighten($neutral, 30%);
-$neutral-lighter-40: lighten($neutral, 40%);
-$neutral-lighter-50: lighten($neutral, 50%);
-$neutral-lighter-60: lighten($neutral, 60%);
-$neutral-lighter-80: lighten($neutral, 80%);
-$neutral-lighter-90: lighten($neutral, 90%);
-$neutral-lighter-95: lighten($neutral, 95%);
+$neutral-darken-2: darken($neutral, 18%);
+$neutral-darken-1: darken($neutral, 9%);
+
+$neutral-lighten-1: lighten($neutral, 9%);
+$neutral-lighten-2: lighten($neutral, 24%);
+$neutral-lighten-3: lighten($neutral, 36%);
+$neutral-lighten-4: lighten($neutral, 48%);
+$neutral-lighten-5: lighten($neutral, 54%);
+$neutral-lighten-6: lighten($neutral, 57%);
 
 // brand variations
-$brand-darker-50: darken($brand, 50%);
-$brand-darker-40: darken($brand, 40%);
-$brand-darker-30: darken($brand, 30%);
-$brand-darker-20: darken($brand, 20%);
-$brand-darker-10: darken($brand, 10%);
-$brand-lighter-10: lighten($brand, 10%);
-$brand-lighter-20: lighten($brand, 20%);
-$brand-lighter-30: lighten($brand, 30%);
-$brand-lighter-40: lighten($brand, 40%);
-$brand-lighter-50: lighten($brand, 50%);
-$brand-lighter-60: lighten($brand, 60%);
-$brand-lighter-80: lighten($brand, 80%);
-$brand-lighter-90: lighten($brand, 90%);
-$brand-lighter-95: lighten($brand, 95%);
+$brand-darken-2: darken($brand, 30%);
+$brand-darken-1: darken($brand, 15%);
+
+$brand-lighten-1: lighten($brand, 9%);
+$brand-lighten-2: lighten($brand, 18%);
+$brand-lighten-3: lighten($brand, 24%);
+$brand-lighten-4: lighten($brand, 30%);
+$brand-lighten-5: lighten($brand, 36%);
+$brand-lighten-6: lighten($brand, 39%);
 
 // action variations
-$action-darker-50: darken($action, 50%);
-$action-darker-40: darken($action, 40%);
-$action-darker-30: darken($action, 30%);
-$action-darker-20: darken($action, 20%);
-$action-darker-10: darken($action, 10%);
-$action-lighter-10: lighten($action, 10%);
-$action-lighter-20: lighten($action, 20%);
-$action-lighter-30: lighten($action, 30%);
-$action-lighter-40: lighten($action, 40%);
-$action-lighter-50: lighten($action, 50%);
-$action-lighter-60: lighten($action, 60%);
-$action-lighter-80: lighten($action, 80%);
-$action-lighter-90: lighten($action, 90%);
-$action-lighter-95: lighten($action, 95%);
+$action-darken-2: darken($action, 18%);
+$action-darken-1: darken($action, 9%);
+
+$action-lighten-1: lighten($action, 9%);
+$action-lighten-2: lighten($action, 21%);
+$action-lighten-3: lighten($action, 33%);
+$action-lighten-4: lighten($action, 42%);
+$action-lighten-5: lighten($action, 48%);
+$action-lighten-6: lighten($action, 51%);
