@@ -1,48 +1,46 @@
-@mixin font-common($weight: normal) {
+@mixin typo-common($weight: normal) {
   font-family: 'Rubik', sans-serif;
   font-weight: if($weight == bold, 500, $weight);
-  margin: 0;
-  padding: 0;
 }
 
 @mixin display-1($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 48px;
 }
 
 @mixin display-2($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 36px;
 }
 
 @mixin heading-1($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 24px;
 }
 
 @mixin heading-2($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 20px;
 }
 
 @mixin body($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 16px;
 }
 
 @mixin small-text($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 14px;
 }
 
 @mixin mini-text($weight: normal) {
-  @include font-common($weight);
+  @include typo-common($weight);
 
   font-size: 12px;
 }
