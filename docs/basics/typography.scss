@@ -1,0 +1,82 @@
+@import '../../src/lib/styles/typography.scss';
+@import '../../src/lib/styles/colors.scss';
+
+.group {
+  margin-top: 64px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.fonts {
+  display: flex;
+
+  > p {
+    width: 50%;
+  }
+}
+
+.title {
+  @include body;
+
+  color: $neutral-lighten-1;
+  display: block;
+  padding-bottom: 12px;
+}
+
+.display-1 {
+  @include display-1;
+}
+
+.display-1-bold {
+  @include display-1(bold);
+}
+
+.display-2 {
+  @include display-2;
+}
+
+.display-2-bold {
+  @include display-2(bold);
+}
+
+.heading-1 {
+  @include heading-1;
+}
+
+.heading-1-bold {
+  @include heading-1(bold);
+}
+
+.heading-2 {
+  @include heading-2;
+}
+
+.heading-2-bold {
+  @include heading-2(bold);
+}
+
+.body {
+  @include body;
+}
+
+.body-bold {
+  @include body(bold);
+}
+
+.small-text {
+  @include small-text;
+}
+
+.small-text-bold {
+  @include small-text(bold);
+}
+
+.mini-text {
+  @include mini-text;
+}
+
+.mini-text-bold {
+  @include mini-text(bold);
+}
