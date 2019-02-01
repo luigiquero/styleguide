@@ -1,12 +1,13 @@
 @import '../../styles/colors.scss';
 @import '../../styles/spacement.scss';
+@import '../../styles/typography.scss';
 
 .button {
+  @include small-text;
+
   border: 1px solid transparent;
   border-radius: 6px;
   cursor: pointer;
-  font-family: 'Rubik', sans-serif;
-  font-size: 14px;
   outline: 0;
   padding: $space-8 $space-16;
   text-align: center;
@@ -56,11 +57,15 @@
   }
 
   &--medium {
+    @include body;
+
     font-size: 16px;
     padding: $space-12 $space-24;
   }
 
   &--large {
+    @include heading-2;
+
     font-size: 20px;
     padding: $space-12 $space-32;
   }
