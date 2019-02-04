@@ -3,6 +3,8 @@ export default {
   description: 'The UI library by Indeva',
   repository: 'https://github.com/indeva/styleguide',
   ordering: 'ascending',
+  src: './src/docs',
+  dest: './docs',
   hashRouter: true,
   themeConfig: {
     colors: {
