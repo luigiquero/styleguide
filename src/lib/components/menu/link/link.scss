@@ -1,20 +1,21 @@
+@import '../../../styles/variables';
+
 .link {
-  color: #768196;
+  @include small-text;
+
+  color: $neutral-lighten-1;
   cursor: pointer;
-  font-family: 'Rubik', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
   outline: 0;
   text-decoration: none;
   transition: color 0.15s ease-in;
 
   &:hover {
-    color: #54627c;
+    color: $neutral;
   }
 
   &:active {
-    color: #f47d35;
-    font-weight: 500;
+    @include small-text(bold);
+
+    color: $brand;
   }
 }

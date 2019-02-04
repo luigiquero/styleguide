@@ -7,7 +7,8 @@ const Link = ({ url, target, children }) => (
     <a href={url} target={target} className="link">{children}</a>
   ) : (
     <span className="link">{children}</span>
-  ));
+  )
+);
 
 Link.defaultProps = {
   target: '_self',
