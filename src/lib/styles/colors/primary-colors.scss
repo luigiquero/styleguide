@@ -1,0 +1,39 @@
+$white: #fff;
+
+// primary colors
+$neutral: #54627c;
+$brand: #f47d35;
+$action: #2463d0;
+
+// neutral variations
+$neutral-darken-2: darken($neutral, 18%);
+$neutral-darken-1: darken($neutral, 9%);
+
+$neutral-lighten-1: lighten($neutral, 9%);
+$neutral-lighten-2: lighten($neutral, 24%);
+$neutral-lighten-3: lighten($neutral, 36%);
+$neutral-lighten-4: lighten($neutral, 48%);
+$neutral-lighten-5: lighten($neutral, 54%);
+$neutral-lighten-6: lighten($neutral, 57%);
+
+// brand variations
+$brand-darken-2: darken($brand, 30%);
+$brand-darken-1: darken($brand, 15%);
+
+$brand-lighten-1: lighten($brand, 9%);
+$brand-lighten-2: lighten($brand, 18%);
+$brand-lighten-3: lighten($brand, 24%);
+$brand-lighten-4: lighten($brand, 30%);
+$brand-lighten-5: lighten($brand, 36%);
+$brand-lighten-6: lighten($brand, 39%);
+
+// action variations
+$action-darken-2: darken($action, 18%);
+$action-darken-1: darken($action, 9%);
+
+$action-lighten-1: lighten($action, 9%);
+$action-lighten-2: lighten($action, 21%);
+$action-lighten-3: lighten($action, 33%);
+$action-lighten-4: lighten($action, 42%);
+$action-lighten-5: lighten($action, 48%);
+$action-lighten-6: lighten($action, 51%);
