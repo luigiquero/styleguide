@@ -1,6 +1,4 @@
-@import '../../styles/colors.scss';
-@import '../../styles/spacement.scss';
-@import '../../styles/typography.scss';
+@import '../../styles/variables.scss';
 
 .button {
   @include small-text;

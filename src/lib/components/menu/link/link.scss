@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+.link {
+  @include small-text;
+
+  color: $neutral-lighten-1;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+
+  &:hover {
+    color: $neutral;
+  }
+
+  &:active {
+    @include small-text(bold);
+
+    color: $brand;
+  }
+}

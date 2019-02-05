@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link with url should render link with href 1`] = `
+<a
+  className="link"
+  href="/test"
+  target="_self"
+>
+  link with href
+</a>
+`;
+
+exports[`Link with url should render link with target 1`] = `
+<a
+  className="link"
+  href="/test"
+  target="_blank"
+>
+  link
+</a>
+`;
+
+exports[`Link without url should render link properly 1`] = `
+<span
+  className="link"
+>
+  my link
+</span>
+`;
