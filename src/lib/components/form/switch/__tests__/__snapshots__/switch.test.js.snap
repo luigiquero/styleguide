@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch snapshot tests when has checked property renders switch with checked true 1`] = `
+<div
+  className="switch"
+>
+  <input
+    checked={true}
+    className="switch__input"
+    disabled={null}
+    id="name"
+    name="name"
+    onChange={null}
+    type="checkbox"
+    value="value"
+  />
+  <span
+    className="switch__checked"
+  />
+</div>
+`;
+
+exports[`Switch snapshot tests when has disabled property renders switch with disabled true 1`] = `
+<div
+  className="switch"
+>
+  <input
+    checked={null}
+    className="switch__input"
+    disabled={true}
+    id="name"
+    name="name"
+    onChange={null}
+    type="checkbox"
+    value="value"
+  />
+  <span
+    className="switch__checked"
+  />
+</div>
+`;
+
+exports[`Switch snapshot tests when has label property renders switch with label 1`] = `
+<div
+  className="switch"
+>
+  <input
+    checked={null}
+    className="switch__input"
+    disabled={null}
+    id="name"
+    name="name"
+    onChange={null}
+    type="checkbox"
+    value="value"
+  />
+  <span
+    className="switch__checked"
+  />
+  <label
+    className="switch__label"
+    htmlFor="name"
+  >
+    label
+  </label>
+</div>
+`;
+
+exports[`Switch snapshot tests when pass only required props renders switch properly 1`] = `
+<div
+  className="switch"
+>
+  <input
+    checked={null}
+    className="switch__input"
+    disabled={null}
+    id="name"
+    name="name"
+    onChange={null}
+    type="checkbox"
+    value="value"
+  />
+  <span
+    className="switch__checked"
+  />
+</div>
+`;
