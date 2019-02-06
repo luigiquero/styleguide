@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-import { Switch as SimpleSwitch } from '../../../lib';
+import SimpleSwitch from 'lib/components/form/switch';
 
 export default class Switch extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      checked: props.checked,
+      checked: props.checked || false,
     };
   }
 
