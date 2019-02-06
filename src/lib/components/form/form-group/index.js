@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './form_group.scss';
+import './form-group.scss';
 
 const FormGroup = ({ errorMessage, children }) => {
   const hassErrorMessage = !!errorMessage;

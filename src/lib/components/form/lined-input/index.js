@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './lined_input.scss';
+import './lined-input.scss';
 
 const LinedInput = ({
   name,

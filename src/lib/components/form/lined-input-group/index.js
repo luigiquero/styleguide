@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import FormGroup from '../form_group/';
-import LinedInput from '../lined_input/';
+import FormGroup from '../form-group';
+import LinedInput from '../lined-input';
 
 const LinedInputGroup = ({
   name,

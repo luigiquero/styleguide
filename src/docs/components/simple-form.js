@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LinedInputGroup from '../../../src/lib/components/lined_input_group';
+import LinedInputGroup from '../../lib/components/form/lined-input-group';
 
 class SimpleForm extends Component {
   state = {
