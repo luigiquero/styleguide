@@ -1,0 +1,31 @@
+---
+name: Switch
+menu: Components
+route: /components/switch
+---
+
+import { Component } from 'react';
+import Switch from './switch-controlled';
+import { Switch as SimpleSwitch } from '../../../lib';
+import { Playground, PropsTable } from 'docz';
+import './switch.scss';
+
+# Switch Component
+
+This is the Switch component, to deal with native components like `checkbox` and `radio`.
+
+## Playground
+
+<Playground>
+  <Switch checked type="checkbox" name="on" label="On" value="test" />
+
+  <Switch type="checkbox" name="off" label="Off" value="test" />
+
+  <Switch checked disabled type="checkbox" name="on-disabled" label="On (Disabled)" value="test" />
+
+  <Switch disabled type="checkbox" name="off-disabled" label="Off (Disabled)" value="test" />
+</Playground>
+
+## Properties Table
+
+<PropsTable of={SimpleSwitch} />
