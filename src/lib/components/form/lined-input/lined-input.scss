@@ -1,23 +1,31 @@
 @import '../../../styles/variables.scss';
 
-.lined-input-control {
-  position: relative;
-  margin-bottom: 1.5rem;
+.lined-input {
   height: 50px;
+  margin-bottom: 1.5rem;
+  position: relative;
 
-  .lined-input {
-    font-family: Rubik;
-    font-size: 16px;
+  &__label {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: all 200ms;
+
+    &--error {
+      color: $danger;
+    }
+  }
+
+  &__field {
     border: 0;
     border-bottom: 2px solid $neutral-lighten-3;
+    font-family: Rubik;
+    font-size: 16px;
     height: 30px;
     line-height: 21px;
     outline: none;
-    width: 100%;
-    -webkit-transition : border 500ms ease-out;
-    -moz-transition : border 500ms ease-out;
-    -o-transition : border 500ms ease-out;
     transition : border 500ms ease-out;
+    width: 100%;
 
     &--error {
       border-bottom: 2px solid $danger;
@@ -27,23 +35,12 @@
       border-bottom: 2px solid $brand;
     }
 
-    &:focus + .floating-label,
-    &:valid + .floating-label {
-      font-size: 75%;
-      transform: translate3d(0, -100%, 0);
+    &:focus + .lined-input__label,
+    &:valid + .lined-input__label {
       color: $brand;
+      font-size: 75%;
       opacity: 1;
-    }
-  }
-
-  .floating-label {
-    position: absolute;
-    top: 0;
-    transition: all 200ms;
-    opacity: 0.5;
-
-    &--error {
-      color: $danger;
+      transform: translate3d(0, -100%, 0);
     }
   }
 }

@@ -12,21 +12,22 @@ const LinedInput = ({
   hasError,
   disabled,
 }) => {
-  const labelClassName = classNames(
-    'floating-label',
+  const inputClassName = classNames(
+    'lined-input__field',
     {
-      'floating-label--error': hasError,
+      'lined-input__field--error': hasError,
     },
   );
-  const inputClassName = classNames(
-    'lined-input',
+
+  const labelClassName = classNames(
+    'lined-input__label',
     {
-      'lined-input--error': hasError,
+      'lined-input__label--error': hasError,
     },
   );
 
   return (
-    <div className="lined-input-control">
+    <div className="lined-input">
       <input
         name={name}
         onChange={onChange}
