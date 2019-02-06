@@ -3,32 +3,33 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './form_group.scss';
 
-const FormGroup = ({ fieldMessage, children, fieldState }) => {
-  const fieldGroupMEssageClassName = classNames(
+const FormGroup = ({ errorMessage, children }) => {
+  const hassErrorMessage = !!errorMessage;
+
+  const messageClassName = classNames(
     'field-group__message',
     {
-      'field-group__message--error': !!fieldMessage,
+      'field-group__message--error': hassErrorMessage,
     },
   );
 
   return (
     <div className="field-group">
       {children}
-      <span className={fieldGroupMEssageClassName}>
-        {fieldMessage}
+      <span className={messageClassName}>
+        {errorMessage}
       </span>
     </div>
   );
 };
 
 FormGroup.propTypes = {
+  children: PropTypes.node.isRequired,
   errorMessage: PropTypes.string,
-  children: PropTypes.element.isRequired,
 };
 
 FormGroup.defaultProps = {
-  disabled: false,
-  fieldMessage: null,
+  errorMessage: null,
 };
 
 export default FormGroup;

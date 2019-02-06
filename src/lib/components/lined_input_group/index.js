@@ -4,47 +4,50 @@ import classNames from 'classnames';
 import FormGroup from '../form_group/';
 import LinedInput from '../lined_input/';
 
-const LinedInputGroup = ({ 
-   id, label, fieldMessage, value, onChange, type, disabled,
+const LinedInputGroup = ({
+  name,
+  label,
+  value,
+  type,
+  onChange,
+  errorMessage,
+  disabled,
 }) => {
-  const hasError = !!fieldMessage;
-
-  console.log(hasError);
+  const hasError = !!errorMessage;
 
   return (
-    <FormGroup fieldMessage={fieldMessage}>
-      <LinedInput 
-        id={id}
+    <FormGroup errorMessage={errorMessage}>
+      <LinedInput
+        name={name}
         label={label}
         onChange={onChange}
         value={value}
         type={type}
-        hasError
-        disabled
+        hasError={hasError}
+        disabled={disabled}
       />
     </FormGroup>
   );
 };
 
 LinedInputGroup.propTypes = {
-  fieldMessage: PropTypes.string,
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func.isRequired,
-  id: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  fieldMessage: PropTypes.string,
-  fieldState: PropTypes.string,
+  value: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
     'password',
     'text',
+    'email',
   ]),
+  onChange: PropTypes.func.isRequired,
+  errorMessage: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 LinedInputGroup.defaultProps = {
-  disabled: false,
   type: 'text',
-  fieldMessage: null,
+  disabled: false,
+  errorMessage: null,
 };
 
 export default LinedInputGroup;

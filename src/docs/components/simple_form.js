@@ -20,14 +20,14 @@ class SimpleForm extends Component {
           id="name1"
           label="Name 1"
           value={name}
-          onChange={this.onChangeName} 
+          onChange={this.onChangeName}
         />
         <LinedInputGroup
           id="name2"
           label="Name 2"
           value={name2}
           onChange={this.onChangeName2}
-          fieldMessage="Wrong!"
+          errorMessage="Wrong!"
         />
       </form>
     );

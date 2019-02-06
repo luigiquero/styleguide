@@ -1,10 +1,16 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './lined_input.scss';
 
 const LinedInput = ({
-  id, label, value, onChange, type, lined, hasError, disabled,
+  name,
+  label,
+  value,
+  type,
+  onChange,
+  hasError,
+  disabled,
 }) => {
   const labelClassName = classNames(
     'floating-label',
@@ -22,14 +28,14 @@ const LinedInput = ({
   return (
     <div className="lined-input-control">
       <input
-        id={id}
+        name={name}
         onChange={onChange}
         className={inputClassName}
         value={value}
         type={type}
-        required
+        disabled={disabled}
       />
-      <label className={labelClassName} htmlFor={id}>
+      <label className={labelClassName} htmlFor={name}>
         {label}
       </label>
     </div>
@@ -37,22 +43,23 @@ const LinedInput = ({
 };
 
 LinedInput.propTypes = {
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func.isRequired,
-  id: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  hasError: PropTypes.bool,
+  value: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
     'password',
     'text',
+    'email',
   ]),
+  onChange: PropTypes.func.isRequired,
+  hasError: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 LinedInput.defaultProps = {
+  type: 'text',
   hasError: false,
   disabled: false,
-  type: 'text',
 };
 
 export default LinedInput;
