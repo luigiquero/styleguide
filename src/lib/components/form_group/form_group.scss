@@ -1,0 +1,12 @@
+@import '../../styles/colors/feedback-colors';
+
+.field-group {
+  &__message {
+    &--error {
+      color: $danger;
+      font-size: 12px;
+      line-height: 16px;
+      margin: 2px;
+    }
+  }
+}

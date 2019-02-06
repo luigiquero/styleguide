@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.lined-input-control {
+  position: relative;
+  margin-bottom: 1.5rem;
+  height: 50px;
+
+  .lined-input {
+    font-family: Rubik;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid $neutral-lighten-3;
+    height: 30px;
+    line-height: 21px;
+    outline: none;
+    width: 100%;
+    -webkit-transition : border 500ms ease-out;
+    -moz-transition : border 500ms ease-out;
+    -o-transition : border 500ms ease-out;
+    transition : border 500ms ease-out;
+
+    &--error {
+      border-bottom: 2px solid $danger;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $brand;
+    }
+
+    &:focus + .floating-label,
+    &:valid + .floating-label {
+      font-size: 75%;
+      transform: translate3d(0, -100%, 0);
+      color: $brand;
+      opacity: 1;
+    }
+  }
+
+  .floating-label {
+    position: absolute;
+    top: 0;
+    transition: all 200ms;
+    opacity: 0.5;
+
+    &--error {
+      color: $danger;
+    }
+  }
+}
