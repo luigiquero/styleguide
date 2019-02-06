@@ -5,8 +5,8 @@ import './switch.scss';
 
 const Switch = ({
   name,
-  type,
   value,
+  type,
   checked,
   disabled,
   label,
@@ -29,6 +29,7 @@ const Switch = ({
 );
 
 Switch.defaultProps = {
+  type: 'checkbox',
   label: null,
   checked: null,
   disabled: null,
@@ -37,11 +38,11 @@ Switch.defaultProps = {
 
 Switch.propTypes = {
   name: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['checkbox', 'radio']).isRequired,
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool,
   ]).isRequired,
+  type: PropTypes.oneOf(['checkbox', 'radio']),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   label: PropTypes.string,
