@@ -12,6 +12,7 @@ const Button = ({
   tertiary,
   medium,
   large,
+  block,
 }) => {
   const className = classNames(
     'button',
@@ -21,6 +22,7 @@ const Button = ({
       'button--tertiary': tertiary,
       'button--medium': medium,
       'button--large': large,
+      'button--block': block,
     },
   );
 
@@ -38,6 +40,7 @@ Button.defaultProps = {
   tertiary: false,
   medium: false,
   large: false,
+  block: false,
 };
 
 Button.propTypes = {
@@ -48,6 +51,7 @@ Button.propTypes = {
   tertiary: PropTypes.bool,
   medium: PropTypes.bool,
   large: PropTypes.bool,
+  block: PropTypes.bool,
 };
 
 export default Button;
