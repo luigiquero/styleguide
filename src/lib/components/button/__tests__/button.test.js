@@ -50,9 +50,17 @@ describe('Button', () => {
       });
     });
 
-    describe('compose by primary and large', () => {
+    describe('block', () => {
       it('should render button properly', () => {
-        const component = renderer.create(<Button primary medium>Test</Button>);
+        const component = renderer.create(<Button block>Test</Button>);
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+
+    describe('compose by primary and large and block', () => {
+      it('should render button properly', () => {
+        const component = renderer.create(<Button primary large block>Test</Button>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });

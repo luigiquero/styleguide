@@ -27,9 +27,18 @@ exports[`Button should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier compose by primary and large should render button properly 1`] = `
+exports[`Button with modifier block should render button properly 1`] = `
 <button
-  className="button button--primary button--medium"
+  className="button button--block"
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with modifier compose by primary and large and block should render button properly 1`] = `
+<button
+  className="button button--primary button--large button--block"
   type="button"
 >
   Test
