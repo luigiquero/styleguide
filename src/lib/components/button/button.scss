@@ -1,0 +1,74 @@
+@import '../../styles/variables.scss';
+
+.button {
+  @include small-text;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: 0;
+  padding: $space-8 $space-16;
+  text-align: center;
+
+  &--primary {
+    background-color: $action;
+    border-color: $action;
+    color: $white;
+
+    &:hover {
+      background-color: $action-lighten-1;
+      border-color: $action-lighten-1;
+    }
+
+    &:active {
+      background-color: $action-darken-1;
+      border-color: $action-darken-1;
+    }
+  }
+
+  &--secondary {
+    background-color: $white;
+    border-color: $neutral-lighten-3;
+    color: $neutral;
+
+    &:hover {
+      border-color: $action-lighten-1;
+      color: $action;
+    }
+
+    &:active {
+      border-color: $action-darken-1;
+      color: $action-darken-1;
+    }
+  }
+
+  &--tertiary {
+    color: $neutral;
+
+    &:hover {
+      color: $action;
+    }
+
+    &:active {
+      color: $action-darken-1;
+    }
+  }
+
+  &--medium {
+    @include body;
+
+    font-size: 16px;
+    padding: $space-12 $space-24;
+  }
+
+  &--large {
+    @include heading-2;
+
+    font-size: 20px;
+    padding: $space-12 $space-32;
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

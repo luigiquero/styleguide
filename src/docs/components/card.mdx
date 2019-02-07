@@ -1,0 +1,33 @@
+---
+name: Card
+menu: Components
+route: /components/card
+---
+
+import { Card } from '../../lib';
+import { Playground, PropsTable } from 'docz';
+
+# Card Component
+
+This is the card component.
+
+## Playground
+
+<Playground className="row">
+  <div className="column">
+    <Card>
+      <h1>Card header</h1>
+      <p>Lorem ipsum</p>
+    </Card>
+  </div>
+  <div className="column">
+    <Card>
+      <h1>Card header</h1>
+      <p>Lorem ipsum</p>
+    </Card>
+  </div>
+</Playground>
+
+## Properties Table
+
+<PropsTable of={Card} />

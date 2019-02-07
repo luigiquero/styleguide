@@ -1,0 +1,21 @@
+$success: #63c674;
+$danger: #e45048;
+$warning: #f3c333;
+
+// success variations
+$success-darken-1: darken($success, 12%);
+
+$success-lighten-1: lighten($success, 9%);
+$success-lighten-2: lighten($success, 39%);
+
+// danger variations
+$danger-darken-1: darken($danger, 12%);
+
+$danger-lighten-1: lighten($danger, 9%);
+$danger-lighten-2: lighten($danger, 51%);
+
+// warning variations
+$warning-darken-1: darken($warning, 12%);
+
+$warning-lighten-1: lighten($warning, 9%);
+$warning-lighten-2: lighten($warning, 39%);
