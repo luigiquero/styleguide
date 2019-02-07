@@ -1,8 +1,8 @@
 @import '../../../styles/variables.scss';
 
 .lined-input {
-  height: 50px;
-  margin-bottom: 1.5rem;
+  height: 28px;
+  margin-top: 2rem;
   position: relative;
 
   &__label {
@@ -19,8 +19,7 @@
   &__field {
     border: 0;
     border-bottom: 2px solid $neutral-lighten-3;
-    font-family: Rubik;
-    font-size: 16px;
+    @include body;
     height: 30px;
     line-height: 21px;
     outline: none;
@@ -35,9 +34,12 @@
       border-bottom: 2px solid $brand;
     }
 
+    &:focus + .lined-input__label {
+      color: $brand;
+    }
+
     &:focus + .lined-input__label,
     &:valid + .lined-input__label {
-      color: $brand;
       font-size: 75%;
       opacity: 1;
       transform: translate3d(0, -100%, 0);

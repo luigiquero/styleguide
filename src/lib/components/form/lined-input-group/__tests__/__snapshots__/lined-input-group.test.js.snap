@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinedInputGroup renders the LinedInputGroup 1`] = `
+<div
+  className="form-group"
+>
+  <div
+    className="lined-input"
+  >
+    <input
+      className="lined-input__field"
+      disabled={false}
+      id="name1"
+      onChange={[MockFunction]}
+      required={true}
+      type="text"
+      value="Test"
+    />
+    <label
+      className="lined-input__label"
+      htmlFor="name1"
+    >
+      Name 1
+    </label>
+    <div />
+  </div>
+  <span
+    className="form-group__message"
+  />
+</div>
+`;

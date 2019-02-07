@@ -1,15 +1,29 @@
 ---
-name: Lined Input
-route: /lined_input
+name: Lined Input Group
+menu: Components
+route: /components/lined-input-group
 ---
 
-import SimpleForm from './simple-form';
-import { Playground } from 'docz';
+import LinedInputGroupComponent from 'lib/components/form/lined-input-group';
+import LinedInputGroup from 'test-helpers/controlleds/lined-input';
+import { Playground, PropsTable } from 'docz';
 
-# Input Component
+# Lined Input Group Component
 
 This input is awesome.
 
 <Playground>
-  <SimpleForm />
+  <LinedInputGroup
+    id="name1"
+    label="Name 1"
+    value=""
+  />
+  <LinedInputGroup
+    id="name2"
+    label="Name 2"
+    value="Wrong!"
+    errorMessage="Wrong!"
+  />
 </Playground>
+
+<PropsTable of={LinedInputGroupComponent} />

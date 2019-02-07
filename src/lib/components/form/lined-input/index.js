@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import './lined-input.scss';
 
 const LinedInput = ({
-  name,
+  id,
   label,
   value,
   type,
@@ -29,22 +29,24 @@ const LinedInput = ({
   return (
     <div className="lined-input">
       <input
-        name={name}
+        id={id}
         onChange={onChange}
         className={inputClassName}
         value={value}
         type={type}
         disabled={disabled}
+        required
       />
-      <label className={labelClassName} htmlFor={name}>
+      <label className={labelClassName} htmlFor={id}>
         {label}
       </label>
+      <div />
     </div>
   );
 };
 
 LinedInput.propTypes = {
-  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   type: PropTypes.oneOf([

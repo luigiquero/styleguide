@@ -4,7 +4,7 @@ import FormGroup from '../form-group';
 import LinedInput from '../lined-input';
 
 const LinedInputGroup = ({
-  name,
+  id,
   label,
   value,
   type,
@@ -17,7 +17,7 @@ const LinedInputGroup = ({
   return (
     <FormGroup errorMessage={errorMessage}>
       <LinedInput
-        name={name}
+        id={id}
         label={label}
         onChange={onChange}
         value={value}
@@ -30,7 +30,7 @@ const LinedInputGroup = ({
 };
 
 LinedInputGroup.propTypes = {
-  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
