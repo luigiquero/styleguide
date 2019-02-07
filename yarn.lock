@@ -1107,6 +1107,11 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.14.tgz#0eb86a77ac88e8c12c48591735283f0bf0ea5606"
   integrity sha512-LOcvERCI96KioXSIfOYN4IATv2ROJOyf72dYnpoWfOIkuyLp45oMej1kL03kYdzvktLCzYhykgHwiu6nkg9Xbw==
 
+"@fortawesome/fontawesome-pro@^5.7.1":
+  version "5.7.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/fontawesome-pro/-/fontawesome-pro-5.7.1.tgz#0c23f79c387892112f5414549e55ea4b3577bfaa"
+  integrity sha512-DuN3IpOAkoTy/XHfXDqhvQ9yCH08zIkZYCUdcCinxB833jxnBjwGAJE3Q2LFJuitl+yB29LnKycsSUtqQQXG3w==
+
 "@fortawesome/fontawesome-svg-core@^1.2.14":
   version "1.2.14"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.14.tgz#48fde5fbfa223cffd5fac9c0402cfbe87605a7d0"
@@ -1118,6 +1123,27 @@
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.7.1.tgz#df41b8643383862a2af93456e7129e5ffc0fb7ae"
   integrity sha512-5V/Q+JoPzuiIHW2JwmZGvE9bHguvNJKa7611DPo51uIvYv9LweX/SnDF+HC23X2W5T3myHhnGi+EZJTmidAmyg==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.14"
+
+"@fortawesome/pro-light-svg-icons@^5.7.1":
+  version "5.7.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-light-svg-icons/-/pro-light-svg-icons-5.7.1.tgz#77cfc50fce11c892ccbbf19f728ea8dbf72724bd"
+  integrity sha512-tvzJ9UjJMhStl2N9bWaIP657pyvLgPK+s/8jjSvq+bbidhDE4xzBBbxJ2vzeAtKpesFTeQOlxStZyI+eBRF8vw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.14"
+
+"@fortawesome/pro-regular-svg-icons@^5.7.1":
+  version "5.7.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-regular-svg-icons/-/pro-regular-svg-icons-5.7.1.tgz#66e4ab0ec3b5389a4629dd17a743532f7224e997"
+  integrity sha512-Utu+l6J/c5ODnBXA5N9DfAnj4ZEgOf2Nn6UenxRP9DAaNsxA4fhxARexenISCltBAUVWk8GJh7vjU9A5/+eIAA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.14"
+
+"@fortawesome/pro-solid-svg-icons@^5.7.1":
+  version "5.7.1"
+  resolved "https://npm.fontawesome.com/@fortawesome/pro-solid-svg-icons/-/pro-solid-svg-icons-5.7.1.tgz#6ee4630f8267e383193a4e199f4cb7f4debfe98f"
+  integrity sha512-wlKXnGR4LXdVnj1McATt4W0FQMmnZBgkOApHdKN1ot8cg4fsv6emIjbt9Ew78IXt7n6dWRB3f3GIeiwyOBcaUA==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.14"
 
