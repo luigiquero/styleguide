@@ -31,6 +31,14 @@ $switch-width: 44px;
     user-select: none;
   }
 
+  &__icon {
+    color: $white;
+    font-size: 12px;
+    left: 6px;
+    position: absolute;
+    top: 4px;
+  }
+
   &__checked {
     background-color: $neutral-lighten-5;
     border: 1px solid $neutral-lighten-3;
