@@ -1,0 +1,133 @@
+---
+name: Icons
+menu: Basics
+route: /basics/icons
+---
+
+import { Playground, PropsTable } from 'docz';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './icons.scss';
+
+# Icons
+
+Here at Indeva we use icons through [FontAwesome](https://fontawesome.com/).
+
+To use the icons, we use the official [Font Awesome React component](https://www.npmjs.com/package/@fortawesome/react-fontawesome).
+
+## Usage
+
+To use the icons, you must to import the Font Awesome lib:
+
+```js
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+```
+
+And you can specify any icon from the [icons list](https://origin.fontawesome.com/icons):
+
+<Playground className="separate-icons">
+  <FontAwesomeIcon icon="smile-beam" size="4x"/>
+  <FontAwesomeIcon icon="smile" size="4x"/>
+  <FontAwesomeIcon icon="laugh-squint" size="4x"/>
+  <FontAwesomeIcon icon="grin-stars" size="4x"/>
+  <FontAwesomeIcon icon="grin-squint-tears" size="4x"/>
+</Playground>
+
+## Prefixes
+
+There's one another piece of magic that's happening in the background when providing icon names as strings like this: the `fas` prefix (for Font Awesome Solid) is being inferred as the default. Later, we'll look at what that means and how we can do something different than the default.
+
+You have another prefixes to use, see it:
+
+| Style                                               | Availability  | Prefix  |
+|-----------------------------------------------------|---------------|---------|
+| [Solid](https://fontawesome.com/icons?s=solid)      | Free          | `fas`   |
+| [Regular](https://fontawesome.com/icons?s=regular)  | Pro Required  | `far`   |
+| [Light](https://fontawesome.com/icons?s=light)      | Pro Required  | `fal`   |
+
+### Examples:
+<Playground className="separate-icons">
+  <FontAwesomeIcon icon={['fas', 'igloo']} size="3x" />
+  <FontAwesomeIcon icon={['far', 'igloo']} size="3x" />
+  <FontAwesomeIcon icon={['fal', 'igloo']} size="3x" />
+</Playground>
+
+## Features
+
+The following features are available as part of Font Awesome. Note that the syntax is different from our general web-use documentation.
+
+In the following code snippets, we'll use the shortcut notation for the
+icons—referencing the icons by their names as strings.
+
+But remember, that option is only valid after you've either
+explicitly imported and added those icons to the library, or externally
+loaded an icon bundle. See the sections above for the details.
+
+### Basic
+
+[Size](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons):
+
+```javascript
+<FontAwesomeIcon icon="spinner" size="xs" />
+<FontAwesomeIcon icon="spinner" size="lg" />
+<FontAwesomeIcon icon="spinner" size="6x" />
+```
+
+[Fixed width](https://fontawesome.com/how-to-use/on-the-web/styling/fixed-width-icons):
+
+```javascript
+<FontAwesomeIcon icon="spinner" fixedWidth />
+```
+
+Inverse:
+
+```javascript
+<FontAwesomeIcon icon="spinner" inverse />
+```
+
+[List Items](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list):
+
+```javascript
+<FontAwesomeIcon icon="spinner" listItem />
+```
+
+[Rotate](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons):
+
+```javascript
+<FontAwesomeIcon icon="spinner" rotation={90} />
+<FontAwesomeIcon icon="spinner" rotation={180} />
+<FontAwesomeIcon icon="spinner" rotation={270} />
+```
+
+Flip horizontally, vertically, or both:
+
+```javascript
+<FontAwesomeIcon icon="spinner" flip="horizontal" />
+<FontAwesomeIcon icon="spinner" flip="vertical" />
+<FontAwesomeIcon icon="spinner" flip="both" />
+```
+
+Spin and pulse [animation](https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons):
+
+```javascript
+<FontAwesomeIcon icon="spinner" spin />
+<FontAwesomeIcon icon="spinner" pulse />
+```
+
+[Border](https://fontawesome.com/how-to-use/on-the-web/styling/bordered-pulled-icons):
+
+```javascript
+<FontAwesomeIcon icon="spinner" border />
+```
+
+[Pull left or right](https://fontawesome.com/how-to-use/on-the-web/styling/bordered-pulled-icons):
+
+```javascript
+<FontAwesomeIcon icon="spinner" pull="left" />
+<FontAwesomeIcon icon="spinner" pull="right" />
+```
+
+Your own class names:
+
+```javascript
+<FontAwesomeIcon icon="spinner" className="highlight" />
+```
