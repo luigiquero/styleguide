@@ -6,6 +6,11 @@ export default {
   base: '/styleguide/',
   src: './src/docs',
   dest: './docs',
+  menu: [
+    'Home',
+    'Basics',
+    'Components',
+  ],
   hashRouter: true,
   themeConfig: {
     colors: {
