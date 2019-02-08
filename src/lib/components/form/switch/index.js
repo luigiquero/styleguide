@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Icon } from 'lib';
 import './switch.scss';
 
 const Switch = ({
@@ -25,7 +25,7 @@ const Switch = ({
       onChange={onChange}
     />
     <span className="switch__checked">
-      <FontAwesomeIcon icon={['far', 'check']} className="switch__icon" />
+      <Icon icon={['far', 'check']} className="switch__icon" />
     </span>
     { label && <label className="switch__label" htmlFor={name}>{label}</label> }
   </div>
