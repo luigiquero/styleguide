@@ -1,0 +1,48 @@
+@import '../../../styles/variables.scss';
+
+.lined-input {
+  height: 28px;
+  margin-top: 2rem;
+  position: relative;
+
+  &__label {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: all 200ms;
+
+    &--error {
+      color: $danger;
+    }
+  }
+
+  &__field {
+    border: 0;
+    border-bottom: 2px solid $neutral-lighten-3;
+    @include body;
+    height: 30px;
+    line-height: 21px;
+    outline: none;
+    transition : border 500ms ease-out;
+    width: 100%;
+
+    &--error {
+      border-bottom: 2px solid $danger;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $brand;
+    }
+
+    &:focus + .lined-input__label {
+      color: $brand;
+    }
+
+    &:focus + .lined-input__label,
+    &:valid + .lined-input__label {
+      font-size: 75%;
+      opacity: 1;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+}

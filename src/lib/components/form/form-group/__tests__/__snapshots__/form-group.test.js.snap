@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormGroup when the errorMessage prop has been filled renders the FormGroup with error 1`] = `
+<div
+  className="form-group"
+>
+  <div />
+  <span
+    className="form-group__message form-group__message--error"
+  >
+    test
+  </span>
+</div>
+`;
+
+exports[`FormGroup when there is not any prop renders the FormGroup 1`] = `
+<div
+  className="form-group"
+>
+  <div />
+  <span
+    className="form-group__message"
+  />
+</div>
+`;

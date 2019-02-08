@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+
+.form-group {
+  height: 58px;
+  &__message {
+    &--error {
+      color: $danger;
+      @include mini-text;
+      line-height: 16px;
+      margin: 2px;
+    }
+  }
+}
