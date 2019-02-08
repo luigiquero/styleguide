@@ -6,7 +6,6 @@ import { fas as fasPro } from '@fortawesome/pro-solid-svg-icons';
 import { fal as falPro } from '@fortawesome/pro-light-svg-icons';
 import { far as farPro } from '@fortawesome/pro-regular-svg-icons';
 
-
 library.add(
   fasFree,
   fasPro,
