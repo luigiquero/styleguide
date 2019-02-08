@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinedInput snapshot tests when the component has just the defaultprops renders the LinedInput normally 1`] = `
+<div
+  className="lined-input"
+>
+  <input
+    className="lined-input__field"
+    disabled={false}
+    id="name"
+    onChange={[MockFunction]}
+    required={true}
+    type="text"
+    value="value"
+  />
+  <label
+    className="lined-input__label"
+    htmlFor="name"
+  >
+    Name
+  </label>
+  <div />
+</div>
+`;
+
+exports[`LinedInput snapshot tests when the componente also has the flag hasError as prop renders the LinedInput with error 1`] = `
+<div
+  className="lined-input"
+>
+  <input
+    className="lined-input__field lined-input__field--error"
+    disabled={false}
+    id="name"
+    onChange={[MockFunction]}
+    required={true}
+    type="text"
+    value="value"
+  />
+  <label
+    className="lined-input__label lined-input__label--error"
+    htmlFor="name"
+  >
+    Name
+  </label>
+  <div />
+</div>
+`;
