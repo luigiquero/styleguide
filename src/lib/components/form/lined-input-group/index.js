@@ -11,11 +11,12 @@ const LinedInputGroup = ({
   onChange,
   errorMessage,
   disabled,
+  className,
 }) => {
   const hasError = !!errorMessage;
 
   return (
-    <FormGroup errorMessage={errorMessage}>
+    <FormGroup errorMessage={errorMessage} className={className}>
       <LinedInput
         id={id}
         label={label}
@@ -41,12 +42,14 @@ LinedInputGroup.propTypes = {
   onChange: PropTypes.func.isRequired,
   errorMessage: PropTypes.string,
   disabled: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 LinedInputGroup.defaultProps = {
   type: 'text',
   disabled: false,
   errorMessage: null,
+  className: null,
 };
 
 export default LinedInputGroup;
