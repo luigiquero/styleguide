@@ -18,7 +18,7 @@ exports[` 2`] = `
 </button>
 `;
 
-exports[`Button should render button properly 1`] = `
+exports[`Button snapshot tests should render button properly 1`] = `
 <button
   className="button"
   type="button"
@@ -27,7 +27,7 @@ exports[`Button should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier block should render button properly 1`] = `
+exports[`Button snapshot tests with modifier block should render button properly 1`] = `
 <button
   className="button button--block"
   type="button"
@@ -36,7 +36,7 @@ exports[`Button with modifier block should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier compose by primary and large and block should render button properly 1`] = `
+exports[`Button snapshot tests with modifier compose by primary and large and block should render button properly 1`] = `
 <button
   className="button button--primary button--large button--block"
   type="button"
@@ -45,7 +45,7 @@ exports[`Button with modifier compose by primary and large and block should rend
 </button>
 `;
 
-exports[`Button with modifier large should render button properly 1`] = `
+exports[`Button snapshot tests with modifier large should render button properly 1`] = `
 <button
   className="button button--large"
   type="button"
@@ -54,7 +54,7 @@ exports[`Button with modifier large should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier medium should render button properly 1`] = `
+exports[`Button snapshot tests with modifier medium should render button properly 1`] = `
 <button
   className="button button--medium"
   type="button"
@@ -63,7 +63,7 @@ exports[`Button with modifier medium should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier primary should render button properly 1`] = `
+exports[`Button snapshot tests with modifier primary should render button properly 1`] = `
 <button
   className="button button--primary"
   type="button"
@@ -72,7 +72,7 @@ exports[`Button with modifier primary should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier secondary should render button properly 1`] = `
+exports[`Button snapshot tests with modifier secondary should render button properly 1`] = `
 <button
   className="button button--secondary"
   type="button"
@@ -81,7 +81,7 @@ exports[`Button with modifier secondary should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier tertiary should render button properly 1`] = `
+exports[`Button snapshot tests with modifier tertiary should render button properly 1`] = `
 <button
   className="button button--tertiary"
   type="button"
