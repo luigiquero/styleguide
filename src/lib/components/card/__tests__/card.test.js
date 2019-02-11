@@ -8,4 +8,12 @@ describe('Card', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  describe('whith custom class', () => {
+    it('should render card properly', () => {
+      const component = renderer.create(<Card className="my classes">my card</Card>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
