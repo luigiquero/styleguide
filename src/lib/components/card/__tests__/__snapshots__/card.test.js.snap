@@ -7,3 +7,11 @@ exports[`Card should render card properly 1`] = `
   my card
 </div>
 `;
+
+exports[`Card whith custom class should render card properly 1`] = `
+<div
+  className="card my classes"
+>
+  my card
+</div>
+`;
