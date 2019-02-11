@@ -2,10 +2,10 @@
 
 .lined-input {
   height: 28px;
-  margin-top: 2rem;
   position: relative;
 
   &__label {
+    left: 0;
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -17,13 +17,14 @@
   }
 
   &__field {
+    @include body;
+
     border: 0;
     border-bottom: 2px solid $neutral-lighten-3;
-    @include body;
     height: 30px;
     line-height: 21px;
     outline: none;
-    transition : border 500ms ease-out;
+    transition: border 500ms ease-out;
     width: 100%;
 
     &--error {
