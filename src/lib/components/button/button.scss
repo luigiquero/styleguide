@@ -1,5 +1,19 @@
 @import '../../styles/variables.scss';
 
+@mixin disabled($background: true) {
+  background-color: if($background, $neutral-lighten-5, $white);
+  border: 1px solid if($background, $neutral-lighten-5, $white);
+  color: $neutral-lighten-3;
+  cursor: not-allowed;
+
+  &:hover,
+  &:active {
+    background-color: if($background, $neutral-lighten-5, $white);
+    border: 1px solid if($background, $neutral-lighten-5, $white);
+    color: $neutral-lighten-3;
+  }
+}
+
 .button {
   @include small-text;
 
@@ -24,6 +38,10 @@
       background-color: $action-darken-1;
       border-color: $action-darken-1;
     }
+
+    &:disabled {
+      @include disabled;
+    }
   }
 
   &--secondary {
@@ -40,6 +58,10 @@
       border-color: $action-darken-1;
       color: $action-darken-1;
     }
+
+    &:disabled {
+      @include disabled;
+    }
   }
 
   &--tertiary {
@@ -51,6 +73,10 @@
 
     &:active {
       color: $action-darken-1;
+    }
+
+    &:disabled {
+      @include disabled(false);
     }
   }
 

@@ -3,6 +3,7 @@
 exports[` 1`] = `
 <button
   className="button"
+  disabled={false}
   type="submit"
 >
   Test
@@ -12,6 +13,7 @@ exports[` 1`] = `
 exports[` 2`] = `
 <button
   className="button"
+  disabled={false}
   type="reset"
 >
   Test
@@ -21,6 +23,27 @@ exports[` 2`] = `
 exports[`Button should render button properly 1`] = `
 <button
   className="button"
+  disabled={false}
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with disabled prop as true should render button with disabled as true 1`] = `
+<button
+  className="button"
+  disabled={true}
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button with disabled prop should render button with disabled as true 1`] = `
+<button
+  className="button"
+  disabled={true}
   type="button"
 >
   Test
@@ -30,6 +53,7 @@ exports[`Button should render button properly 1`] = `
 exports[`Button with modifier block should render button properly 1`] = `
 <button
   className="button button--block"
+  disabled={false}
   type="button"
 >
   Test
@@ -39,6 +63,7 @@ exports[`Button with modifier block should render button properly 1`] = `
 exports[`Button with modifier compose by primary and large and block should render button properly 1`] = `
 <button
   className="button button--primary button--large button--block"
+  disabled={false}
   type="button"
 >
   Test
@@ -48,6 +73,7 @@ exports[`Button with modifier compose by primary and large and block should rend
 exports[`Button with modifier large should render button properly 1`] = `
 <button
   className="button button--large"
+  disabled={false}
   type="button"
 >
   Test
@@ -57,6 +83,7 @@ exports[`Button with modifier large should render button properly 1`] = `
 exports[`Button with modifier medium should render button properly 1`] = `
 <button
   className="button button--medium"
+  disabled={false}
   type="button"
 >
   Test
@@ -66,6 +93,7 @@ exports[`Button with modifier medium should render button properly 1`] = `
 exports[`Button with modifier primary should render button properly 1`] = `
 <button
   className="button button--primary"
+  disabled={false}
   type="button"
 >
   Test
@@ -75,6 +103,7 @@ exports[`Button with modifier primary should render button properly 1`] = `
 exports[`Button with modifier secondary should render button properly 1`] = `
 <button
   className="button button--secondary"
+  disabled={false}
   type="button"
 >
   Test
@@ -84,6 +113,7 @@ exports[`Button with modifier secondary should render button properly 1`] = `
 exports[`Button with modifier tertiary should render button properly 1`] = `
 <button
   className="button button--tertiary"
+  disabled={false}
   type="button"
 >
   Test
