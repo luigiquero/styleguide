@@ -14,6 +14,7 @@ const Button = ({
   large,
   block,
   disabled,
+  onClick,
 }) => {
   const className = classNames(
     'button',
@@ -28,7 +29,12 @@ const Button = ({
   );
 
   return (
-    <button type={type} className={className} disabled={disabled}>
+    <button
+      type={type}
+      className={className}
+      disabled={disabled}
+      onClick={onClick}
+    >
       { children }
     </button>
   );
@@ -43,6 +49,7 @@ Button.defaultProps = {
   large: false,
   block: false,
   disabled: false,
+  onClick: undefined,
 };
 
 Button.propTypes = {
@@ -55,6 +62,7 @@ Button.propTypes = {
   large: PropTypes.bool,
   block: PropTypes.bool,
   disabled: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default Button;

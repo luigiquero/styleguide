@@ -20,7 +20,7 @@ exports[` 2`] = `
 </button>
 `;
 
-exports[`Button should render button properly 1`] = `
+exports[`Button snapshot tests should render button properly 1`] = `
 <button
   className="button"
   disabled={false}
@@ -30,7 +30,7 @@ exports[`Button should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with disabled prop as true should render button with disabled as true 1`] = `
+exports[`Button snapshot tests with disabled prop should render button with disabled as true 1`] = `
 <button
   className="button"
   disabled={true}
@@ -40,17 +40,7 @@ exports[`Button with disabled prop as true should render button with disabled as
 </button>
 `;
 
-exports[`Button with disabled prop should render button with disabled as true 1`] = `
-<button
-  className="button"
-  disabled={true}
-  type="button"
->
-  Test
-</button>
-`;
-
-exports[`Button with modifier block should render button properly 1`] = `
+exports[`Button snapshot tests with modifier block should render button properly 1`] = `
 <button
   className="button button--block"
   disabled={false}
@@ -60,7 +50,7 @@ exports[`Button with modifier block should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier compose by primary and large and block should render button properly 1`] = `
+exports[`Button snapshot tests with modifier compose by primary and large and block should render button properly 1`] = `
 <button
   className="button button--primary button--large button--block"
   disabled={false}
@@ -70,7 +60,7 @@ exports[`Button with modifier compose by primary and large and block should rend
 </button>
 `;
 
-exports[`Button with modifier large should render button properly 1`] = `
+exports[`Button snapshot tests with modifier large should render button properly 1`] = `
 <button
   className="button button--large"
   disabled={false}
@@ -80,7 +70,7 @@ exports[`Button with modifier large should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier medium should render button properly 1`] = `
+exports[`Button snapshot tests with modifier medium should render button properly 1`] = `
 <button
   className="button button--medium"
   disabled={false}
@@ -90,7 +80,7 @@ exports[`Button with modifier medium should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier primary should render button properly 1`] = `
+exports[`Button snapshot tests with modifier primary should render button properly 1`] = `
 <button
   className="button button--primary"
   disabled={false}
@@ -100,7 +90,7 @@ exports[`Button with modifier primary should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier secondary should render button properly 1`] = `
+exports[`Button snapshot tests with modifier secondary should render button properly 1`] = `
 <button
   className="button button--secondary"
   disabled={false}
@@ -110,7 +100,7 @@ exports[`Button with modifier secondary should render button properly 1`] = `
 </button>
 `;
 
-exports[`Button with modifier tertiary should render button properly 1`] = `
+exports[`Button snapshot tests with modifier tertiary should render button properly 1`] = `
 <button
   className="button button--tertiary"
   disabled={false}
