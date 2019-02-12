@@ -6,7 +6,8 @@ describe('LinedInputGroup', () => {
   it('renders the LinedInputGroup', () => {
     const component = renderer.create(
       <LinedInputGroup
-        id="name1"
+        id="id"
+        name="name"
         label="Name 1"
         value="Test"
         onChange={jest.fn()}

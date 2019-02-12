@@ -10,8 +10,8 @@ exports[`LinedInputGroup renders the LinedInputGroup 1`] = `
     <input
       className="lined-input__field"
       disabled={false}
-      id="name1"
-      name={null}
+      id="id"
+      name="name"
       onChange={[MockFunction]}
       required={true}
       type="text"
@@ -19,7 +19,7 @@ exports[`LinedInputGroup renders the LinedInputGroup 1`] = `
     />
     <label
       className="lined-input__label"
-      htmlFor="name1"
+      htmlFor="id"
     >
       Name 1
     </label>
