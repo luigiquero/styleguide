@@ -5,6 +5,8 @@
   position: relative;
 
   &__label {
+    @include body;
+
     left: 0;
     opacity: 0.5;
     position: absolute;
@@ -41,7 +43,8 @@
 
     &:focus + .lined-input__label,
     &:valid + .lined-input__label {
-      font-size: 75%;
+      @include mini-text;
+
       opacity: 1;
       transform: translate3d(0, -100%, 0);
     }
