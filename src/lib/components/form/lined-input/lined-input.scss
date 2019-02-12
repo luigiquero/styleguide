@@ -12,7 +12,7 @@
     transition: all 200ms;
 
     &--error {
-      color: $danger;
+      color: $danger-lighten-1;
     }
   }
 
@@ -20,7 +20,7 @@
     @include body;
 
     border: 0;
-    border-bottom: 2px solid $neutral-lighten-3;
+    border-bottom: 1px solid $neutral-lighten-3;
     height: 30px;
     line-height: 21px;
     outline: none;
@@ -28,15 +28,15 @@
     width: 100%;
 
     &--error {
-      border-bottom: 2px solid $danger;
+      border-bottom: 2px solid $danger-lighten-1;
     }
 
     &:focus {
-      border-bottom: 2px solid $brand;
+      border-bottom: 2px solid $action-lighten-1;
     }
 
     &:focus + .lined-input__label {
-      color: $brand;
+      color: $action-lighten-1;
     }
 
     &:focus + .lined-input__label,
