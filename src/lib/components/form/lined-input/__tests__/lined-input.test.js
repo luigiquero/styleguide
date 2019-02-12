@@ -6,6 +6,7 @@ import LinedInput from '..';
 describe('LinedInput', () => {
   const defaultProps = {
     id: 'name',
+    name: 'name',
     value: 'value',
     label: 'Name',
     onChange: jest.fn(),

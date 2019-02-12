@@ -11,6 +11,7 @@ exports[`LinedInputGroup renders the LinedInputGroup 1`] = `
       className="lined-input__field"
       disabled={false}
       id="name1"
+      name={null}
       onChange={[MockFunction]}
       required={true}
       type="text"

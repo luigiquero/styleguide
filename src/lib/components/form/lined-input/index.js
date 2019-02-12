@@ -5,6 +5,7 @@ import './lined-input.scss';
 
 const LinedInput = ({
   id,
+  name,
   label,
   value,
   type,
@@ -30,6 +31,7 @@ const LinedInput = ({
     <div className="lined-input">
       <input
         id={id}
+        name={name}
         onChange={onChange}
         className={inputClassName}
         value={value}
@@ -47,6 +49,7 @@ const LinedInput = ({
 
 LinedInput.propTypes = {
   id: PropTypes.string.isRequired,
+  name: PropTypes.string,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
@@ -61,6 +64,7 @@ LinedInput.propTypes = {
 
 LinedInput.defaultProps = {
   type: 'text',
+  name: null,
   hasError: false,
   disabled: false,
 };

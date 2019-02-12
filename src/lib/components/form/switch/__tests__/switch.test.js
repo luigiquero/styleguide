@@ -6,6 +6,7 @@ import Switch from '..';
 
 describe('Switch', () => {
   const defaultProps = {
+    id: 'id',
     name: 'name',
     value: 'value',
   };
