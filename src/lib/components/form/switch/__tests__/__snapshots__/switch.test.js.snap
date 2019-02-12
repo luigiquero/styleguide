@@ -8,7 +8,7 @@ exports[`Switch snapshot tests when has checked property renders switch with che
     checked={true}
     className="switch__input"
     disabled={null}
-    id="name"
+    id="id"
     name="name"
     onChange={null}
     type="checkbox"
@@ -46,7 +46,7 @@ exports[`Switch snapshot tests when has disabled property renders switch with di
     checked={null}
     className="switch__input"
     disabled={true}
-    id="name"
+    id="id"
     name="name"
     onChange={null}
     type="checkbox"
@@ -84,7 +84,7 @@ exports[`Switch snapshot tests when has label property renders switch with label
     checked={null}
     className="switch__input"
     disabled={null}
-    id="name"
+    id="id"
     name="name"
     onChange={null}
     type="checkbox"
@@ -128,7 +128,7 @@ exports[`Switch snapshot tests when pass only required props renders switch prop
     checked={null}
     className="switch__input"
     disabled={null}
-    id="name"
+    id="id"
     name="name"
     onChange={null}
     type="checkbox"

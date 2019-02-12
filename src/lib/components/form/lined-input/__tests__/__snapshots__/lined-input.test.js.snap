@@ -8,6 +8,7 @@ exports[`LinedInput snapshot tests when the component has just the defaultprops 
     className="lined-input__field"
     disabled={false}
     id="name"
+    name="name"
     onChange={[MockFunction]}
     required={true}
     type="text"
@@ -31,6 +32,7 @@ exports[`LinedInput snapshot tests when the componente also has the flag hasErro
     className="lined-input__field lined-input__field--error"
     disabled={false}
     id="name"
+    name="name"
     onChange={[MockFunction]}
     required={true}
     type="text"

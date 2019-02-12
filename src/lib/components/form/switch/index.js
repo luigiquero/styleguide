@@ -5,6 +5,7 @@ import { Icon } from '../../..';
 import './switch.scss';
 
 const Switch = ({
+  id,
   name,
   value,
   type,
@@ -15,10 +16,10 @@ const Switch = ({
 }) => (
   <div className="switch">
     <input
+      id={id}
       className="switch__input"
       type={type}
       name={name}
-      id={name}
       value={value}
       checked={checked}
       disabled={disabled}
@@ -34,13 +35,15 @@ const Switch = ({
 Switch.defaultProps = {
   type: 'checkbox',
   label: null,
+  name: null,
   checked: null,
   disabled: null,
   onChange: null,
 };
 
 Switch.propTypes = {
-  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string,
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.bool,

@@ -14,11 +14,14 @@ class SimpleForm extends Component {
 
   render() {
     const { value } = this.state;
-    const { id, label, errorMessage } = this.props;
+    const {
+      id, name, label, errorMessage,
+    } = this.props;
 
     return (
       <LinedInputGroup
         id={id}
+        name={name}
         label={label}
         value={value}
         errorMessage={errorMessage}
