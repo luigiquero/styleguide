@@ -13,6 +13,7 @@ const Button = ({
   medium,
   large,
   block,
+  disabled,
   onClick,
 }) => {
   const className = classNames(
@@ -28,7 +29,12 @@ const Button = ({
   );
 
   return (
-    <button type={type} className={className} onClick={onClick}>
+    <button
+      type={type}
+      className={className}
+      disabled={disabled}
+      onClick={onClick}
+    >
       { children }
     </button>
   );
@@ -42,6 +48,7 @@ Button.defaultProps = {
   medium: false,
   large: false,
   block: false,
+  disabled: false,
   onClick: undefined,
 };
 
@@ -54,6 +61,7 @@ Button.propTypes = {
   medium: PropTypes.bool,
   large: PropTypes.bool,
   block: PropTypes.bool,
+  disabled: PropTypes.bool,
   onClick: PropTypes.func,
 };
 

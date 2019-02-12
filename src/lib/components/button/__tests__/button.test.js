@@ -82,6 +82,14 @@ describe('Button', () => {
         expect(tree).toMatchSnapshot();
       });
     });
+
+    describe('with disabled prop', () => {
+      it('should render button with disabled as true', () => {
+        const component = renderer.create(<Button disabled>Test</Button>);
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
   });
 
   describe('behavior tests', () => {
