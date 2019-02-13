@@ -15,7 +15,7 @@ class SimpleForm extends Component {
   render() {
     const { value } = this.state;
     const {
-      id, name, label, errorMessage,
+      id, name, label, errorMessage, type,
     } = this.props;
 
     return (
@@ -24,6 +24,7 @@ class SimpleForm extends Component {
         name={name}
         label={label}
         value={value}
+        type={type}
         errorMessage={errorMessage}
         onChange={this.onChangeName}
       />
