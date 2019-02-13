@@ -5,6 +5,7 @@ import LinedInput from '../lined-input';
 
 const LinedInputGroup = ({
   id,
+  name,
   label,
   value,
   type,
@@ -19,6 +20,7 @@ const LinedInputGroup = ({
     <FormGroup errorMessage={errorMessage} className={className}>
       <LinedInput
         id={id}
+        name={name}
         label={label}
         onChange={onChange}
         value={value}
@@ -32,6 +34,7 @@ const LinedInputGroup = ({
 
 LinedInputGroup.propTypes = {
   id: PropTypes.string.isRequired,
+  name: PropTypes.string,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
@@ -47,6 +50,7 @@ LinedInputGroup.propTypes = {
 
 LinedInputGroup.defaultProps = {
   type: 'text',
+  name: null,
   disabled: false,
   errorMessage: null,
   className: null,
