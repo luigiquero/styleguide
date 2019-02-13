@@ -12,6 +12,7 @@ exports[`LinedInputGroup renders the LinedInputGroup 1`] = `
       disabled={false}
       id="id"
       name="name"
+      onBlur={[MockFunction]}
       onChange={[MockFunction]}
       required={true}
       type="text"

@@ -35,7 +35,7 @@ describe('LinedInput', () => {
   });
 
   describe('behavior tests', () => {
-    describe('when the value is changed', () => {
+    describe('when the value has been changed', () => {
       it('calls the callback funcation', () => {
         const onChangeCallback = jest.fn();
         const wrapper = mount(
@@ -45,8 +45,23 @@ describe('LinedInput', () => {
           />,
         );
 
-        wrapper.find('.lined-input__field').simulate('change');
+        wrapper.find('input').simulate('change');
         expect(onChangeCallback).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe('when the field has been blurred', () => {
+      it('calls the callback funcation', () => {
+        const onBlurCallback = jest.fn();
+        const wrapper = mount(
+          <LinedInput
+            {...defaultProps}
+            onBlur={onBlurCallback}
+          />,
+        );
+
+        wrapper.find('input').simulate('blur');
+        expect(onBlurCallback).toHaveBeenCalledTimes(1);
       });
     });
   });

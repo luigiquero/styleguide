@@ -11,6 +11,7 @@ describe('LinedInputGroup', () => {
         label="Name 1"
         value="Test"
         onChange={jest.fn()}
+        onBlur={jest.fn()}
       />,
     );
     const tree = component.toJSON();

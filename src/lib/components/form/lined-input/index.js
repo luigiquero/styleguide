@@ -9,6 +9,7 @@ const LinedInput = ({
   label,
   value,
   type,
+  onBlur,
   onChange,
   hasError,
   disabled,
@@ -33,6 +34,7 @@ const LinedInput = ({
         id={id}
         name={name}
         onChange={onChange}
+        onBlur={onBlur}
         className={inputClassName}
         value={value}
         type={type}
@@ -57,6 +59,7 @@ LinedInput.propTypes = {
     'text',
     'email',
   ]),
+  onBlur: PropTypes.func,
   onChange: PropTypes.func.isRequired,
   hasError: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -67,6 +70,7 @@ LinedInput.defaultProps = {
   name: null,
   hasError: false,
   disabled: false,
+  onBlur: null,
 };
 
 export default LinedInput;
