@@ -7,7 +7,7 @@
     &--error {
       @include mini-text;
 
-      color: $danger;
+      color: $danger-lighten-1;
       line-height: 16px;
       margin: 2px;
     }
