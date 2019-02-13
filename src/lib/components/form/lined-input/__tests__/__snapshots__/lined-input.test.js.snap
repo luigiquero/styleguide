@@ -9,6 +9,7 @@ exports[`LinedInput snapshot tests when the component has just the defaultprops 
     disabled={false}
     id="name"
     name="name"
+    onBlur={null}
     onChange={[MockFunction]}
     required={true}
     type="text"
@@ -33,6 +34,7 @@ exports[`LinedInput snapshot tests when the componente also has the flag hasErro
     disabled={false}
     id="name"
     name="name"
+    onBlur={null}
     onChange={[MockFunction]}
     required={true}
     type="text"
