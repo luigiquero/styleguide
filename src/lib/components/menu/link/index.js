@@ -4,9 +4,9 @@ import './link.scss';
 
 const Link = ({ url, target, children }) => (
   url ? (
-    <a href={url} target={target} className="link">{children}</a>
+    <a href={url} target={target} className="menu__link">{children}</a>
   ) : (
-    <span className="link">{children}</span>
+    <span className="menu__link">{children}</span>
   )
 );
 

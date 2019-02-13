@@ -1,13 +1,13 @@
 @import '../../../styles/variables';
 
-.link {
+.menu__link {
   @include small-text;
 
   color: $neutral-lighten-1;
   cursor: pointer;
   outline: 0;
   text-decoration: none;
-  transition: color 0.15s ease-in;
+  transition: color $transition-time;
 
   &:hover {
     color: $neutral;

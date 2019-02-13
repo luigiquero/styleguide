@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link with custom class should render link properly 1`] = `
+<a
+  className="link my classes"
+  href="/test"
+  target="_self"
+>
+  my link
+</a>
+`;
+
+exports[`Link with small modifier should render link properly 1`] = `
+<a
+  className="link link--small"
+  href="/test"
+  target="_self"
+>
+  small link
+</a>
+`;
+
+exports[`Link with target should render link properly 1`] = `
+<a
+  className="link"
+  href="/test"
+  target="_blank"
+>
+  link
+</a>
+`;
+
+exports[`Link with url should render link properly 1`] = `
+<a
+  className="link"
+  href="/test"
+  target="_self"
+>
+  link with href
+</a>
+`;
