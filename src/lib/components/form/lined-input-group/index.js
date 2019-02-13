@@ -9,6 +9,7 @@ const LinedInputGroup = ({
   label,
   value,
   type,
+  onBlur,
   onChange,
   errorMessage,
   disabled,
@@ -23,6 +24,7 @@ const LinedInputGroup = ({
         name={name}
         label={label}
         onChange={onChange}
+        onBlur={onBlur}
         value={value}
         type={type}
         hasError={hasError}
@@ -42,6 +44,7 @@ LinedInputGroup.propTypes = {
     'text',
     'email',
   ]),
+  onBlur: PropTypes.func,
   onChange: PropTypes.func.isRequired,
   errorMessage: PropTypes.string,
   disabled: PropTypes.bool,
@@ -54,6 +57,7 @@ LinedInputGroup.defaultProps = {
   disabled: false,
   errorMessage: null,
   className: null,
+  onBlur: null,
 };
 
 export default LinedInputGroup;
