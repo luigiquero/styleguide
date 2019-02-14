@@ -7,6 +7,7 @@ const Alert = ({
   type,
   visible,
   onCloseClick,
+  showClose,
   children,
 }) => {
   if (!visible) return null;
@@ -25,7 +26,11 @@ const Alert = ({
         {children}
       </div>
 
-      <Icon icon={['far', 'times']} className="alert__close" onClick={onCloseClick} />
+      {
+        showClose ? (
+          <Icon icon={['far', 'times']} className="alert__close" onClick={onCloseClick} />
+        ) : null
+      }
     </div>
   );
 };
@@ -36,9 +41,16 @@ Alert.propTypes = {
     'warning',
     'success',
   ]).isRequired,
-  visible: PropTypes.bool.isRequired,
-  onCloseClick: PropTypes.func.isRequired,
+  visible: PropTypes.bool,
+  onCloseClick: PropTypes.func,
+  showClose: PropTypes.bool,
   children: PropTypes.node.isRequired,
+};
+
+Alert.defaultProps = {
+  visible: true,
+  onCloseClick: null,
+  showClose: false,
 };
 
 export default Alert;

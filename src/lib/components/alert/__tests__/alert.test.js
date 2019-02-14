@@ -7,6 +7,7 @@ describe('Alert', () => {
     const defaultProps = {
       visible: true,
       onCloseClick: () => {},
+      showClose: false,
       type: 'success',
     };
 
@@ -30,6 +31,12 @@ describe('Alert', () => {
 
     it('should render success alert properly', () => {
       const component = renderer.create(<Alert {...defaultProps} type="success">Test</Alert>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render with close button when showClose is true', () => {
+      const component = renderer.create(<Alert {...defaultProps} showClose>Test</Alert>);
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
