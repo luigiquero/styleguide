@@ -25,7 +25,7 @@ const Alert = ({
         {children}
       </div>
 
-      <Icon icon={['far', 'times']} className="alert__close" />
+      <Icon icon={['far', 'times']} className="alert__close" onClick={onCloseClick} />
     </div>
   );
 };
@@ -36,8 +36,8 @@ Alert.propTypes = {
     'warning',
     'success',
   ]).isRequired,
-  visible: PropTypes.node.isRequired,
-  onCloseClick: PropTypes.node.isRequired,
+  visible: PropTypes.bool.isRequired,
+  onCloseClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
 };
 
