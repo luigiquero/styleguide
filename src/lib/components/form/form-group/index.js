@@ -8,18 +8,19 @@ const FormGroup = ({
   children,
   className,
 }) => {
-  const hassErrorMessage = !!errorMessage;
+  const hasErrorMessage = !!errorMessage;
 
   const messageClassName = classNames(
     'form-group__message',
     {
-      'form-group__message--error': hassErrorMessage,
+      'form-group__message--error': hasErrorMessage,
     },
-    className,
   );
 
+  const classes = classNames('form-group', className);
+
   return (
-    <div className="form-group">
+    <div className={classes}>
       {children}
       <span className={messageClassName}>
         {errorMessage}
