@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import FormGroup from '../form-group';
 import LinedInput from '../lined-input';
+import './lined-input-group.scss';
 
 const LinedInputGroup = ({
   fieldRef,
@@ -17,9 +19,10 @@ const LinedInputGroup = ({
   className,
 }) => {
   const hasError = !!errorMessage;
+  const classes = classNames('lined-input-group', className);
 
   return (
-    <FormGroup errorMessage={errorMessage} className={className}>
+    <FormGroup errorMessage={errorMessage} className={classes}>
       <LinedInput
         fieldRef={fieldRef}
         id={id}

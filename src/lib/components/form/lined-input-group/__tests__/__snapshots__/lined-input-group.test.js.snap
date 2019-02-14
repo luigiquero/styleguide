@@ -2,7 +2,39 @@
 
 exports[`LinedInputGroup renders the LinedInputGroup 1`] = `
 <div
-  className="form-group"
+  className="form-group lined-input-group"
+>
+  <div
+    className="lined-input"
+  >
+    <input
+      className="lined-input__field"
+      disabled={false}
+      id="id"
+      name="name"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      required={true}
+      type="text"
+      value="Test"
+    />
+    <label
+      className="lined-input__label"
+      htmlFor="id"
+    >
+      Name 1
+    </label>
+    <div />
+  </div>
+  <span
+    className="form-group__message"
+  />
+</div>
+`;
+
+exports[`LinedInputGroup with custom class renders the LinedInputGroup 1`] = `
+<div
+  className="form-group lined-input-group my class"
 >
   <div
     className="lined-input"
