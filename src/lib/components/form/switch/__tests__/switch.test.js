@@ -7,6 +7,7 @@ import Switch from '..';
 
 describe('Switch', () => {
   const defaultProps = {
+    fieldRef: jest.fn(),
     id: 'id',
     name: 'name',
     value: 'value',
