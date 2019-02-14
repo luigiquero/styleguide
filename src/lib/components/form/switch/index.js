@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from '../../..';
@@ -11,7 +10,7 @@ const Switch = ({
   type,
   checked,
   disabled,
-  label,
+  children,
   onChange,
 }) => (
   <div className="switch">
@@ -28,13 +27,13 @@ const Switch = ({
     <span className="switch__checked">
       <Icon icon={['far', 'check']} className="switch__icon" />
     </span>
-    { label && <label className="switch__label" htmlFor={name}>{label}</label> }
+    { children }
   </div>
 );
 
 Switch.defaultProps = {
   type: 'checkbox',
-  label: null,
+  children: null,
   name: null,
   checked: null,
   disabled: null,
@@ -51,7 +50,7 @@ Switch.propTypes = {
   type: PropTypes.oneOf(['checkbox', 'radio']),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  label: PropTypes.string,
+  children: PropTypes.node,
   onChange: PropTypes.func,
 };
 

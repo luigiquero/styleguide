@@ -9,6 +9,12 @@ $switch-width: 44px;
   justify-content: flex-start;
   position: relative;
 
+  label {
+    cursor: pointer;
+    padding-left: ($switch-width + $space-16);
+    user-select: none;
+  }
+
   &__input {
     cursor: pointer;
     height: $switch-height;
@@ -18,17 +24,6 @@ $switch-width: 44px;
     position: absolute;
     width: $switch-width;
     z-index: 1;
-  }
-
-  &__label {
-    @include small-text;
-
-    color: $neutral;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 300;
-    padding-left: ($switch-width + $space-16);
-    user-select: none;
   }
 
   &__icon {

@@ -76,7 +76,7 @@ exports[`Switch snapshot tests when has disabled property renders switch with di
 </div>
 `;
 
-exports[`Switch snapshot tests when has label property renders switch with label 1`] = `
+exports[`Switch snapshot tests when has label children property renders switch with children 1`] = `
 <div
   className="switch"
 >
@@ -112,7 +112,6 @@ exports[`Switch snapshot tests when has label property renders switch with label
     </svg>
   </span>
   <label
-    className="switch__label"
     htmlFor="name"
   >
     label

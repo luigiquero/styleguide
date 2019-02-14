@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label with children render label properly 1`] = `
+<label
+  className="label"
+  htmlFor={null}
+>
+  label
+</label>
+`;
+
+exports[`Label with custom class render label properly 1`] = `
+<label
+  className="label my class"
+  htmlFor={null}
+>
+  label
+</label>
+`;
+
+exports[`Label with htmlFor render label properly 1`] = `
+<label
+  className="label"
+  htmlFor="name"
+>
+  label
+</label>
+`;
+
+exports[`Label with modifier disabled render label properly 1`] = `
+<label
+  className="label label--disabled"
+  htmlFor={null}
+>
+  label
+</label>
+`;
+
+exports[`Label with modifier featured render label properly 1`] = `
+<label
+  className="label label--featured"
+  htmlFor={null}
+>
+  label
+</label>
+`;
+
+exports[`Label with modifier small render label properly 1`] = `
+<label
+  className="label label--small"
+  htmlFor={null}
+>
+  label
+</label>
+`;
