@@ -41,6 +41,12 @@ describe('Alert', () => {
       expect(tree).toMatchSnapshot();
     });
 
+    it('should render with className', () => {
+      const component = renderer.create(<Alert {...defaultProps} className="test">Test</Alert>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
     it('should render null when visible is false', () => {
       const component = renderer.create(<Alert {...defaultProps} visible={false}>Test</Alert>);
       const tree = component.toJSON();
