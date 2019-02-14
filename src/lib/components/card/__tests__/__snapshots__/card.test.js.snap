@@ -15,3 +15,11 @@ exports[`Card whith custom class should render card properly 1`] = `
   my card
 </div>
 `;
+
+exports[`Card with featured modifier should render card properly 1`] = `
+<div
+  className="card card--featured"
+>
+  small link
+</div>
+`;
