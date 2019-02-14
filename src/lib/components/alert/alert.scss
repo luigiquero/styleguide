@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.alert {
+  @include body;
+
+  align-items: center;
+  border-radius: 6px;
+  color: $neutral;
+  display: flex;
+  justify-content: space-between;
+  padding: $space-12 $space-24;
+
+  &--danger {
+    background-color: $danger-lighten-2;
+  }
+
+  &--warning {
+    background-color: $warning-lighten-2;
+  }
+
+  &--success {
+    background-color: $success-lighten-2;
+  }
+
+  &__icon {
+    @include body;
+
+    margin-right: 12px;
+
+    &--danger {
+      color: $danger;
+    }
+
+    &--warning {
+      color: $warning;
+    }
+
+    &--success {
+      color: $success;
+    }
+  }
+
+  &__close {
+    color: $neutral;
+    cursor: pointer;
+  }
+}

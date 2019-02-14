@@ -1,0 +1,31 @@
+---
+name: Alert
+menu: Components
+route: /components/alert
+---
+
+import { Alert } from '../../../lib';
+import { Playground, PropsTable } from 'docz';
+import './alert.scss';
+
+# Alert Component
+
+This is the alert component.
+
+## Playground
+<Playground>
+  <Alert type="danger" visible onCloseClick={() => {}}>
+    Danger
+  </Alert>
+
+  <Alert type="warning" visible onCloseClick={() => {}}>
+    Warning
+  </Alert>
+
+  <Alert type="success" visible onCloseClick={() => {}}>
+    Success
+  </Alert>
+</Playground>
+
+## Properties Table
+<PropsTable of={Alert} />
