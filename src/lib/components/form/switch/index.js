@@ -4,6 +4,7 @@ import { Icon } from '../../..';
 import './switch.scss';
 
 const Switch = ({
+  fieldRef,
   id,
   name,
   value,
@@ -15,6 +16,7 @@ const Switch = ({
 }) => (
   <div className="switch">
     <input
+      ref={fieldRef}
       id={id}
       className="switch__input"
       type={type}
@@ -32,6 +34,7 @@ const Switch = ({
 );
 
 Switch.defaultProps = {
+  fieldRef: null,
   type: 'checkbox',
   children: null,
   name: null,
@@ -41,6 +44,7 @@ Switch.defaultProps = {
 };
 
 Switch.propTypes = {
+  fieldRef: PropTypes.func,
   id: PropTypes.string.isRequired,
   name: PropTypes.string,
   value: PropTypes.oneOfType([

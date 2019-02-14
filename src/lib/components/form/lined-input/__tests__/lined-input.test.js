@@ -5,6 +5,7 @@ import LinedInput from '..';
 
 describe('LinedInput', () => {
   const defaultProps = {
+    fieldRef: jest.fn(),
     id: 'name',
     name: 'name',
     value: 'value',
