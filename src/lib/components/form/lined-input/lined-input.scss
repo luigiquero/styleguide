@@ -12,10 +12,6 @@
     position: absolute;
     top: 0;
     transition: all 200ms;
-
-    &--error {
-      color: $danger-lighten-1;
-    }
   }
 
   &__field {
@@ -47,6 +43,10 @@
 
       opacity: 1;
       transform: translate3d(0, -100%, 0);
+
+      &--error {
+        color: $danger-lighten-1;
+      }
     }
   }
 }
