@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.label {
+  @include body;
+
+  color: $neutral;
+
+  &--small {
+    @include small-text;
+  }
+
+  &--disabled {
+    color: $neutral-lighten-2;
+  }
+
+  &--featured {
+    color: $neutral-darken-2;
+  }
+}

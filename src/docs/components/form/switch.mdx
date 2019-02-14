@@ -6,7 +6,7 @@ route: /components/switch
 
 import { Component } from 'react';
 import Switch from 'test-helpers/controlleds/switch';
-import { Switch as SimpleSwitch } from 'lib';
+import { Switch as SimpleSwitch, Label } from 'lib';
 import { Playground, PropsTable } from 'docz';
 import './switch.scss';
 
@@ -17,13 +17,21 @@ This is the Switch component, to deal with native components like `checkbox` and
 ## Playground
 
 <Playground>
-  <Switch checked type="checkbox" id="on" name="on" label="On" value="test" />
+  <Switch checked type="checkbox" id="on" name="on" value="test">
+    <Label htmlFor="on">On</Label>
+  </Switch>
 
-  <Switch type="checkbox" id="off" name="off" label="Off" value="test" />
+  <Switch type="checkbox" id="off" name="off" label="Off" value="test">
+    <Label htmlFor="off">Off</Label>
+  </Switch>
 
-  <Switch checked disabled type="checkbox" id="on-disabled" name="on-disabled" label="On (Disabled)" value="test" />
+  <Switch checked disabled type="checkbox" id="on-disabled" name="on-disabled" value="test">
+    <Label htmlFor="on-disabled" disabled>On (Disabled)</Label>
+  </Switch>
 
-  <Switch disabled type="checkbox" id="off-disabled" name="off-disabled" label="Off (Disabled)" value="test" />
+  <Switch disabled type="checkbox" id="off-disabled" name="off-disabled" value="test">
+    <Label htmlFor="off-disabled" disabled>Off (Disabled)</Label>
+  </Switch>
 </Playground>
 
 ## Properties Table

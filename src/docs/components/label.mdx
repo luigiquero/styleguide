@@ -1,0 +1,33 @@
+---
+name: Label
+menu: Components
+route: /components/label
+---
+
+import { Label } from '../../lib';
+import { Playground, PropsTable } from 'docz';
+
+# Card Component
+
+This is the label component.
+
+## Playground
+
+<Playground className="vertical-spacing">
+  <div>
+    <Label>Normal label</Label>
+  </div>
+  <div>
+    <Label disabled>Disabled label</Label>
+  </div>
+  <div>
+    <Label featured>Featured label</Label>
+  </div>
+  <div>
+    <Label small>Small label</Label>
+  </div>
+</Playground>
+
+## Properties Table
+
+<PropsTable of={Label} />

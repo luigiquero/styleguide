@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
@@ -20,9 +21,11 @@ describe('Switch', () => {
       });
     });
 
-    describe('when has label property', () => {
-      it('renders switch with label', () => {
-        const component = renderer.create(<Switch {...defaultProps} label="label" />);
+    describe('when has label children property', () => {
+      it('renders switch with children', () => {
+        const component = renderer.create(
+          <Switch {...defaultProps}><label htmlFor="name">label</label></Switch>,
+        );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
