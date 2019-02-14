@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.link {
+  @include body;
+
+  color: $action-lighten-1;
+  text-decoration: none;
+  transition: all $transition-time;
+
+  &:active {
+    color: $action-darken-1;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--small {
+    @include small-text;
+  }
+}

@@ -2,7 +2,7 @@
 
 exports[`Link with url should render link with href 1`] = `
 <a
-  className="link"
+  className="menu__link"
   href="/test"
   target="_self"
 >
@@ -12,7 +12,7 @@ exports[`Link with url should render link with href 1`] = `
 
 exports[`Link with url should render link with target 1`] = `
 <a
-  className="link"
+  className="menu__link"
   href="/test"
   target="_blank"
 >
@@ -22,7 +22,7 @@ exports[`Link with url should render link with target 1`] = `
 
 exports[`Link without url should render link properly 1`] = `
 <span
-  className="link"
+  className="menu__link"
 >
   my link
 </span>

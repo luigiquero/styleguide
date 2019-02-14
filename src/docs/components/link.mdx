@@ -1,0 +1,27 @@
+---
+name: Link
+menu: Components
+route: /components/link
+---
+
+import { Link } from '../../lib';
+import { Playground, PropsTable } from 'docz';
+
+# Link Component
+
+This is the link component.
+
+## Sizes
+
+<Playground className="vertical-spacing">
+  <div>
+    <Link url="#">Click me</Link>
+  </div>
+  <div>
+    <Link small url="#">Click me</Link>
+  </div>
+</Playground>
+
+## Properties Table
+
+<PropsTable of={Link} />

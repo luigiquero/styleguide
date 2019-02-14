@@ -4,6 +4,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import Button from './components/button';
 import Card from './components/card';
 import Label from './components/label';
+import Link from './components/link';
 import Menu from './components/menu';
 import Switch from './components/form/switch';
 import LinedInputGroup from './components/form/lined-input-group';
@@ -15,6 +16,7 @@ export {
   Card,
   Icon,
   Label,
+  Link,
   Menu,
   Switch,
   LinedInputGroup,
