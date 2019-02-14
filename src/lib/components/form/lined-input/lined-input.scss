@@ -42,7 +42,7 @@
     }
 
     &:focus + .lined-input__label,
-    &:valid + .lined-input__label {
+    &:not([value=""]) + .lined-input__label {
       @include mini-text;
 
       opacity: 1;
