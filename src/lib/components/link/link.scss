@@ -3,6 +3,7 @@
 @mixin like-button() {
   border-radius: 6px;
   cursor: pointer;
+  display: block;
   outline: 0;
   padding: $space-8 $space-16;
   text-align: center;
