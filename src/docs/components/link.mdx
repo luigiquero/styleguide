@@ -6,12 +6,13 @@ route: /components/link
 
 import { Link } from '../../lib';
 import { Playground, PropsTable } from 'docz';
+import '../main.scss';
 
 # Link Component
 
 This is the link component.
 
-## Sizes
+## Simple links
 
 <Playground className="vertical-spacing">
   <div>
@@ -19,6 +20,28 @@ This is the link component.
   </div>
   <div>
     <Link small url="#">Click me</Link>
+  </div>
+</Playground>
+
+## Button Like
+
+<Playground className="row colapse">
+  <div className="column vertical-spacing">
+    <Link url="#" primary>Primary</Link>
+    <Link url="#" primary medium>Primary Medium</Link>
+    <Link url="#" primary large>Primary Large</Link>
+  </div>
+
+  <div className="column vertical-spacing">
+    <Link url="#" secondary>Secondary</Link>
+    <Link url="#" secondary medium>Secondary Medium</Link>
+    <Link url="#" secondary large>Secondary Large</Link>
+  </div>
+
+  <div className="column vertical-spacing">
+    <Link url="#" tertiary>Tertiary</Link>
+    <Link url="#" tertiary medium>Tertiary Medium</Link>
+    <Link url="#" tertiary large>Tertiary Large</Link>
   </div>
 </Playground>
 
