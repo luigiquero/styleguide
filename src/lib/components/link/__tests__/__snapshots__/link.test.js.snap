@@ -10,13 +10,76 @@ exports[`Link with custom class should render link properly 1`] = `
 </a>
 `;
 
-exports[`Link with small modifier should render link properly 1`] = `
+exports[`Link with modifier block should render link properly 1`] = `
+<a
+  className="link link--block"
+  target="_self"
+>
+  Test
+</a>
+`;
+
+exports[`Link with modifier compose by primary and large and block should render link properly 1`] = `
+<a
+  className="link link--primary link--large link--block"
+  target="_self"
+>
+  Test
+</a>
+`;
+
+exports[`Link with modifier large should render link properly 1`] = `
+<a
+  className="link link--large"
+  target="_self"
+>
+  Test
+</a>
+`;
+
+exports[`Link with modifier medium should render link properly 1`] = `
+<a
+  className="link link--medium"
+  target="_self"
+>
+  Test
+</a>
+`;
+
+exports[`Link with modifier primary should render link properly 1`] = `
+<a
+  className="link link--primary"
+  target="_self"
+>
+  Test
+</a>
+`;
+
+exports[`Link with modifier secondary should render link properly 1`] = `
+<a
+  className="link link--secondary"
+  target="_self"
+>
+  Test
+</a>
+`;
+
+exports[`Link with modifier small should render link properly 1`] = `
 <a
   className="link link--small"
   href="/test"
   target="_self"
 >
-  small link
+  Test
+</a>
+`;
+
+exports[`Link with modifier tertiary should render link properly 1`] = `
+<a
+  className="link link--tertiary"
+  target="_self"
+>
+  Test
 </a>
 `;
 
