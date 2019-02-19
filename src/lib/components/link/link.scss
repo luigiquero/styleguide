@@ -1,5 +1,18 @@
 @import '../../styles/variables';
 
+@mixin like-button() {
+  border-radius: 6px;
+  cursor: pointer;
+  outline: 0;
+  padding: $space-8 $space-16;
+  text-align: center;
+  transition: all $transition-time;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .link {
   @include body;
 
@@ -16,7 +29,73 @@
     text-decoration: underline;
   }
 
+  &--primary {
+    @include like-button;
+
+    background-color: $action;
+    border: 1px solid $action;
+    color: $white;
+
+    &:hover {
+      background-color: $action-lighten-1;
+      border: 1px solid $action-lighten-1;
+    }
+
+    &:active {
+      background-color: $action-darken-1;
+      border: 1px solid $action-darken-1;
+    }
+  }
+
+  &--secondary {
+    @include like-button;
+
+    background-color: $white;
+    border: 1px solid $neutral-lighten-3;
+    color: $neutral;
+
+    &:hover {
+      border: 1px solid $action-lighten-1;
+      color: $action;
+    }
+
+    &:active {
+      border: 1px solid $action-darken-1;
+      color: $action-darken-1;
+    }
+  }
+
+  &--tertiary {
+    @include like-button;
+
+    color: $neutral;
+
+    &:hover {
+      color: $action;
+    }
+
+    &:active {
+      color: $action-darken-1;
+    }
+  }
+
+  &--medium {
+    @include body;
+
+    padding: $space-12 $space-24;
+  }
+
   &--small {
     @include small-text;
+  }
+
+  &--large {
+    @include heading-2;
+
+    padding: $space-12 $space-32;
+  }
+
+  &--block {
+    width: 100%;
   }
 }
