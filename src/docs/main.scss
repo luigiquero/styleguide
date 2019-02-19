@@ -12,9 +12,7 @@
 }
 
 .vertical-spacing {
-  > div,
-  > section,
-  > button {
+  > * {
     margin-top: 12px;
 
     &:first-child {

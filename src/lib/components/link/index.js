@@ -7,13 +7,25 @@ const Link = ({
   children,
   url,
   target,
-  small,
   className,
+  primary,
+  secondary,
+  tertiary,
+  small,
+  medium,
+  large,
+  block,
 }) => {
   const classes = classNames(
     'link', className,
     {
+      'link--primary': primary,
+      'link--secondary': secondary,
+      'link--tertiary': tertiary,
       'link--small': small,
+      'link--medium': medium,
+      'link--large': large,
+      'link--block': block,
     },
   );
 
@@ -30,8 +42,14 @@ const Link = ({
 
 Link.defaultProps = {
   target: '_self',
-  small: false,
   className: null,
+  primary: false,
+  secondary: false,
+  tertiary: false,
+  small: false,
+  medium: false,
+  large: false,
+  block: false,
 };
 
 Link.propTypes = {
@@ -44,8 +62,14 @@ Link.propTypes = {
     '_top',
     'framename',
   ]),
-  small: PropTypes.bool,
   className: PropTypes.string,
+  primary: PropTypes.bool,
+  secondary: PropTypes.bool,
+  tertiary: PropTypes.bool,
+  small: PropTypes.bool,
+  medium: PropTypes.bool,
+  large: PropTypes.bool,
+  block: PropTypes.bool,
 };
 
 export default Link;
