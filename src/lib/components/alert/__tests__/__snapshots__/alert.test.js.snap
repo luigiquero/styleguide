@@ -4,7 +4,9 @@ exports[`Alert snapshot tests should render danger alert properly 1`] = `
 <div
   className="alert alert--danger"
 >
-  <div>
+  <div
+    className="alert__body"
+  >
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-times-circle fa-w-16 alert__icon alert__icon--danger"
@@ -22,7 +24,11 @@ exports[`Alert snapshot tests should render danger alert properly 1`] = `
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="alert__content"
+    >
+      Test
+    </span>
   </div>
 </div>
 `;
@@ -31,7 +37,9 @@ exports[`Alert snapshot tests should render success alert properly 1`] = `
 <div
   className="alert alert--success"
 >
-  <div>
+  <div
+    className="alert__body"
+  >
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-check-circle fa-w-16 alert__icon alert__icon--success"
@@ -49,7 +57,11 @@ exports[`Alert snapshot tests should render success alert properly 1`] = `
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="alert__content"
+    >
+      Test
+    </span>
   </div>
 </div>
 `;
@@ -58,7 +70,9 @@ exports[`Alert snapshot tests should render success alert properly 2`] = `
 <div
   className="alert alert--success"
 >
-  <div>
+  <div
+    className="alert__body"
+  >
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-check-circle fa-w-16 alert__icon alert__icon--success"
@@ -76,7 +90,11 @@ exports[`Alert snapshot tests should render success alert properly 2`] = `
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="alert__content"
+    >
+      Test
+    </span>
   </div>
 </div>
 `;
@@ -85,7 +103,9 @@ exports[`Alert snapshot tests should render warning alert properly 1`] = `
 <div
   className="alert alert--warning"
 >
-  <div>
+  <div
+    className="alert__body"
+  >
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-exclamation-triangle fa-w-18 alert__icon alert__icon--warning"
@@ -103,7 +123,11 @@ exports[`Alert snapshot tests should render warning alert properly 1`] = `
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="alert__content"
+    >
+      Test
+    </span>
   </div>
 </div>
 `;
@@ -112,7 +136,9 @@ exports[`Alert snapshot tests should render with className 1`] = `
 <div
   className="alert alert--success test"
 >
-  <div>
+  <div
+    className="alert__body"
+  >
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-check-circle fa-w-16 alert__icon alert__icon--success"
@@ -130,7 +156,11 @@ exports[`Alert snapshot tests should render with className 1`] = `
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="alert__content"
+    >
+      Test
+    </span>
   </div>
 </div>
 `;
@@ -139,7 +169,9 @@ exports[`Alert snapshot tests should render with close button when showClose is 
 <div
   className="alert alert--success"
 >
-  <div>
+  <div
+    className="alert__body"
+  >
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-check-circle fa-w-16 alert__icon alert__icon--success"
@@ -157,7 +189,11 @@ exports[`Alert snapshot tests should render with close button when showClose is 
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="alert__content"
+    >
+      Test
+    </span>
   </div>
   <svg
     aria-hidden="true"
