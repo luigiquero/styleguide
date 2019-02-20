@@ -1,4 +1,10 @@
 language: node_js
-before_install:
- - yarn
 cache: yarn
+before_install:
+  - yarn
+script:
+  - yarn lint:js
+  - yarn lint:style
+  - yarn test:ci
+
+
