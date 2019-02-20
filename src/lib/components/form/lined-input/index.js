@@ -17,16 +17,12 @@ const LinedInput = ({
 }) => {
   const inputClassName = classNames(
     'lined-input__field',
-    {
-      'lined-input__field--error': hasError,
-    },
+    { 'lined-input__field--error': hasError },
   );
 
   const labelClassName = classNames(
     'lined-input__label',
-    {
-      'lined-input__label--error': hasError,
-    },
+    { 'lined-input__label--error': hasError },
   );
 
   return (

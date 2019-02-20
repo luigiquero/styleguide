@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from '../..';
 import classNames from 'classnames';
+import { Icon } from '../..';
 import './alert.scss';
 
 const Alert = ({

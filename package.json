@@ -6,9 +6,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test",
     "eject": "react-scripts eject",
     "doc": "docz dev",
-    "doc:build": "docz build"
+    "doc:build": "docz build",
+    "lint:js": "eslint ./src",
+    "lint:style": "stylelint ./src"
   },
   "browserslist": [
     ">0.2%",
