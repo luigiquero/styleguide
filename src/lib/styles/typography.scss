@@ -7,40 +7,47 @@
   @include typo-common($weight);
 
   font-size: 48px;
+  line-height: 60px;
 }
 
 @mixin display-2($weight: normal) {
   @include typo-common($weight);
 
   font-size: 36px;
+  line-height: 48px;
 }
 
 @mixin heading-1($weight: normal) {
   @include typo-common($weight);
 
   font-size: 24px;
+  line-height: 31px;
 }
 
 @mixin heading-2($weight: normal) {
   @include typo-common($weight);
 
   font-size: 20px;
+  line-height: 27px;
 }
 
 @mixin body($weight: normal) {
   @include typo-common($weight);
 
   font-size: 16px;
+  line-height: 21px;
 }
 
 @mixin small-text($weight: normal) {
   @include typo-common($weight);
 
   font-size: 14px;
+  line-height: 19px;
 }
 
 @mixin mini-text($weight: normal) {
   @include typo-common($weight);
 
   font-size: 12px;
+  line-height: 16px;
 }
