@@ -12,9 +12,7 @@ const FormGroup = ({
 
   const messageClassName = classNames(
     'form-group__message',
-    {
-      'form-group__message--error': hasErrorMessage,
-    },
+    { 'form-group__message--error': hasErrorMessage },
   );
 
   const classes = classNames('form-group', className);

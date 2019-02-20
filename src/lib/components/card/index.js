@@ -6,9 +6,7 @@ import './card.scss';
 const Card = ({ className, children, featured }) => {
   const classes = classNames(
     'card', className,
-    {
-      'card--featured': featured,
-    },
+    { 'card--featured': featured },
   );
 
   return (
