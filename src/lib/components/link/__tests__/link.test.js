@@ -30,7 +30,7 @@ describe('Link', () => {
   describe('with modifier', () => {
     describe('primary', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link primary>Test</Link>);
+        const component = renderer.create(<Link url="/test" primary>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
@@ -38,7 +38,7 @@ describe('Link', () => {
 
     describe('secondary', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link secondary>Test</Link>);
+        const component = renderer.create(<Link url="/test" secondary>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
@@ -46,7 +46,7 @@ describe('Link', () => {
 
     describe('tertiary', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link tertiary>Test</Link>);
+        const component = renderer.create(<Link url="/test" tertiary>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
@@ -62,7 +62,7 @@ describe('Link', () => {
 
     describe('medium', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link medium>Test</Link>);
+        const component = renderer.create(<Link url="/test" medium>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
@@ -70,7 +70,7 @@ describe('Link', () => {
 
     describe('large', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link large>Test</Link>);
+        const component = renderer.create(<Link url="/test" large>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
@@ -78,7 +78,7 @@ describe('Link', () => {
 
     describe('block', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link block>Test</Link>);
+        const component = renderer.create(<Link url="/test" block>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
@@ -86,7 +86,7 @@ describe('Link', () => {
 
     describe('compose by primary and large and block', () => {
       it('should render link properly', () => {
-        const component = renderer.create(<Link primary large block>Test</Link>);
+        const component = renderer.create(<Link url="/test" primary large block>Test</Link>);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
