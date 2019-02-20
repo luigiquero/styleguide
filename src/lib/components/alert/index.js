@@ -28,10 +28,12 @@ const Alert = ({
 
   return (
     <div className={blockClassName}>
-      <div>
+      <div className="alert__body">
         <Icon icon={['far', icons[type]]} className={`alert__icon alert__icon--${type}`} />
 
-        {children}
+        <span className="alert__content">
+          { children }
+        </span>
       </div>
 
       {

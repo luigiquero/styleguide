@@ -14,16 +14,24 @@ This is the alert component.
 
 ## Playground
 <Playground>
-  <Alert type="danger" visible onCloseClick={() => {}}>
+  <Alert type="danger" visible>
     Danger
   </Alert>
 
-  <Alert type="warning" visible onCloseClick={() => {}}>
+  <Alert type="warning" visible>
     Warning
   </Alert>
 
-  <Alert type="success" visible onCloseClick={() => {}}>
+  <Alert type="success" visible>
     Success
+  </Alert>
+
+  <Alert type="warning" visible>
+    Long text: Cillum occaecat do Lorem dolor fugiat est officia aute proident culpa ipsum Lorem in. Eu duis laborum nisi occaecat incididunt non veniam.
+  </Alert>
+
+  <Alert type="danger" visible showClose onCloseClick={() => {}}>
+    showClose active
   </Alert>
 </Playground>
 

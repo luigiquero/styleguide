@@ -3,7 +3,7 @@
 .alert {
   @include body;
 
-  align-items: center;
+  align-items: flex-start;
   border-radius: 6px;
   color: $neutral;
   display: flex;
@@ -22,10 +22,18 @@
     background-color: $success-lighten-2;
   }
 
+  &__body {
+    display: flex;
+  }
+
+  &__content {
+    margin-left: $space-12;
+  }
+
   &__icon {
     @include body;
 
-    margin-right: 12px;
+    margin-top: $space-4;
 
     &--danger {
       color: $danger;
@@ -43,5 +51,6 @@
   &__close {
     color: $neutral;
     cursor: pointer;
+    margin-top: $space-4;
   }
 }
