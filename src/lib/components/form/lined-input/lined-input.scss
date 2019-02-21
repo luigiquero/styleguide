@@ -25,16 +25,17 @@
     transition: border 500ms ease-out;
     width: 100%;
 
-    &--error {
-      border-bottom: 2px solid $danger-lighten-1;
-    }
-
     &:focus {
-      border-bottom: 2px solid $action-lighten-1;
+      border-bottom: 1px solid $action-lighten-1;
     }
 
     &:focus + .lined-input__label {
       color: $action-lighten-1;
+    }
+
+    &--error,
+    &--error:focus {
+      border-bottom: 1px solid $danger-lighten-1;
     }
 
     &:focus + .lined-input__label,
