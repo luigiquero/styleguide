@@ -10,9 +10,9 @@ describe('LinedInput', () => {
     name: 'name',
     value: 'value',
     label: 'Name',
-    onChange: jest.fn(),
     type: 'text',
     hasError: false,
+    onChange: () => {},
   };
 
   describe('snapshot tests', () => {
@@ -24,7 +24,7 @@ describe('LinedInput', () => {
       });
     });
 
-    describe('when the componente also has the flag hasError as prop', () => {
+    describe('when the component also has the flag hasError as prop', () => {
       it('renders the LinedInput with error', () => {
         const component = renderer.create(
           <LinedInput {...defaultProps} hasError />,
@@ -37,7 +37,7 @@ describe('LinedInput', () => {
 
   describe('behavior tests', () => {
     describe('when the value has been changed', () => {
-      it('calls the callback funcation', () => {
+      it('calls the callback function', () => {
         const onChangeCallback = jest.fn();
         const wrapper = mount(
           <LinedInput
@@ -51,18 +51,18 @@ describe('LinedInput', () => {
       });
     });
 
-    describe('when the field has been blurred', () => {
-      it('calls the callback funcation', () => {
-        const onBlurCallback = jest.fn();
+    describe('when the field has key pressed', () => {
+      it('calls the callback function', () => {
+        const onKeyDown = jest.fn();
         const wrapper = mount(
           <LinedInput
             {...defaultProps}
-            onBlur={onBlurCallback}
+            onKeyDown={onKeyDown}
           />,
         );
 
-        wrapper.find('input').simulate('blur');
-        expect(onBlurCallback).toHaveBeenCalledTimes(1);
+        wrapper.find('input').simulate('keyDown');
+        expect(onKeyDown).toHaveBeenCalledTimes(1);
       });
     });
   });
