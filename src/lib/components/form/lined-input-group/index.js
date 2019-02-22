@@ -12,11 +12,12 @@ const LinedInputGroup = ({
   label,
   value,
   type,
-  onBlur,
-  onChange,
   errorMessage,
   disabled,
   className,
+  onBlur,
+  onChange,
+  onKeyDown,
 }) => {
   const hasError = !!errorMessage;
   const classes = classNames('lined-input-group', className);
@@ -28,12 +29,13 @@ const LinedInputGroup = ({
         id={id}
         name={name}
         label={label}
-        onChange={onChange}
-        onBlur={onBlur}
         value={value}
         type={type}
         hasError={hasError}
         disabled={disabled}
+        onChange={onChange}
+        onBlur={onBlur}
+        onKeyDown={onKeyDown}
       />
     </FormGroup>
   );
@@ -50,11 +52,12 @@ LinedInputGroup.propTypes = {
     'text',
     'email',
   ]),
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func.isRequired,
   errorMessage: PropTypes.string,
   disabled: PropTypes.bool,
   className: PropTypes.string,
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  onKeyDown: PropTypes.func,
 };
 
 LinedInputGroup.defaultProps = {
@@ -65,6 +68,8 @@ LinedInputGroup.defaultProps = {
   errorMessage: null,
   className: null,
   onBlur: null,
+  onChange: null,
+  onKeyDown: null,
 };
 
 export default LinedInputGroup;
