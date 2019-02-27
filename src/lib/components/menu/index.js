@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from './link';
+// import React from 'react';
+// import Link from './link';
 
 const Menu = () => null;
 
