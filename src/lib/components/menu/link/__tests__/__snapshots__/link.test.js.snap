@@ -51,3 +51,11 @@ exports[`Link without url should render link properly 1`] = `
   my link
 </span>
 `;
+
+exports[`Link without url should render link properly with title instead of children 1`] = `
+<span
+  className="menu__link"
+>
+  my link
+</span>
+`;

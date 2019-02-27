@@ -28,10 +28,10 @@ const Link = ({
   );
 };
 
-const childrenOrTitleRequired = (props, propName, componentName) => {
-  if (!props.title && !props.children) {
+const childrenOrTitleRequired = ({ title, children }) => {
+  if (!title && !children) {
     return new Error(
-      `One of props 'title' or 'children' was not specified in '${componentName}'.`,
+      'One of props \'title\' or \'children\' was not specified on Link.',
     );
   }
 
