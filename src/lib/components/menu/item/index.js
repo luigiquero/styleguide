@@ -18,6 +18,11 @@ const Item = ({
     { 'menu__icon--active': active },
   );
 
+  const dropdownClassName = classNames(
+    'menu__dropdown',
+    { 'menu__dropdown--active': active },
+  );
+
   return (
     <li className="menu__item">
       <Link url={url} active={active} target={target}>
@@ -29,7 +34,7 @@ const Item = ({
       {
         links && (
           // separar esse dropdown num arquivo a parte!
-          <ul className="menu__dropdown">
+          <ul className={dropdownClassName}>
             {
               links.map(childParams => (
                 <li className="menu__item menu__item--child">

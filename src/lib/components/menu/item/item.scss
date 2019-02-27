@@ -19,7 +19,13 @@
 
 // separar esse dropdown num arquivo a parte!
 .menu__dropdown {
+  height: 0;
   margin: 0;
   margin-left: $space-32;
+  overflow: hidden;
   padding: 0;
+
+  &--active {
+    height: auto;
+  }
 }
