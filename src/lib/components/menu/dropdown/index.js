@@ -17,7 +17,10 @@ const Dropdown = ({
     <ul className={dropdownClassName}>
       {
         links.map(childParams => (
-          <li className="menu__item menu__item--child">
+          <li
+            className="menu__item menu__item--child"
+            key={childParams.title.toLowerCase()}
+          >
             <Link child {...childParams} />
           </li>
         ))
