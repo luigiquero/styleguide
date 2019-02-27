@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link when is active should have active modifier 1`] = `
+<ul
+  className="menu__dropdown menu__dropdown--active"
+>
+  <li
+    className="menu__item menu__item--child"
+  >
+    <span
+      className="menu__link menu__link--child"
+    >
+      Test
+    </span>
+  </li>
+  <li
+    className="menu__item menu__item--child"
+  >
+    <a
+      className="menu__link menu__link--child"
+      href="#"
+      target="_self"
+    >
+      Test2
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Link when is inactive 1`] = `
+<ul
+  className="menu__dropdown"
+>
+  <li
+    className="menu__item menu__item--child"
+  >
+    <span
+      className="menu__link menu__link--child"
+    >
+      Test
+    </span>
+  </li>
+  <li
+    className="menu__item menu__item--child"
+  >
+    <a
+      className="menu__link menu__link--child"
+      href="#"
+      target="_self"
+    >
+      Test2
+    </a>
+  </li>
+</ul>
+`;
