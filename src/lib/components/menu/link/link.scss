@@ -13,9 +13,13 @@
     color: $neutral;
   }
 
-  &:active {
+  &--active {
     @include small-text(bold);
+  }
 
-    color: $brand;
+  &--child {
+    &.menu__link--active {
+      color: $brand;
+    }
   }
 }
