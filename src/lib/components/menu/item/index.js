@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Link from '../link';
 import { Icon } from '../../..';
+import './item.scss';
 
 const Item = ({
   title,
@@ -11,16 +13,22 @@ const Item = ({
   active,
   links,
 }) => {
+  const iconClassName = classNames(
+    'menu__icon',
+    { 'menu__icon--active': active },
+  );
+
   return (
     <li className="menu__item">
-      { icon && <Icon icon={icon} className="menu__icon" /> }
-
       <Link url={url} active={active} target={target}>
+        { icon && <Icon icon={icon} className={iconClassName} /> }
+
         { title }
       </Link>
 
       {
         links && (
+          // separar esse dropdown num arquivo a parte!
           <ul className="menu__dropdown">
             {
               links.map(childParams => (

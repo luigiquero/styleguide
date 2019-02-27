@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.menu {
+  &__item {
+    list-style: none;
+  }
+
+  &__icon {
+    color: $neutral-lighten-2;
+    font-size: 14px;
+    margin-right: $space-16;
+    width: 16px !important;
+
+    &--active {
+      color: $neutral;
+    }
+  }
+}
+
+// separar esse dropdown num arquivo a parte!
+.menu__dropdown {
+  margin: 0;
+  margin-left: $space-32;
+  padding: 0;
+}
