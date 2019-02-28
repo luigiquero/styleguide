@@ -34,10 +34,10 @@ const Item = ({
 
 Item.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.oneOfType(
+  icon: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.string,
-  ),
+  ]),
   url: PropTypes.string,
   target: PropTypes.oneOf([
     '_blank',
