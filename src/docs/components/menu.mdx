@@ -4,16 +4,20 @@ menu: Components
 route: /components/menu
 ---
 
-import { Menu } from '../../lib';
+import Link from '../../lib/components/menu/link';
 import { Playground } from 'docz';
 
 # Menu Component
 
 This is the menu component.
 
-## Playground
+## Links
 
 <Playground>
-  <Menu></Menu>
+  <div><Link>Link</Link></div>
+  <div><Link active>Link Active</Link></div>
+  <div><Link url="/">Link with URL</Link></div>
+  <div><Link child>Link Child</Link></div>
+  <div><Link child active>Link Child Active</Link></div>
 </Playground>
 

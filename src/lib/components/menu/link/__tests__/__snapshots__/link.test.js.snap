@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link with modifiers with active and child truthy 1`] = `
+<span
+  className="menu__link menu__link--child"
+>
+  test
+</span>
+`;
+
+exports[`Link with modifiers with active truthy 1`] = `
+<span
+  className="menu__link menu__link--active"
+>
+  test
+</span>
+`;
+
+exports[`Link with modifiers with child truthy 1`] = `
+<span
+  className="menu__link menu__link--child"
+>
+  test
+</span>
+`;
+
 exports[`Link with url should render link with href 1`] = `
 <a
   className="menu__link"

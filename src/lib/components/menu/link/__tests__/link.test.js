@@ -24,4 +24,24 @@ describe('Link', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe('with modifiers', () => {
+    it('with active truthy', () => {
+      const component = renderer.create(<Link active>test</Link>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('with child truthy', () => {
+      const component = renderer.create(<Link child>test</Link>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('with active and child truthy', () => {
+      const component = renderer.create(<Link child>test</Link>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
