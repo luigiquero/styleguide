@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.menu {
+  &__item {
+    list-style: none;
+  }
+
+  &__icon {
+    color: $neutral-lighten-2;
+    font-size: 14px;
+    margin-right: $space-16;
+    width: 16px !important;
+
+    &--active {
+      color: $neutral;
+    }
+  }
+}

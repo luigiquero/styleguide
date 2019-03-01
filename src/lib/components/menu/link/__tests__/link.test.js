@@ -23,6 +23,12 @@ describe('Link', () => {
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
+
+    it('should render link properly with title instead of children', () => {
+      const component = renderer.create(<Link title="my link" />);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 
   describe('with modifiers', () => {
