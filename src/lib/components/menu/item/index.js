@@ -24,7 +24,7 @@ const Item = ({
       <Link url={url} active={active} target={target}>
         { icon && <Icon icon={icon} className={iconClassName} /> }
 
-        { title }
+        <span className="menu__item-text">{ title }</span>
       </Link>
 
       { links && <Dropdown active={active} links={links} /> }
