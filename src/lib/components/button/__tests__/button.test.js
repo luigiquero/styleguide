@@ -5,8 +5,14 @@ import Button from '..';
 
 describe('Button', () => {
   describe('snapshot tests', () => {
-    it('should render button properly', () => {
+    it('renders button properly', () => {
       const component = renderer.create(<Button>Test</Button>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('renders button with className', () => {
+      const component = renderer.create(<Button className="class">Test</Button>);
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
