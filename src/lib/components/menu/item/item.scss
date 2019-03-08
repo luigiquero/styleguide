@@ -1,18 +1,24 @@
 @import '../../../styles/variables';
 
 .menu {
-  &__item {
-    list-style: none;
-  }
-
   &__icon {
     color: $neutral-lighten-2;
     font-size: 14px;
     margin-right: $space-16;
+    transition: margin 0;
     width: 16px !important;
 
     &--active {
       color: $neutral;
     }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__item-text {
+    opacity: 1;
+    transition: all 0.05s ease-in-out;
   }
 }

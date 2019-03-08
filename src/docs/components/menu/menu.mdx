@@ -1,0 +1,100 @@
+---
+name: Menu
+menu: Components
+route: /components/menu
+---
+
+import Menu from '../../../lib/components/menu';
+import Link from '../../../lib/components/menu/link';
+import Item from '../../../lib/components/menu/item';
+import { Playground } from 'docz';
+import './menu.scss';
+
+# Menu Component
+
+This is the menu component.
+
+## Menu example
+<Playground className="inline-menu">
+  <Menu
+    minified={false}
+    links={[
+      { title: 'Visão Geral', icon: ['fas', 'store'] },
+      {
+        title: 'Relatórios',
+        icon: ['fas', 'analytics'],
+        active: true,
+        links: [
+          { title: 'Raio X' },
+          { title: 'Evolução' },
+          { title: 'Eventos e motivos', active: true },
+          { title: 'Mural de vendas' },
+          { title: 'Comparador de períodos' },
+          { title: 'Fluxo e oportunidades' },
+          { title: 'Lista da vez' },
+          { title: 'Feedbacks' },
+        ]
+      },
+      { title: 'Ranking', icon: ['fas', 'trophy'] },
+      { title: 'Validação', icon: ['fas', 'check-circle'] },
+      { title: 'Feedback', icon: ['fas', 'retweet'] },
+      { title: 'Cadastros', icon: ['fas', 'folder-open'] },
+      { title: 'Chat', icon: ['fas', 'comment'] },
+      { title: 'Aprenda Indeva', icon: ['fas', 'lightbulb'] },
+    ]}
+  />
+
+  <Menu
+    minified={true}
+    links={[
+      { title: 'Visão Geral', icon: ['fas', 'store'] },
+      { title: 'Relatórios', icon: ['fas', 'analytics'], active: true },
+      { title: 'Ranking', icon: ['fas', 'trophy'] },
+      { title: 'Validação', icon: ['fas', 'check-circle'] },
+      { title: 'Feedback', icon: ['fas', 'retweet'] },
+      { title: 'Cadastros', icon: ['fas', 'folder-open'] },
+      { title: 'Chat', icon: ['fas', 'comment'] },
+      { title: 'Aprenda Indeva', icon: ['fas', 'lightbulb'] },
+    ]}
+  />
+</Playground>
+
+## Links
+
+<Playground>
+  <div><Link>Link</Link></div>
+  <div><Link active>Link Active</Link></div>
+  <div><Link url="/">Link with URL</Link></div>
+  <div><Link child>Link Child</Link></div>
+  <div><Link child active>Link Child Active</Link></div>
+</Playground>
+
+## Item
+
+<Playground>
+  <div>
+    <Item title="Visão Geral" icon={['fas', 'store']} />
+  </div>
+
+  <div>
+    <Item
+      active
+      title="Relatórios"
+      icon={['fas', 'analytics']}
+      links={[
+        { title: 'Raio X' },
+        { title: 'Evolução', active: true },
+        { title: 'Eventos e motivos' },
+      ]}
+    />
+  </div>
+
+  <div>
+    <Item title="Ranking" icon={['fas', 'trophy']} />
+  </div>
+
+  <div>
+    <Item title="Validação" icon={['fas', 'check-circle']} url="#" />
+  </div>
+</Playground>
+

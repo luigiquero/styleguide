@@ -1,0 +1,8 @@
+.inline-menu {
+  display: flex;
+  flex-direction: row;
+
+  > *:not(:first-child) {
+    margin-left: 16px;
+  }
+}
