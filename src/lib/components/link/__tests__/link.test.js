@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import ComponentToReplace from 'test-helpers/link/component-to-replace';
 import Link from '..';
 
 describe('Link', () => {
@@ -14,6 +15,14 @@ describe('Link', () => {
   describe('with target', () => {
     it('should render link properly', () => {
       const component = renderer.create(<Link url="/test" target="_blank">link</Link>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe('when As prop is filled', () => {
+    it('renders the filled component instead', () => {
+      const component = renderer.create(<Link url="/test" className="my classes" As={ComponentToReplace}>my link</Link>);
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
