@@ -14,7 +14,14 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+
+    &:not(:first-child),
+    &--child {
+      margin-top: 16px;
+    }
   }
 
   &__item-text {
