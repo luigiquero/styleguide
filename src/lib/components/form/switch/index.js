@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from '../../..';
+import Icon from '../../../icons';
 import './switch.scss';
 
 const Switch = ({

@@ -12,3 +12,5 @@ library.add(
   falPro,
   farPro,
 );
+
+export default FontAwesomeIcon;

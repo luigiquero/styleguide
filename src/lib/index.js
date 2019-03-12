@@ -1,6 +1,4 @@
 import './styles/main.scss';
-import './icons';
-import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import Alert from './components/alert';
 import Button from './components/button';
 import Card from './components/card';
@@ -17,7 +15,6 @@ export {
   Button,
   Card,
   FormGroup,
-  Icon,
   Label,
   LinedInput,
   LinedInputGroup,
