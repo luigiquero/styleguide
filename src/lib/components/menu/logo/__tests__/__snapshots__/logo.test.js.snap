@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo menu component should render properly 1`] = `
+<div
+  className="menu__logo-wrapper"
+>
+  <img
+    className="menu__logo menu__logo--in"
+    src="logo-in.svg"
+  />
+  <img
+    className="menu__logo menu__logo--deva"
+    src="logo-deva.svg"
+  />
+</div>
+`;
