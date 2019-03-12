@@ -1,16 +1,20 @@
 /* eslint-disable no-unused-vars */
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fas as fasFree } from '@fortawesome/free-solid-svg-icons';
-import { fas as fasPro } from '@fortawesome/pro-solid-svg-icons';
-import { fal as falPro } from '@fortawesome/pro-light-svg-icons';
-import { far as farPro } from '@fortawesome/pro-regular-svg-icons';
+import {
+  faStore as fasStore,
+  faAnalytics as fasAnalytics,
+  faTrophy as fasTrophy,
+  faCheckCircle as fasCheckCircle,
+} from '@fortawesome/pro-solid-svg-icons';
+import { faCheck as farCheck } from '@fortawesome/pro-regular-svg-icons';
 
 library.add(
-  fasFree,
-  fasPro,
-  falPro,
-  farPro,
+  fasStore,
+  fasAnalytics,
+  fasTrophy,
+  fasCheckCircle,
+  farCheck,
 );
 
 export default FontAwesomeIcon;
