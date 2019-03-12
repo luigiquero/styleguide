@@ -33,11 +33,22 @@ class Menu extends Component {
           onClick={this.toggleMinified}
         >
           <Logo />
-          <img src={BurguerIcon} alt="Minificar menu" className="menu__burguer" />
+          <img
+            src={BurguerIcon}
+            alt="Minificar menu"
+            className="menu__burguer"
+          />
         </div>
 
         <ul className="menu__nav">
-          { links.map(linkProps => <Item {...linkProps} />) }
+          {
+            links.map(linkProps => (
+              <Item
+                {...linkProps}
+                key={linkProps.title.toLowerCase()}
+              />
+            ))
+          }
         </ul>
       </div>
     );
