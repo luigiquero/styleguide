@@ -14,20 +14,6 @@
     margin-left: $space-16;
   }
 
-  &__logo-wrapper {
-    display: flex;
-  }
-
-  &__logo {
-    height: 32px;
-    transform-origin: left;
-    transition: all 0.2s ease-in-out;
-
-    &--deva {
-      max-width: 73px;
-    }
-  }
-
   &__burguer {
     margin-left: $space-16;
     transition: opacity 0.2s ease-in-out;
