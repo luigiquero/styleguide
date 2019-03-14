@@ -42,10 +42,20 @@ class Menu extends Component {
 
         <ul className="menu__nav">
           {
-            links.map(linkProps => (
+            links.map(({
+              title,
+              url,
+              icon,
+              target,
+              active,
+            }) => (
               <Item
-                {...linkProps}
-                key={linkProps.title.toLowerCase()}
+                title={title}
+                icon={icon}
+                url={url}
+                target={target}
+                active={active}
+                key={title.toLowerCase()}
               />
             ))
           }
