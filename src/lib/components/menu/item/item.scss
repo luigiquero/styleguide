@@ -20,7 +20,7 @@
 
     &:not(:first-child),
     &--child {
-      margin-top: 16px;
+      margin-top: $space-16;
     }
   }
 
