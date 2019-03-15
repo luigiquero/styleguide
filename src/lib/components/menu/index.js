@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -18,7 +19,7 @@ class Menu extends Component {
 
   render() {
     const { minified } = this.state;
-    const { links } = this.props;
+    const menuItems = this.props.links;
 
     const className = classNames(
       'menu',
@@ -42,12 +43,13 @@ class Menu extends Component {
 
         <ul className="menu__nav">
           {
-            links.map(({
+            menuItems.map(({
               title,
               url,
               icon,
               target,
               active,
+              links,
             }) => (
               <Item
                 title={title}
@@ -55,6 +57,7 @@ class Menu extends Component {
                 url={url}
                 target={target}
                 active={active}
+                links={links}
                 key={title.toLowerCase()}
               />
             ))
