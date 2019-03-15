@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Pro Solid
 import { faAnalytics as fasAnalytics } from '@fortawesome/pro-solid-svg-icons/faAnalytics';
 import { faCheckCircle as fasCheckCircle } from '@fortawesome/pro-solid-svg-icons/faCheckCircle';
+import { faComment as fasComment } from '@fortawesome/pro-solid-svg-icons/faComment';
+import { faFolderOpen as fasFolderOpen } from '@fortawesome/pro-solid-svg-icons/faFolderOpen';
+import { faLightbulb as fasLightbulb } from '@fortawesome/pro-solid-svg-icons/faLightbulb';
+import { faRetweet as fasRetweet } from '@fortawesome/pro-solid-svg-icons/faRetweet';
 import { faStore as fasStore } from '@fortawesome/pro-solid-svg-icons/faStore';
 import { faTrophy as fasTrophy } from '@fortawesome/pro-solid-svg-icons/faTrophy';
 
@@ -21,6 +25,10 @@ import { faIgloo as falIgloo } from '@fortawesome/pro-light-svg-icons/faIgloo';
 library.add(
   fasAnalytics,
   fasCheckCircle,
+  fasComment,
+  fasFolderOpen,
+  fasLightbulb,
+  fasRetweet,
   fasStore,
   fasTrophy,
   farCheck,
