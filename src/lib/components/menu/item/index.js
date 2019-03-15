@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Link from '../link';
 import Dropdown from '../dropdown';
-import { Icon } from '../../..';
+import Icon from '../../../icons';
 import './item.scss';
 
 const Item = ({

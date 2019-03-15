@@ -15,6 +15,7 @@ const Link = ({
   medium,
   large,
   block,
+  As,
 }) => {
   const classes = classNames(
     'link', className,
@@ -28,6 +29,14 @@ const Link = ({
       'link--block': block,
     },
   );
+
+  if (As) {
+    return (
+      <As to={url} className={classes}>
+        {children}
+      </As>
+    );
+  }
 
   return (
     <a
@@ -43,6 +52,7 @@ const Link = ({
 Link.defaultProps = {
   target: '_self',
   className: null,
+  As: null,
   primary: false,
   secondary: false,
   tertiary: false,
@@ -54,6 +64,7 @@ Link.defaultProps = {
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
+  As: PropTypes.func,
   url: PropTypes.string.isRequired,
   target: PropTypes.oneOf([
     '_blank',

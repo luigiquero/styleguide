@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link when As prop is filled renders the filled component instead 1`] = `
+<p
+  className="link my classes"
+  to="/test"
+>
+  my link
+</p>
+`;
+
 exports[`Link with custom class should render link properly 1`] = `
 <a
   className="link my classes"

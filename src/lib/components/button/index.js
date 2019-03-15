@@ -6,6 +6,7 @@ import './button.scss';
 
 const Button = ({
   children,
+  className,
   type,
   primary,
   secondary,
@@ -16,8 +17,8 @@ const Button = ({
   disabled,
   onClick,
 }) => {
-  const className = classNames(
-    'button',
+  const classes = classNames(
+    'button', className,
     {
       'button--primary': primary,
       'button--secondary': secondary,
@@ -31,7 +32,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={className}
+      className={classes}
       disabled={disabled}
       onClick={onClick}
     >
@@ -42,6 +43,7 @@ const Button = ({
 
 Button.defaultProps = {
   type: 'button',
+  className: null,
   primary: false,
   secondary: false,
   tertiary: false,
@@ -54,6 +56,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
   primary: PropTypes.bool,
   secondary: PropTypes.bool,

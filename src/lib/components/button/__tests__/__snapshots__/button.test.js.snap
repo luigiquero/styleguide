@@ -20,9 +20,19 @@ exports[` 2`] = `
 </button>
 `;
 
-exports[`Button snapshot tests should render button properly 1`] = `
+exports[`Button snapshot tests renders button properly 1`] = `
 <button
   className="button"
+  disabled={false}
+  type="button"
+>
+  Test
+</button>
+`;
+
+exports[`Button snapshot tests renders button with className 1`] = `
+<button
+  className="button class"
   disabled={false}
   type="button"
 >
