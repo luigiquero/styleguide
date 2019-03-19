@@ -7,7 +7,11 @@ exports[`Item with links should render properly 1`] = `
   <span
     className="menu__link"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </span>
   <ul
     className="menu__dropdown"
@@ -63,7 +67,11 @@ exports[`Item with links when item is active should render properly 1`] = `
   <span
     className="menu__link menu__link--active"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </span>
   <ul
     className="menu__dropdown menu__dropdown--active"
@@ -119,7 +127,11 @@ exports[`Item without links with active truthly should render properly 1`] = `
   <span
     className="menu__link menu__link--active"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </span>
 </li>
 `;
@@ -131,7 +143,11 @@ exports[`Item without links with active truthly should render properly 2`] = `
   <span
     className="menu__link menu__link--active"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </span>
 </li>
 `;
@@ -160,7 +176,11 @@ exports[`Item without links with icon should render with icon 1`] = `
         style={Object {}}
       />
     </svg>
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </span>
 </li>
 `;
@@ -174,7 +194,11 @@ exports[`Item without links with url and target should render properly 1`] = `
     href="#"
     target="_blank"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </a>
 </li>
 `;
@@ -188,7 +212,11 @@ exports[`Item without links with url should render properly 1`] = `
     href="#"
     target="_self"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </a>
 </li>
 `;
@@ -200,7 +228,11 @@ exports[`Item without links without url should render properly 1`] = `
   <span
     className="menu__link"
   >
-    Test
+    <span
+      className="menu__item-text"
+    >
+      Test
+    </span>
   </span>
 </li>
 `;

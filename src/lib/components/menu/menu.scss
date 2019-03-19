@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.menu {
+  background-color: $action-lighten-5;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: $space-24 0;
+  transition: width 0.3s ease-in-out;
+  width: 260px;
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    margin-left: $space-16;
+  }
+
+  &__burguer {
+    margin-left: $space-16;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &__nav {
+    margin: 0;
+    min-width: 190px;
+    padding: $space-32 $space-24 0;
+  }
+
+  &--minified {
+    transition: width 0.2s ease-in-out 0.2s;
+    width: 64px;
+
+    .menu__burguer,
+    .menu__item-text {
+      opacity: 0;
+    }
+
+    .menu__logo--deva {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    .menu__dropdown,
+    .menu__dropdown--active {
+      max-height: 0;
+      opacity: 0;
+    }
+  }
+}

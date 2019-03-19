@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32.1 32" style="enable-background:new 0 0 32.1 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F37920;}
+</style>
+<g id="arco_1_">
+	<defs>
+		<path id="SVGID_1_" d="M0,28.1c7.7,5.2,24.3,5.2,32.1,0l-2.3-3.7c-7,4-20.4,4-27.4,0L0,28.1z"/>
+	</defs>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="28.196" x2="32.0536" y2="28.196">
+		<stop  offset="0" style="stop-color:#1D5BA9"/>
+		<stop  offset="1" style="stop-color:#2B1C6F"/>
+	</linearGradient>
+	<use xlink:href="#SVGID_1_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);"/>
+	<clipPath id="SVGID_3_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+<g id="In_1_">
+	<path class="st0" d="M3.5,6.3h4.9v17C6.6,23,5,22.5,3.5,21.8V6.3z"/>
+	<path class="st0" d="M23.7,23.3V15c0-1.7-0.9-3.9-3.8-3.9c-2.1,0-3.7,1.7-3.7,3.8v9.2c-1.7,0-3.3-0.1-4.9-0.3c0-2.7,0-7.7,0-8.9
+		c0-6.4,4.9-8.6,8.6-8.6c6.6,0,8.6,4.9,8.6,8.7c0,0.3,0,5.5,0,6.8C27.1,22.5,25.4,23,23.7,23.3z"/>
+</g>
+</svg>
