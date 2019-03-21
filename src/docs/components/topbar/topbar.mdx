@@ -1,0 +1,28 @@
+---
+name: Topbar
+menu: Components
+route: /components/topbar
+---
+
+import Topbar from '../../../lib/components/topbar';
+import { Playground, PropsTable } from 'docz';
+
+# Topbar Component
+
+This is the Topbar component.
+
+## Topbar example
+<Playground>
+  <Topbar
+    avatarURL="https://placekitten.com/32/32"
+    name="Little Cat"
+    role="Boss"
+    links={[
+      { title: 'Editar perfil', icon: ['fas', 'pen'] },
+      { title: 'Sair', icon: ['fas', 'sign-out-alt'] },
+    ]}
+  />
+</Playground>
+
+## Properties table
+<PropsTable of={Topbar} />
