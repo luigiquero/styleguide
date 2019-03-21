@@ -25,6 +25,10 @@
   text-align: center;
   transition: all $transition-time;
 
+  > svg {
+    margin-right: $space-8;
+  }
+
   &--primary {
     background-color: $action;
     border-color: $action;
