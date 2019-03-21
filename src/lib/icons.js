@@ -6,9 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnalytics as fasAnalytics } from '@fortawesome/pro-solid-svg-icons/faAnalytics';
 import { faCheckCircle as fasCheckCircle } from '@fortawesome/pro-solid-svg-icons/faCheckCircle';
 import { faComment as fasComment } from '@fortawesome/pro-solid-svg-icons/faComment';
+import { faFilter as fasFilter } from '@fortawesome/pro-solid-svg-icons/faFilter';
 import { faFolderOpen as fasFolderOpen } from '@fortawesome/pro-solid-svg-icons/faFolderOpen';
 import { faLightbulb as fasLightbulb } from '@fortawesome/pro-solid-svg-icons/faLightbulb';
+import { faPen as fasPen } from '@fortawesome/pro-solid-svg-icons/faPen';
 import { faRetweet as fasRetweet } from '@fortawesome/pro-solid-svg-icons/faRetweet';
+import { faSignInAlt as fasSignInAlt } from '@fortawesome/pro-solid-svg-icons/faSignInAlt';
 import { faStore as fasStore } from '@fortawesome/pro-solid-svg-icons/faStore';
 import { faTrophy as fasTrophy } from '@fortawesome/pro-solid-svg-icons/faTrophy';
 
@@ -26,9 +29,12 @@ library.add(
   fasAnalytics,
   fasCheckCircle,
   fasComment,
+  fasFilter,
   fasFolderOpen,
   fasLightbulb,
+  fasPen,
   fasRetweet,
+  fasSignInAlt,
   fasStore,
   fasTrophy,
   farCheck,
