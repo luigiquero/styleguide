@@ -11,7 +11,7 @@ import { faFolderOpen as fasFolderOpen } from '@fortawesome/pro-solid-svg-icons/
 import { faLightbulb as fasLightbulb } from '@fortawesome/pro-solid-svg-icons/faLightbulb';
 import { faPen as fasPen } from '@fortawesome/pro-solid-svg-icons/faPen';
 import { faRetweet as fasRetweet } from '@fortawesome/pro-solid-svg-icons/faRetweet';
-import { faSignInAlt as fasSignInAlt } from '@fortawesome/pro-solid-svg-icons/faSignInAlt';
+import { faSignOutAlt as fasSignOutAlt } from '@fortawesome/pro-solid-svg-icons/faSignOutAlt';
 import { faStore as fasStore } from '@fortawesome/pro-solid-svg-icons/faStore';
 import { faTrophy as fasTrophy } from '@fortawesome/pro-solid-svg-icons/faTrophy';
 
@@ -34,7 +34,7 @@ library.add(
   fasLightbulb,
   fasPen,
   fasRetweet,
-  fasSignInAlt,
+  fasSignOutAlt,
   fasStore,
   fasTrophy,
   farCheck,

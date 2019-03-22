@@ -1,0 +1,54 @@
+@import '../../../styles/variables.scss';
+
+.topbar-settings {
+  background-color: $white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(84, 98, 124, 0.15);
+  display: flex;
+  flex-direction: column;
+  min-width: 230px;
+  position: absolute;
+  right: $space-32;
+  top: 69px;
+
+  &__header {
+    @include body;
+
+    align-items: flex-start;
+    border-bottom: 1px solid $neutral-lighten-4;
+    color: $neutral-darken-1;
+    display: flex;
+    flex-direction: column;
+    padding: $space-8 $space-16;
+
+    span {
+      @include mini-text;
+
+      color: $neutral-lighten-1;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    padding: $space-8 $space-16 $space-16;
+  }
+
+  &__link {
+    @include small-text;
+
+    border-radius: 6px;
+    color: $neutral;
+    padding: $space-12;
+    text-decoration: none;
+
+    > svg {
+      margin-right: $space-12;
+    }
+
+    &:hover {
+      background-color: $action-lighten-5;
+      color: $action;
+    }
+  }
+}
