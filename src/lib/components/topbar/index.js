@@ -1,36 +1,62 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../button';
 import Icon from '../../icons';
 import Settings from './settings';
 import './topbar.scss';
 
-const Topbar = ({
-  avatarURL,
-  name,
-  role,
-  links,
-}) => (
-  <div className="topbar">
-    <Button primary>
-      <Icon icon={['fas', 'filter']} />
-      Filtros
-    </Button>
+class Topbar extends Component {
+  state = {
+    settingsActive: false,
+  };
 
-    <img
-      alt={name}
-      src={avatarURL}
-      className="topbar__avatar"
-    />
+  toggleSettings = () => {
+    const { settingsActive } = this.state;
+    this.setState({ settingsActive: !settingsActive });
+  }
 
-    <Settings
-      name={name}
-      role={role}
-      links={links}
-      active
-    />
-  </div>
-);
+  render() {
+    const {
+      avatarURL,
+      name,
+      role,
+      links,
+    } = this.props;
+
+    const { settingsActive } = this.state;
+
+    return (
+      <div className="topbar">
+        <Button primary>
+          <Icon icon={['fas', 'filter']} />
+          Filtros
+        </Button>
+
+        <div className="topbar__settings">
+          <img
+            alt={name}
+            src={avatarURL}
+            className="topbar__avatar"
+            role="presentation"
+            onClick={this.toggleSettings}
+          />
+
+          {
+            settingsActive ? (
+              <Settings
+                name={name}
+                role={role}
+                links={links}
+                active={settingsActive}
+                toggleSettings={this.toggleSettings}
+              />
+            ) : null
+          }
+        </div>
+      </div>
+    );
+  }
+}
 
 Topbar.propTypes = {
   avatarURL: PropTypes.string.isRequired,
