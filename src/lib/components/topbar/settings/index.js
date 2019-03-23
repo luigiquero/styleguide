@@ -77,7 +77,6 @@ Settings.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,
-  active: PropTypes.bool.isRequired,
   toggleSettings: PropTypes.func.isRequired,
 };
 
