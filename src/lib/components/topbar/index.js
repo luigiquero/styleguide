@@ -21,13 +21,14 @@ class Topbar extends Component {
       name,
       role,
       links,
+      clickOnFilterButton,
     } = this.props;
 
     const { settingsActive } = this.state;
 
     return (
       <div className="topbar">
-        <Button primary>
+        <Button primary onClick={clickOnFilterButton}>
           <Icon icon={['fas', 'filter']} />
           Filtros
         </Button>
@@ -65,6 +66,7 @@ Topbar.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,
+  clickOnFilterButton: PropTypes.func.isRequired,
 };
 
 export default Topbar;
