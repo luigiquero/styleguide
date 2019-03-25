@@ -28,13 +28,6 @@ describe('Topbar Settings', () => {
   });
 
   describe('on lifecycle events', () => {
-    beforeAll(() => {
-      Object.defineProperty(window, 'document', {
-        addEventListener: () => {},
-        removeEventListener: () => {},
-      });
-    });
-
     describe('on componentDidMount', () => {
       it('should call document.addEventListener', () => {
         const spy = jest.spyOn(document, 'addEventListener');
