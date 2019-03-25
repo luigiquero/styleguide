@@ -29,7 +29,7 @@ describe('Topbar Settings', () => {
 
   describe('on lifecycle events', () => {
     beforeAll(() => {
-      Object.defineProperty(global, 'document', {
+      Object.defineProperty(window, 'document', {
         addEventListener: () => {},
         removeEventListener: () => {},
       });
