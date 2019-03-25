@@ -1,0 +1,30 @@
+---
+name: Topbar
+menu: Components
+route: /components/topbar
+---
+
+import Topbar from '../../../lib/components/topbar';
+import { Playground, PropsTable } from 'docz';
+import './topbar.scss';
+
+# Topbar Component
+
+This is the Topbar component.
+
+## Topbar example
+<Playground className="topbar-height">
+  <Topbar
+    avatarURL="https://placekitten.com/32/32"
+    name="Felino da Silva"
+    role="Gerente"
+    links={[
+      { title: 'Editar perfil', icon: ['far', 'pen'], url: '#1' },
+      { title: 'Sair', icon: ['far', 'sign-out-alt'], url: '#2' },
+    ]}
+    clickOnFilterButton={() => alert('Click on Filter Button')}
+  />
+</Playground>
+
+## Properties table
+<PropsTable of={Topbar} />
