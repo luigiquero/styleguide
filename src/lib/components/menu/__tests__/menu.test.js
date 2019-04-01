@@ -5,6 +5,7 @@ import Menu from '..';
 
 describe('Menu', () => {
   const defaultProps = {
+    className: 'class',
     links: [
       { title: 'Visão Geral', icon: ['fas', 'store'] },
       {

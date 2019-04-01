@@ -2,7 +2,7 @@
 
 exports[`Menu should render minified properly 1`] = `
 <div
-  className="menu menu--minified"
+  className="class menu menu--minified"
 >
   <div
     className="menu__header"
@@ -118,7 +118,7 @@ exports[`Menu should render minified properly 1`] = `
 
 exports[`Menu should render properly 1`] = `
 <div
-  className="menu"
+  className="class menu"
 >
   <div
     className="menu__header"
