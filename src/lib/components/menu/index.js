@@ -20,14 +20,16 @@ class Menu extends Component {
   render() {
     const { minified } = this.state;
     const menuItems = this.props.links;
+    const { className } = this.props;
 
-    const className = classNames(
+    const classes = classNames(
+      className,
       'menu',
       { 'menu--minified': minified },
     );
 
     return (
-      <div className={className}>
+      <div className={classes}>
         <div
           className="menu__header"
           role="presentation"
@@ -69,9 +71,14 @@ class Menu extends Component {
 }
 
 Menu.propTypes = {
+  className: PropTypes.string,
   links: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,
+};
+
+Menu.defaultProps = {
+  className: null,
 };
 
 export default Menu;
