@@ -28,6 +28,22 @@ describe('Topbar', () => {
     });
   });
 
+  describe('showFilterButton', () => {
+    describe('when it is true', () => {
+      it('should include Settings', () => {
+        const component = renderer.create(<Topbar {...defaultProps} showFilterButton />);
+        expect(component.toJSON()).toMatchSnapshot();
+      });
+    });
+
+    describe('when it is false', () => {
+      it('should include Settings', () => {
+        const component = renderer.create(<Topbar {...defaultProps} showFilterButton={false} />);
+        expect(component.toJSON()).toMatchSnapshot();
+      });
+    });
+  });
+
   describe('when state settingsActive is truthly', () => {
     it('should include Settings', () => {
       const wrapper = mount(<Topbar {...defaultProps} />);
