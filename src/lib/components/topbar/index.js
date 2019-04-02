@@ -22,16 +22,21 @@ class Topbar extends Component {
       role,
       links,
       clickOnFilterButton,
+      showFilterButton,
     } = this.props;
 
     const { settingsActive } = this.state;
 
     return (
       <div className="topbar">
-        <Button primary onClick={clickOnFilterButton}>
-          <Icon icon={['fas', 'filter']} />
-          Filtros
-        </Button>
+        {
+          showFilterButton && (
+            <Button primary onClick={clickOnFilterButton}>
+              <Icon icon={['fas', 'filter']} />
+              Filtros
+            </Button>
+          )
+        }
 
         <div className="topbar__settings">
           <img
@@ -59,6 +64,10 @@ class Topbar extends Component {
   }
 }
 
+Topbar.defaultProps = {
+  showFilterButton: true,
+};
+
 Topbar.propTypes = {
   avatarURL: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -67,6 +76,7 @@ Topbar.propTypes = {
     PropTypes.object,
   ).isRequired,
   clickOnFilterButton: PropTypes.func.isRequired,
+  showFilterButton: PropTypes.bool,
 };
 
 export default Topbar;
