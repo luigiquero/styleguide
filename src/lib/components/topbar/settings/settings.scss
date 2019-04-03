@@ -58,5 +58,6 @@
     opacity: 1;
     transition: visibility 0s ease, opacity 0.15s ease-in-out;
     visibility: visible;
+    z-index: 1;
   }
 }
