@@ -9,6 +9,15 @@
   padding: $space-16 $space-32;
   width: 100%;
 
+  &--with-info {
+    justify-content: space-between;
+  }
+
+  &__options {
+    align-items: center;
+    display: flex;
+  }
+
   &__settings {
     display: flex;
     position: relative;
