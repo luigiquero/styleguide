@@ -52,6 +52,7 @@ class Menu extends Component {
               target,
               active,
               links,
+              onClick,
             }) => (
               <Item
                 title={title}
@@ -61,6 +62,7 @@ class Menu extends Component {
                 active={active}
                 links={links}
                 key={title.toLowerCase()}
+                onClick={onClick}
               />
             ))
           }
