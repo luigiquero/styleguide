@@ -21,6 +21,19 @@ describe('Topbar', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  describe('when there is children', () => {
+    it('renders children with with-info modifier', () => {
+      const component = renderer.create(
+        <Topbar {...defaultProps}>
+          <span>topbar</span>
+        </Topbar>,
+      );
+
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe('when state settingsActive is falsy (by default)', () => {
     it('should not include Settings', () => {
       const wrapper = mount(<Topbar {...defaultProps} />);
