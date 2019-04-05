@@ -6,6 +6,8 @@ exports[`Item with links should render properly 1`] = `
 >
   <span
     className="menu__link"
+    onClick={null}
+    role="presentation"
   >
     <span
       className="menu__item-text"
@@ -21,6 +23,8 @@ exports[`Item with links should render properly 1`] = `
     >
       <span
         className="menu__link menu__link--child"
+        onClick={null}
+        role="presentation"
       >
         Test
       </span>
@@ -30,6 +34,8 @@ exports[`Item with links should render properly 1`] = `
     >
       <span
         className="menu__link menu__link--child menu__link--active"
+        onClick={null}
+        role="presentation"
       >
         Test2
       </span>
@@ -66,6 +72,8 @@ exports[`Item with links when item is active should render properly 1`] = `
 >
   <span
     className="menu__link menu__link--active"
+    onClick={null}
+    role="presentation"
   >
     <span
       className="menu__item-text"
@@ -81,6 +89,8 @@ exports[`Item with links when item is active should render properly 1`] = `
     >
       <span
         className="menu__link menu__link--child"
+        onClick={null}
+        role="presentation"
       >
         Test
       </span>
@@ -90,6 +100,8 @@ exports[`Item with links when item is active should render properly 1`] = `
     >
       <span
         className="menu__link menu__link--child menu__link--active"
+        onClick={null}
+        role="presentation"
       >
         Test2
       </span>
@@ -126,6 +138,8 @@ exports[`Item without links with active truthly should render properly 1`] = `
 >
   <span
     className="menu__link menu__link--active"
+    onClick={null}
+    role="presentation"
   >
     <span
       className="menu__item-text"
@@ -142,6 +156,8 @@ exports[`Item without links with active truthly should render properly 2`] = `
 >
   <span
     className="menu__link menu__link--active"
+    onClick={null}
+    role="presentation"
   >
     <span
       className="menu__item-text"
@@ -158,6 +174,8 @@ exports[`Item without links with icon should render with icon 1`] = `
 >
   <span
     className="menu__link"
+    onClick={null}
+    role="presentation"
   >
     <svg
       aria-hidden="true"
@@ -227,6 +245,8 @@ exports[`Item without links without url should render properly 1`] = `
 >
   <span
     className="menu__link"
+    onClick={null}
+    role="presentation"
   >
     <span
       className="menu__item-text"

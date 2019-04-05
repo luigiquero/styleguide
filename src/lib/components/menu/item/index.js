@@ -13,6 +13,7 @@ const Item = ({
   target,
   active,
   links,
+  onClick,
 }) => {
   const iconClassName = classNames(
     'menu__icon',
@@ -21,7 +22,12 @@ const Item = ({
 
   return (
     <li className="menu__item">
-      <Link url={url} active={active} target={target}>
+      <Link
+        url={url}
+        active={active}
+        target={target}
+        onClick={onClick}
+      >
         { icon && <Icon icon={icon} className={iconClassName} /> }
 
         <span className="menu__item-text">{ title }</span>
@@ -48,6 +54,7 @@ Item.propTypes = {
   ]),
   active: PropTypes.bool,
   links: PropTypes.arrayOf(PropTypes.object),
+  onClick: PropTypes.func,
 };
 
 Item.defaultProps = {
@@ -56,6 +63,7 @@ Item.defaultProps = {
   target: '_self',
   active: false,
   links: null,
+  onClick: null,
 };
 
 export default Item;

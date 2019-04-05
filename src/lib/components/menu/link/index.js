@@ -11,6 +11,7 @@ const Link = ({
   child,
   active,
   target,
+  onClick,
 }) => {
   const className = classNames(
     'menu__link',
@@ -20,10 +21,10 @@ const Link = ({
   const linkTitle = title || children;
 
   return (
-    url ? (
+    (url && !onClick) ? (
       <a href={url} target={target} className={className}>{ linkTitle }</a>
     ) : (
-      <span className={className}>{ linkTitle }</span>
+      <span className={className} onClick={onClick} role="presentation">{ linkTitle }</span>
     )
   );
 };
@@ -51,6 +52,7 @@ Link.propTypes = {
     '_top',
     'framename',
   ]),
+  onClick: PropTypes.func,
 };
 
 Link.defaultProps = {
@@ -58,6 +60,7 @@ Link.defaultProps = {
   child: false,
   active: false,
   target: '_self',
+  onClick: null,
 };
 
 export default Link;

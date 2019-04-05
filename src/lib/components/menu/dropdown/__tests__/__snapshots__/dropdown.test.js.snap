@@ -9,6 +9,8 @@ exports[`Link when is active should have active modifier 1`] = `
   >
     <span
       className="menu__link menu__link--child"
+      onClick={null}
+      role="presentation"
     >
       Test
     </span>
@@ -36,6 +38,8 @@ exports[`Link when is inactive 1`] = `
   >
     <span
       className="menu__link menu__link--child"
+      onClick={null}
+      role="presentation"
     >
       Test
     </span>

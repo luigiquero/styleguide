@@ -35,6 +35,8 @@ exports[`Menu should render minified properly 1`] = `
     >
       <span
         className="menu__link"
+        onClick={null}
+        role="presentation"
       >
         <svg
           aria-hidden="true"
@@ -65,6 +67,8 @@ exports[`Menu should render minified properly 1`] = `
     >
       <span
         className="menu__link menu__link--active"
+        onClick={null}
+        role="presentation"
       >
         <svg
           aria-hidden="true"
@@ -97,6 +101,8 @@ exports[`Menu should render minified properly 1`] = `
         >
           <span
             className="menu__link menu__link--child"
+            onClick={null}
+            role="presentation"
           >
             Raio X
           </span>
@@ -106,6 +112,8 @@ exports[`Menu should render minified properly 1`] = `
         >
           <span
             className="menu__link menu__link--child menu__link--active"
+            onClick={null}
+            role="presentation"
           >
             Eventos e motivos
           </span>
@@ -151,6 +159,8 @@ exports[`Menu should render properly 1`] = `
     >
       <span
         className="menu__link"
+        onClick={null}
+        role="presentation"
       >
         <svg
           aria-hidden="true"
@@ -181,6 +191,8 @@ exports[`Menu should render properly 1`] = `
     >
       <span
         className="menu__link menu__link--active"
+        onClick={null}
+        role="presentation"
       >
         <svg
           aria-hidden="true"
@@ -213,6 +225,8 @@ exports[`Menu should render properly 1`] = `
         >
           <span
             className="menu__link menu__link--child"
+            onClick={null}
+            role="presentation"
           >
             Raio X
           </span>
@@ -222,6 +236,8 @@ exports[`Menu should render properly 1`] = `
         >
           <span
             className="menu__link menu__link--child menu__link--active"
+            onClick={null}
+            role="presentation"
           >
             Eventos e motivos
           </span>

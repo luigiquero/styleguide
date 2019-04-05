@@ -32,7 +32,7 @@ This is the menu component.
           { title: 'Comparador de períodos' },
           { title: 'Fluxo e oportunidades' },
           { title: 'Lista da vez' },
-          { title: 'Feedbacks' },
+          { title: 'Feedbacks', onClick: () => alert('onClick prop') },
         ]
       },
       { title: 'Ranking', icon: ['fas', 'trophy'] },
@@ -40,7 +40,7 @@ This is the menu component.
       { title: 'Feedback', icon: ['fas', 'retweet'] },
       { title: 'Cadastros', icon: ['fas', 'folder-open'] },
       { title: 'Chat', icon: ['fas', 'comment'] },
-      { title: 'Aprenda Indeva', icon: ['fas', 'lightbulb'] },
+      { title: 'Aprenda Indeva', icon: ['fas', 'lightbulb'], onClick: () => alert('onClick prop') },
     ]}
   />
 </Playground>

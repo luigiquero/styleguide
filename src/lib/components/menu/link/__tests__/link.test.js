@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 import Link from '..';
 
 describe('Link', () => {
@@ -28,6 +29,24 @@ describe('Link', () => {
       const component = renderer.create(<Link title="my link" />);
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe('without onClick prop', () => {
+    it('should render link properly', () => {
+      const component = renderer.create(<Link onClick={() => {}}>my link</Link>);
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('should render link properly with title instead of children', () => {
+      const props = { onClick: jest.fn() };
+      const wrapper = mount(<Link {...props}>my link</Link>);
+      const spy = jest.spyOn(props, 'onClick');
+
+      wrapper.find('.menu__link').simulate('click');
+
+      expect(spy).toHaveBeenCalledTimes(1);
     });
   });
 
