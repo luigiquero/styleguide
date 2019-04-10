@@ -2,15 +2,30 @@
 
 .topbar {
   align-items: center;
-  background-color: $action-lighten-5;
+  background-color: $action-lighten-6;
   box-sizing: border-box;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: $space-16 $space-32;
   width: 100%;
 
   &--with-info {
     justify-content: space-between;
+  }
+
+  &__brand {
+    cursor: pointer;
+    display: flex;
+    margin-left: $space-16;
+  }
+
+  &__burguer {
+    margin-left: $space-16;
+    transition: opacity 0.2s ease-in-out;
+
+    &--minified {
+      opacity: 0;
+    }
   }
 
   &__options {
