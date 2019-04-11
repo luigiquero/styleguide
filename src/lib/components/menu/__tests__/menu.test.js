@@ -26,8 +26,7 @@ describe('Menu', () => {
   });
 
   it('should render minified properly', () => {
-    const component = renderer.create(<Menu {...defaultProps} />);
-    component.root.instance.setState({ minified: true });
+    const component = renderer.create(<Menu {...defaultProps} minified />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
