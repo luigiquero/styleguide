@@ -2,14 +2,14 @@
 
 exports[`Logo menu component should render properly 1`] = `
 <div
-  className="menu__logo-wrapper"
+  className="topbar__logo-wrapper"
 >
   <img
-    className="menu__logo menu__logo--in"
+    className="topbar__logo topbar__logo--in"
     src="logo-in.svg"
   />
   <img
-    className="menu__logo menu__logo--deva"
+    className="topbar__logo topbar__logo--deva"
     src="logo-deva.svg"
   />
 </div>
