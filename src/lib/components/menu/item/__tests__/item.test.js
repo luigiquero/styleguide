@@ -87,5 +87,59 @@ describe('Item', () => {
         expect(dropdown.hasClass('menu__dropdown--active')).toBeTruthy();
       });
     });
+
+    describe('behavior tests', () => {
+      describe('expanded inicial state', () => {
+        it('starts expanded as true when active', () => {
+          const wrapper = mount(
+            <Item
+              title="test"
+              links={[
+                { title: 'test' },
+              ]}
+              active
+            />,
+          );
+
+          expect(wrapper.state('expanded')).toBeTruthy();
+        });
+
+        it('starts expanded as false when active', () => {
+          const wrapper = mount(
+            <Item
+              title="test"
+              links={[
+                { title: 'test' },
+              ]}
+            />,
+          );
+
+          expect(wrapper.state('expanded')).toBeFalsy();
+        });
+      });
+
+      describe('when the parent links has been clicked', () => {
+        it('calls the toggle expanded state and calls callback functioon', () => {
+          const onClickCallback = jest.fn();
+          const wrapper = mount(
+            <Item
+              title="test"
+              links={[
+                { title: 'test' },
+              ]}
+              active
+              onClick={onClickCallback}
+            />,
+          );
+
+          expect(wrapper.state('expanded')).toBeTruthy();
+
+          wrapper.find('.menu__link--active').last().simulate('click');
+
+          expect(wrapper.state('expanded')).toBeFalsy();
+          expect(onClickCallback).toHaveBeenCalledTimes(1);
+        });
+      });
+    });
   });
 });

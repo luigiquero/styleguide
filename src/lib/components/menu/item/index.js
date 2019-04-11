@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Link from '../link';
@@ -6,37 +6,67 @@ import Dropdown from '../dropdown';
 import Icon from '../../../icons';
 import './item.scss';
 
-const Item = ({
-  title,
-  icon,
-  url,
-  target,
-  active,
-  links,
-  onClick,
-}) => {
-  const iconClassName = classNames(
-    'menu__icon',
-    { 'menu__icon--active': active },
-  );
+class Item extends Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <li className="menu__item">
-      <Link
-        url={url}
-        active={active}
-        target={target}
-        onClick={onClick}
-      >
-        { icon && <Icon icon={icon} className={iconClassName} /> }
+    this.state = {
+      expanded: props.active,
+    };
+  }
 
-        <span className="menu__item-text">{ title }</span>
-      </Link>
+  handleOnClick = (e) => {
+    const { expanded } = this.state;
+    const {
+      links,
+      onClick,
+    } = this.props;
 
-      { links && <Dropdown active={active} links={links} /> }
-    </li>
-  );
-};
+    if (links) {
+      e.preventDefault();
+      this.setState({ expanded: !expanded });
+    }
+
+    if (onClick) {
+      onClick(e);
+    }
+  }
+
+  render() {
+    const { expanded } = this.state;
+
+    const {
+      title,
+      icon,
+      url,
+      target,
+      active,
+      links,
+    } = this.props;
+
+    const iconClassName = classNames(
+      'menu__icon',
+      { 'menu__icon--active': active },
+    );
+
+    return (
+      <li className="menu__item">
+        <Link
+          url={url}
+          active={active}
+          target={target}
+          onClick={this.handleOnClick}
+        >
+          { icon && <Icon icon={icon} className={iconClassName} /> }
+
+          <span className="menu__item-text">{ title }</span>
+        </Link>
+
+        { links && <Dropdown active={expanded} links={links} /> }
+      </li>
+    );
+  }
+}
 
 Item.propTypes = {
   title: PropTypes.string.isRequired,

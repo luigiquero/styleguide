@@ -12,7 +12,7 @@ exports[`Menu should render minified properly 1`] = `
     >
       <span
         className="menu__link"
-        onClick={null}
+        onClick={[Function]}
         role="presentation"
       >
         <svg
@@ -44,7 +44,7 @@ exports[`Menu should render minified properly 1`] = `
     >
       <span
         className="menu__link menu__link--active"
-        onClick={null}
+        onClick={[Function]}
         role="presentation"
       >
         <svg
@@ -113,7 +113,7 @@ exports[`Menu should render properly 1`] = `
     >
       <span
         className="menu__link"
-        onClick={null}
+        onClick={[Function]}
         role="presentation"
       >
         <svg
@@ -145,7 +145,7 @@ exports[`Menu should render properly 1`] = `
     >
       <span
         className="menu__link menu__link--active"
-        onClick={null}
+        onClick={[Function]}
         role="presentation"
       >
         <svg
