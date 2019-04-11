@@ -13,6 +13,7 @@ describe('Topbar', () => {
       { title: 'Sair', icon: ['far', 'sign-out-alt'], url: '#2' },
     ],
     clickOnFilterButton: () => {},
+    onLogoClick: () => {},
   };
 
   it('should renders properly', () => {
@@ -89,6 +90,15 @@ describe('Topbar', () => {
       const spy = jest.spyOn(defaultProps, 'clickOnFilterButton');
       const wrapper = mount(<Topbar {...defaultProps} />);
       wrapper.find('.button').first().simulate('click');
+      expect(spy).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('on logo click', () => {
+    it('should trigger onLogoClick prop fuction', () => {
+      const spy = jest.spyOn(defaultProps, 'onLogoClick');
+      const wrapper = mount(<Topbar {...defaultProps} />);
+      wrapper.find('.topbar__brand').first().simulate('click');
       expect(spy).toHaveBeenCalledTimes(1);
     });
   });
