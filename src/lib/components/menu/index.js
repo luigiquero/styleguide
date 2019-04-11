@@ -46,7 +46,7 @@ const Menu = (props) => {
       </ul>
     </div>
   );
-}
+};
 
 Menu.propTypes = {
   links: PropTypes.arrayOf(
