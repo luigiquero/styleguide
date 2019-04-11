@@ -6,7 +6,7 @@ exports[`Item with links should render properly 1`] = `
 >
   <span
     className="menu__link"
-    onClick={null}
+    onClick={[Function]}
     role="presentation"
   >
     <span
@@ -72,7 +72,7 @@ exports[`Item with links when item is active should render properly 1`] = `
 >
   <span
     className="menu__link menu__link--active"
-    onClick={null}
+    onClick={[Function]}
     role="presentation"
   >
     <span
@@ -138,7 +138,7 @@ exports[`Item without links with active truthly should render properly 1`] = `
 >
   <span
     className="menu__link menu__link--active"
-    onClick={null}
+    onClick={[Function]}
     role="presentation"
   >
     <span
@@ -156,7 +156,7 @@ exports[`Item without links with active truthly should render properly 2`] = `
 >
   <span
     className="menu__link menu__link--active"
-    onClick={null}
+    onClick={[Function]}
     role="presentation"
   >
     <span
@@ -174,7 +174,7 @@ exports[`Item without links with icon should render with icon 1`] = `
 >
   <span
     className="menu__link"
-    onClick={null}
+    onClick={[Function]}
     role="presentation"
   >
     <svg
@@ -207,17 +207,17 @@ exports[`Item without links with url and target should render properly 1`] = `
 <li
   className="menu__item"
 >
-  <a
+  <span
     className="menu__link"
-    href="#"
-    target="_blank"
+    onClick={[Function]}
+    role="presentation"
   >
     <span
       className="menu__item-text"
     >
       Test
     </span>
-  </a>
+  </span>
 </li>
 `;
 
@@ -225,17 +225,17 @@ exports[`Item without links with url should render properly 1`] = `
 <li
   className="menu__item"
 >
-  <a
+  <span
     className="menu__link"
-    href="#"
-    target="_self"
+    onClick={[Function]}
+    role="presentation"
   >
     <span
       className="menu__item-text"
     >
       Test
     </span>
-  </a>
+  </span>
 </li>
 `;
 
@@ -245,7 +245,7 @@ exports[`Item without links without url should render properly 1`] = `
 >
   <span
     className="menu__link"
-    onClick={null}
+    onClick={[Function]}
     role="presentation"
   >
     <span
