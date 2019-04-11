@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Logo menu component should render properly 1`] = `
+exports[`Logo menu component should render properly when is minified 1`] = `
+<div
+  className="topbar__logo-wrapper topbar__logo-wrapper--minified"
+>
+  <img
+    className="topbar__logo topbar__logo--in"
+    src="logo-in.svg"
+  />
+  <img
+    className="topbar__logo topbar__logo--deva"
+    src="logo-deva.svg"
+  />
+</div>
+`;
+
+exports[`Logo menu component should render properly when is not minified 1`] = `
 <div
   className="topbar__logo-wrapper"
 >
