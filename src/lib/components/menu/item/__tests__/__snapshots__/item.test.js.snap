@@ -138,7 +138,7 @@ exports[`Item without links with active truthly should render properly 1`] = `
 >
   <span
     className="menu__link menu__link--active"
-    onClick={[Function]}
+    onClick={null}
     role="presentation"
   >
     <span
@@ -156,7 +156,7 @@ exports[`Item without links with active truthly should render properly 2`] = `
 >
   <span
     className="menu__link menu__link--active"
-    onClick={[Function]}
+    onClick={null}
     role="presentation"
   >
     <span
@@ -174,7 +174,7 @@ exports[`Item without links with icon should render with icon 1`] = `
 >
   <span
     className="menu__link"
-    onClick={[Function]}
+    onClick={null}
     role="presentation"
   >
     <svg
@@ -207,17 +207,17 @@ exports[`Item without links with url and target should render properly 1`] = `
 <li
   className="menu__item"
 >
-  <span
+  <a
     className="menu__link"
-    onClick={[Function]}
-    role="presentation"
+    href="#"
+    target="_blank"
   >
     <span
       className="menu__item-text"
     >
       Test
     </span>
-  </span>
+  </a>
 </li>
 `;
 
@@ -225,17 +225,17 @@ exports[`Item without links with url should render properly 1`] = `
 <li
   className="menu__item"
 >
-  <span
+  <a
     className="menu__link"
-    onClick={[Function]}
-    role="presentation"
+    href="#"
+    target="_self"
   >
     <span
       className="menu__item-text"
     >
       Test
     </span>
-  </span>
+  </a>
 </li>
 `;
 
@@ -245,7 +245,7 @@ exports[`Item without links without url should render properly 1`] = `
 >
   <span
     className="menu__link"
-    onClick={[Function]}
+    onClick={null}
     role="presentation"
   >
     <span
