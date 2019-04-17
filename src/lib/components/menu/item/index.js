@@ -17,10 +17,15 @@ class Item extends Component {
 
   handleOnClick = (e) => {
     const { expanded } = this.state;
-    const { onClick } = this.props;
+    const {
+      onClick,
+      links,
+    } = this.props;
 
-    e.preventDefault();
-    this.setState({ expanded: !expanded });
+    if (links) {
+      e.preventDefault();
+      this.setState({ expanded: !expanded });
+    }
 
     if (onClick) {
       onClick(e);
@@ -50,7 +55,7 @@ class Item extends Component {
           url={url}
           active={active}
           target={target}
-          onClick={links && this.handleOnClick}
+          onClick={!url && this.handleOnClick}
         >
           { icon && <Icon icon={icon} className={iconClassName} /> }
 
