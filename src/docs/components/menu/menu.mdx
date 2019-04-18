@@ -30,7 +30,7 @@ This is the menu component.
           { title: 'Eventos e motivos', active: true },
           { title: 'Mural de vendas' },
           { title: 'Comparador de períodos' },
-          { title: 'Fluxo e oportunidades' },
+          { title: 'Fluxo e oportunidades', url: "javascript: alert('url')" },
           { title: 'Lista da vez' },
           { title: 'Feedbacks', onClick: () => alert('onClick prop') },
         ]
@@ -38,8 +38,8 @@ This is the menu component.
       { title: 'Ranking', icon: ['fas', 'trophy'] },
       { title: 'Validação', icon: ['fas', 'check-circle'] },
       { title: 'Feedback', icon: ['fas', 'retweet'] },
-      { title: 'Cadastros', icon: ['fas', 'folder-open'] },
-      { title: 'Chat', icon: ['fas', 'comment'] },
+      { title: 'Cadastros', icon: ['fas', 'folder-open'], url: "javascript: alert('url')" },
+      { title: 'Chat', icon: ['fas', 'comment'], onClick: () => alert('onClick prop') },
       { title: 'Aprenda Indeva', icon: ['fas', 'lightbulb'], onClick: () => alert('onClick prop') },
     ]}
   />
