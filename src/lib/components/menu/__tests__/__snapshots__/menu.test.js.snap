@@ -2,8 +2,31 @@
 
 exports[`Menu should render minified properly 1`] = `
 <div
-  className="class menu menu--minified"
+  className="class menu"
 >
+  <div
+    className="menu__header"
+    onClick={[Function]}
+    role="presentation"
+  >
+    <div
+      className="menu__logo-wrapper"
+    >
+      <img
+        className="menu__logo topbar__logo--in"
+        src="logo-in.svg"
+      />
+      <img
+        className="menu__logo topbar__logo--deva"
+        src="logo-deva.svg"
+      />
+    </div>
+    <img
+      alt="Minificar menu"
+      className="menu__burguer"
+      src="burguer-icon.svg"
+    />
+  </div>
   <ul
     className="menu__nav"
   >
@@ -105,6 +128,29 @@ exports[`Menu should render properly 1`] = `
 <div
   className="class menu"
 >
+  <div
+    className="menu__header"
+    onClick={[Function]}
+    role="presentation"
+  >
+    <div
+      className="menu__logo-wrapper"
+    >
+      <img
+        className="menu__logo topbar__logo--in"
+        src="logo-in.svg"
+      />
+      <img
+        className="menu__logo topbar__logo--deva"
+        src="logo-deva.svg"
+      />
+    </div>
+    <img
+      alt="Minificar menu"
+      className="menu__burguer"
+      src="burguer-icon.svg"
+    />
+  </div>
   <ul
     className="menu__nav"
   >

@@ -12,7 +12,7 @@ describe('Topbar', () => {
       { title: 'Editar perfil', icon: ['far', 'pen'], url: '#1' },
       { title: 'Sair', icon: ['far', 'sign-out-alt'], url: '#2' },
     ],
-    clickOnFilterButton: () => {},
+    onFilterClick: () => {},
     onLogoClick: () => {},
   };
 
@@ -86,19 +86,10 @@ describe('Topbar', () => {
   });
 
   describe('on filter button click', () => {
-    it('should trigger clickOnFilterButton prop fuction', () => {
-      const spy = jest.spyOn(defaultProps, 'clickOnFilterButton');
+    it('should trigger onFilterClick prop fuction', () => {
+      const spy = jest.spyOn(defaultProps, 'onFilterClick');
       const wrapper = mount(<Topbar {...defaultProps} />);
       wrapper.find('.button').first().simulate('click');
-      expect(spy).toHaveBeenCalledTimes(1);
-    });
-  });
-
-  describe('on logo click', () => {
-    it('should trigger onLogoClick prop fuction', () => {
-      const spy = jest.spyOn(defaultProps, 'onLogoClick');
-      const wrapper = mount(<Topbar {...defaultProps} />);
-      wrapper.find('.topbar__brand').first().simulate('click');
       expect(spy).toHaveBeenCalledTimes(1);
     });
   });

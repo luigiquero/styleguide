@@ -34,11 +34,13 @@
     "enzyme-adapter-react-16": "^1.9.1",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts": "2.1.3"
   },
   "devDependencies": {
+    "@types/react": "^16.8.14",
     "docz": "^0.13.7",
     "docz-theme-default": "^0.13.7",
     "eslint-config-airbnb": "^17.1.0",
@@ -46,6 +48,7 @@
     "eslint-plugin-jest": "^22.1.3",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "react-test-renderer": "^16.7.0",
     "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0",

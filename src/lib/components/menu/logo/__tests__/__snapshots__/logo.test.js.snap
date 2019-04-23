@@ -2,14 +2,14 @@
 
 exports[`Logo menu component should render properly when is minified 1`] = `
 <div
-  className="topbar__logo-wrapper topbar__logo-wrapper--minified"
+  className="menu__logo-wrapper menu__logo-wrapper--collapsed"
 >
   <img
-    className="topbar__logo topbar__logo--in"
+    className="menu__logo topbar__logo--in"
     src="logo-in.svg"
   />
   <img
-    className="topbar__logo topbar__logo--deva"
+    className="menu__logo topbar__logo--deva"
     src="logo-deva.svg"
   />
 </div>
@@ -17,14 +17,14 @@ exports[`Logo menu component should render properly when is minified 1`] = `
 
 exports[`Logo menu component should render properly when is not minified 1`] = `
 <div
-  className="topbar__logo-wrapper"
+  className="menu__logo-wrapper"
 >
   <img
-    className="topbar__logo topbar__logo--in"
+    className="menu__logo topbar__logo--in"
     src="logo-in.svg"
   />
   <img
-    className="topbar__logo topbar__logo--deva"
+    className="menu__logo topbar__logo--deva"
     src="logo-deva.svg"
   />
 </div>

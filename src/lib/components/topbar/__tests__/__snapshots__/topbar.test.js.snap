@@ -4,34 +4,12 @@ exports[`Topbar should renders properly 1`] = `
 <div
   className="topbar"
 >
-  <div
-    className="topbar__brand"
-    onClick={[Function]}
-    role="presentation"
-  >
-    <div
-      className="topbar__logo-wrapper"
-    >
-      <img
-        className="topbar__logo topbar__logo--in"
-        src="logo-in.svg"
-      />
-      <img
-        className="topbar__logo topbar__logo--deva"
-        src="logo-deva.svg"
-      />
-    </div>
-    <img
-      alt="Minificar menu"
-      className="topbar__burguer"
-      src="burguer-icon.svg"
-    />
-  </div>
+  <div />
   <div
     className="topbar__options"
   >
     <button
-      className="button button--primary"
+      className="button button--secondary"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -74,29 +52,7 @@ exports[`Topbar showFilterButton when it is false should include Settings 1`] = 
 <div
   className="topbar"
 >
-  <div
-    className="topbar__brand"
-    onClick={[Function]}
-    role="presentation"
-  >
-    <div
-      className="topbar__logo-wrapper"
-    >
-      <img
-        className="topbar__logo topbar__logo--in"
-        src="logo-in.svg"
-      />
-      <img
-        className="topbar__logo topbar__logo--deva"
-        src="logo-deva.svg"
-      />
-    </div>
-    <img
-      alt="Minificar menu"
-      className="topbar__burguer"
-      src="burguer-icon.svg"
-    />
-  </div>
+  <div />
   <div
     className="topbar__options"
   >
@@ -119,34 +75,12 @@ exports[`Topbar showFilterButton when it is true should include Settings 1`] = `
 <div
   className="topbar"
 >
-  <div
-    className="topbar__brand"
-    onClick={[Function]}
-    role="presentation"
-  >
-    <div
-      className="topbar__logo-wrapper"
-    >
-      <img
-        className="topbar__logo topbar__logo--in"
-        src="logo-in.svg"
-      />
-      <img
-        className="topbar__logo topbar__logo--deva"
-        src="logo-deva.svg"
-      />
-    </div>
-    <img
-      alt="Minificar menu"
-      className="topbar__burguer"
-      src="burguer-icon.svg"
-    />
-  </div>
+  <div />
   <div
     className="topbar__options"
   >
     <button
-      className="button button--primary"
+      className="button button--secondary"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -189,37 +123,16 @@ exports[`Topbar when there is children renders children with with-info modifier 
 <div
   className="topbar topbar--with-info"
 >
-  <div
-    className="topbar__brand"
-    onClick={[Function]}
-    role="presentation"
-  >
-    <div
-      className="topbar__logo-wrapper"
-    >
-      <img
-        className="topbar__logo topbar__logo--in"
-        src="logo-in.svg"
-      />
-      <img
-        className="topbar__logo topbar__logo--deva"
-        src="logo-deva.svg"
-      />
-    </div>
-    <img
-      alt="Minificar menu"
-      className="topbar__burguer"
-      src="burguer-icon.svg"
-    />
+  <div>
+    <span>
+      topbar
+    </span>
   </div>
-  <span>
-    topbar
-  </span>
   <div
     className="topbar__options"
   >
     <button
-      className="button button--primary"
+      className="button button--secondary"
       disabled={false}
       onClick={[Function]}
       type="button"

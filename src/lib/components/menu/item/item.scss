@@ -11,6 +11,10 @@
     &--active {
       color: $neutral;
     }
+
+    &--highlated {
+      color: $brand;
+    }
   }
 
   &__item {

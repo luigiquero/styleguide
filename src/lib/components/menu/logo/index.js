@@ -6,24 +6,24 @@ import LogoIn from './logo-in.svg';
 import LogoDeva from './logo-deva.svg';
 import './logo.scss';
 
-const Logo = ({ minified }) => {
+const Logo = ({ collapsed }) => {
   const className = classNames(
-    'topbar__logo-wrapper',
+    'menu__logo-wrapper',
     {
-      'topbar__logo-wrapper--minified': minified,
+      'menu__logo-wrapper--collapsed': collapsed,
     },
   );
 
   return (
     <div className={className}>
-      <img src={LogoIn} className="topbar__logo topbar__logo--in" />
-      <img src={LogoDeva} className="topbar__logo topbar__logo--deva" />
+      <img src={LogoIn} className="menu__logo topbar__logo--in" />
+      <img src={LogoDeva} className="menu__logo topbar__logo--deva" />
     </div>
   );
 };
 
 Logo.propTypes = {
-  minified: PropTypes.bool.isRequired,
+  collapsed: PropTypes.bool.isRequired,
 };
 
 export default Logo;

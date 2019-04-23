@@ -1,4 +1,4 @@
-.topbar {
+.menu {
   &__logo {
     height: 32px;
     transform-origin: left;
@@ -12,7 +12,7 @@
   &__logo-wrapper {
     display: flex;
 
-    &--minified {
+    &--collapsed {
       .topbar__logo--deva {
         opacity: 0;
         transform: scale(0);

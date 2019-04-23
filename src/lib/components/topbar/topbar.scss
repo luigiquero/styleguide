@@ -18,15 +18,6 @@
     display: flex;
   }
 
-  &__burguer {
-    margin-left: $space-16;
-    transition: opacity 0.2s ease-in-out;
-
-    &--minified {
-      opacity: 0;
-    }
-  }
-
   &__options {
     align-items: center;
     display: flex;
