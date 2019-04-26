@@ -9,7 +9,7 @@ import { faComment as fasComment } from '@fortawesome/pro-solid-svg-icons/faComm
 import { faFilter as fasFilter } from '@fortawesome/pro-solid-svg-icons/faFilter';
 import { faFolderOpen as fasFolderOpen } from '@fortawesome/pro-solid-svg-icons/faFolderOpen';
 import { faLightbulb as fasLightbulb } from '@fortawesome/pro-solid-svg-icons/faLightbulb';
-import { faRetweet as fasRetweet } from '@fortawesome/pro-solid-svg-icons/faRetweet';
+import { faSyncAlt as fasSyncAlt } from '@fortawesome/pro-solid-svg-icons/faSyncAlt';
 import { faStore as fasStore } from '@fortawesome/pro-solid-svg-icons/faStore';
 import { faTrophy as fasTrophy } from '@fortawesome/pro-solid-svg-icons/faTrophy';
 
@@ -32,7 +32,7 @@ library.add(
   fasFilter,
   fasFolderOpen,
   fasLightbulb,
-  fasRetweet,
+  fasSyncAlt,
   fasStore,
   fasTrophy,
   farCheck,
