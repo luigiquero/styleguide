@@ -2,20 +2,39 @@
   &__logo {
     height: 32px;
     transform-origin: left;
-    transition: all 0.2s ease-in-out;
+
+    &:not(:hover)  {
+      transition: all 0.5s ease-in-out;
+    }
 
     &--deva {
       max-width: 73px;
     }
   }
 
+  &__logo-burguer {
+    height: 32px;
+
+    &__image {
+      margin: 10px;
+    }
+  }
+
   &__logo-wrapper {
     display: flex;
+    height: 32px;
 
     &--collapsed {
+      width: 32px;
+
       .topbar__logo--deva {
         opacity: 0;
         transform: scale(0);
+      }
+
+      &.menu__logo-wrapper--hover {
+        background-color: white;
+        border-radius: 50%;
       }
     }
   }
