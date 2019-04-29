@@ -18,12 +18,14 @@ const Item = ({
   children,
 }) => {
   const menu = useContext(MenuContext);
-  const { expanded, toggle } = useExpanded(true);
+  const { expanded, toggle } = useExpanded(active);
 
   const handleOnClick = (event) => {
     if (children) {
       event.preventDefault();
-      toggle();
+
+      if (!active) toggle();
+
       menu.expand();
     }
 
@@ -33,7 +35,6 @@ const Item = ({
   const iconClassName = classNames(
     'menu__icon',
     { 'menu__icon--active': active },
-    { 'menu__icon--highlated': active && (!expanded || !menu.expanded || !children) },
   );
 
   return (

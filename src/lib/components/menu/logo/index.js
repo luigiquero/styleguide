@@ -20,7 +20,7 @@ const Logo = ({ collapsed }) => {
   );
 
   return (
-    <div  className={className}>
+    <div className={className}>
       {
         isHovering && collapsed ? (
           <div {...hoverProps} className="menu__logo-burguer">

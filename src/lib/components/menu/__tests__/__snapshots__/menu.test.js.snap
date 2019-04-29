@@ -14,6 +14,8 @@ exports[`Menu should render minified properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -138,6 +140,8 @@ exports[`Menu should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img

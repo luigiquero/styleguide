@@ -14,6 +14,8 @@ exports[`Item with links should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -45,7 +47,7 @@ exports[`Item with links should render properly 1`] = `
         </span>
       </span>
       <ul
-        className="menu__dropdown menu__dropdown--active"
+        className="menu__dropdown"
       >
         <li
           className="menu__item menu__item--child"
@@ -111,6 +113,8 @@ exports[`Item with links when item is active should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -208,6 +212,8 @@ exports[`Item without links with active truthly should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -257,6 +263,8 @@ exports[`Item without links with active truthly should render properly 2`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -306,6 +314,8 @@ exports[`Item without links with icon should render with icon 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -372,6 +382,8 @@ exports[`Item without links with url and target should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -421,6 +433,8 @@ exports[`Item without links with url should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img
@@ -470,6 +484,8 @@ exports[`Item without links without url should render properly 1`] = `
     >
       <img
         className="menu__logo topbar__logo--in"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         src="logo-in.svg"
       />
       <img

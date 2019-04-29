@@ -34,7 +34,10 @@ This is the menu component.
     </Menu.Item>
     <Menu.Item title="Ranking" icon={['fas', 'trophy']} />
     <Menu.Item title="Validação" icon={['fas', 'check-circle']} />
-    <Menu.Item title="Feedback" icon={['fas', 'sync-alt']} />
+    <Menu.Item title="Feedback" icon={['fas', 'sync-alt']}>
+      <Menu.SubItem title="Gerentes" />
+      <Menu.SubItem title="Vendedores" />
+    </Menu.Item>
     <Menu.Item title="Cadastros" icon={['fas', 'folder-open']} url="javascript: alert('url')" />
     <Menu.Item title="Chat" icon={['fas', 'comment']} onClick={() => alert('onClick prop')} />
     <Menu.Item title="Aprenda Indeva" icon={['fas', 'lightbulb']} onClick={() => alert('onClick prop')} />
