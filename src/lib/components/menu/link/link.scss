@@ -19,6 +19,10 @@
     color: $neutral;
   }
 
+  &--highlight {
+    color: $brand;
+  }
+
   &--child {
     &.menu__link--active {
       color: $brand;

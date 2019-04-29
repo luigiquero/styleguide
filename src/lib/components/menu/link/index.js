@@ -10,12 +10,17 @@ const Link = ({
   url,
   child,
   active,
+  highlight,
   target,
   onClick,
 }) => {
   const className = classNames(
     'menu__link',
-    { 'menu__link--child': child, 'menu__link--active': active },
+    {
+      'menu__link--child': child,
+      'menu__link--active': active,
+      'menu__link--highlight': highlight,
+    },
   );
 
   const linkTitle = title || children;
@@ -45,6 +50,7 @@ Link.propTypes = {
   url: PropTypes.string,
   child: PropTypes.bool,
   active: PropTypes.bool,
+  highlight: PropTypes.bool,
   target: PropTypes.oneOf([
     '_blank',
     '_parent',
@@ -59,6 +65,7 @@ Link.defaultProps = {
   url: null,
   child: false,
   active: false,
+  highlight: false,
   target: '_self',
   onClick: null,
 };

@@ -42,6 +42,7 @@ const Item = ({
       <Link
         url={url}
         active={active}
+        highlight={active && !children}
         target={target}
         onClick={url ? null : handleOnClick}
       >

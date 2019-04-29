@@ -234,7 +234,7 @@ exports[`Item without links with active truthly should render properly 1`] = `
       className="menu__item"
     >
       <span
-        className="menu__link menu__link--active"
+        className="menu__link menu__link--active menu__link--highlight"
         onClick={[Function]}
         role="presentation"
       >
@@ -285,7 +285,7 @@ exports[`Item without links with active truthly should render properly 2`] = `
       className="menu__item"
     >
       <span
-        className="menu__link menu__link--active"
+        className="menu__link menu__link--active menu__link--highlight"
         onClick={[Function]}
         role="presentation"
       >
