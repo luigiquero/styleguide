@@ -12,6 +12,7 @@
     cursor: pointer;
     display: flex;
     margin-left: $space-16;
+    margin-bottom: $space-16;
   }
 
   &__burguer {
@@ -22,7 +23,7 @@
   &__nav {
     margin: 0;
     min-width: 190px;
-    padding: $space-32 $space-24 0;
+    padding: $space-16 $space-24 0;
   }
 
   &--collapsed {
