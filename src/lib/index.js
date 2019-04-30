@@ -8,6 +8,7 @@ import LinedInput from './components/form/lined-input';
 import LinedInputGroup from './components/form/lined-input-group';
 import Link from './components/link';
 import Menu from './components/menu';
+import { useMenuContext } from './components/menu/context';
 import Topbar from './components/topbar';
 import Switch from './components/form/switch';
 
@@ -21,6 +22,7 @@ export {
   LinedInputGroup,
   Link,
   Menu,
+  useMenuContext,
   Topbar,
   Switch,
 };

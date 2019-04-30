@@ -1,11 +1,11 @@
-import React, { useContext, forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Link from '../link';
 import Dropdown from '../dropdown';
 import Icon from '../../../icons';
 import useExpanded from '../../../hooks/useExpanded';
-import MenuContext from '../context';
+import { useMenuContext } from '../context';
 import './item.scss';
 
 const Item = ({
@@ -19,7 +19,7 @@ const Item = ({
   active,
   children,
 }) => {
-  const menu = useContext(MenuContext);
+  const menu = useMenuContext();
   const { expanded, toggle } = useExpanded(active, onToggle);
 
   const handleOnClick = (event) => {
