@@ -20,15 +20,20 @@ const Item = ({
   children,
 }) => {
   const menu = useMenuContext();
-  const { expanded, toggle } = useExpanded(active, onToggle);
+  const { expanded, toggle, expand } = useExpanded(active, onToggle);
 
   const handleOnClick = (event) => {
     if (children) {
       event.preventDefault();
 
-      if (!active) toggle();
-
-      menu.expand();
+      if (menu.expanded) {
+        if (!active) {
+          toggle();
+        }
+      } else {
+        menu.expand();
+        expand();
+      }
     }
 
     onClick(event);
