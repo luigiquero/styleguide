@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Link from '../link';
@@ -9,6 +9,8 @@ import MenuContext from '../context';
 import './item.scss';
 
 const Item = ({
+  forwardedRef,
+  onToggle,
   onClick,
   title,
   icon,
@@ -18,7 +20,7 @@ const Item = ({
   children,
 }) => {
   const menu = useContext(MenuContext);
-  const { expanded, toggle } = useExpanded(active);
+  const { expanded, toggle } = useExpanded(active, onToggle);
 
   const handleOnClick = (event) => {
     if (children) {
@@ -38,7 +40,7 @@ const Item = ({
   );
 
   return (
-    <li className="menu__item">
+    <li ref={forwardedRef} className="menu__item">
       <Link
         url={url}
         active={active}
@@ -78,7 +80,11 @@ Item.propTypes = {
   ]),
   active: PropTypes.bool,
   children: PropTypes.node,
+  onToggle: PropTypes.func,
   onClick: PropTypes.func,
+  forwardedRef: PropTypes.shape({
+    current: PropTypes.instanceOf(Element),
+  }),
 };
 
 Item.defaultProps = {
@@ -87,7 +93,14 @@ Item.defaultProps = {
   target: '_self',
   active: false,
   children: null,
+  onToggle: () => {},
   onClick: () => {},
+  forwardedRef: null,
 };
 
-export default Item;
+export default forwardRef((props, ref) => (
+  <Item
+    {...props}
+    forwardedRef={ref}
+  />
+));

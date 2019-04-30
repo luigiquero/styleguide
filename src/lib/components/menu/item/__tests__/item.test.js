@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, createRef } from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import Menu from '../..';
@@ -16,6 +16,16 @@ describe('Item', () => {
       {children}
     </Menu>,
   );
+
+  describe('when pass ref', () => {
+    it('should update #current attribute from ref', () => {
+      const ref = createRef();
+
+      mountWithMenu(<Item ref={ref} title="Test" />);
+
+      expect(ref.current).toBeInstanceOf(Element);
+    });
+  });
 
   describe('without links', () => {
     it('without url should render properly', () => {
@@ -142,21 +152,47 @@ describe('Item', () => {
       });
 
       describe('when the parent links has been clicked', () => {
-        it('calls the toggle expanded state and calls callback functioon', () => {
-          const onClickCallback = jest.fn();
-          const wrapper = mountWithMenu(
-            <Item
-              title="test"
-              onClick={onClickCallback}
-              active
-            >
-              <Menu.SubItem title="test" />
-            </Item>,
-          );
+        describe('and has been inactived', () => {
+          it('calls the onClick and onToggle function', () => {
+            const onToggle = jest.fn();
+            const onClickCallback = jest.fn();
+            const wrapper = mountWithMenu(
+              <Item
+                title="test"
+                onToggle={onToggle}
+                onClick={onClickCallback}
+              >
+                <Menu.SubItem title="test" />
+              </Item>,
+            );
 
-          wrapper.find('.menu__link--active').last().simulate('click');
+            wrapper.find('.menu__link').first().simulate('click');
 
-          expect(onClickCallback).toHaveBeenCalledTimes(1);
+            expect(onToggle).toHaveBeenCalledTimes(1);
+            expect(onClickCallback).toHaveBeenCalledTimes(1);
+          });
+        });
+
+        describe('and has been actived', () => {
+          it('calls the onClick function', () => {
+            const onToggle = jest.fn();
+            const onClickCallback = jest.fn();
+            const wrapper = mountWithMenu(
+              <Item
+                title="test"
+                onToggle={onToggle}
+                onClick={onClickCallback}
+                active
+              >
+                <Menu.SubItem title="test" />
+              </Item>,
+            );
+
+            wrapper.find('.menu__link').first().simulate('click');
+
+            expect(onToggle).toHaveBeenCalledTimes(0);
+            expect(onClickCallback).toHaveBeenCalledTimes(1);
+          });
         });
       });
     });
