@@ -13,9 +13,9 @@
     opacity 0.05s ease-in-out;
 
   &--active {
+    margin-bottom: $space-16;
     margin-left: $space-32;
     max-height: 300px;
     opacity: 1;
-    margin-bottom: $space-16;
   }
 }

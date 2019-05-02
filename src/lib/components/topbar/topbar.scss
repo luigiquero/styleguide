@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   padding: $space-16 $space-32;
+  transition: all $transition-time;
   width: 100%;
 
   &--with-info {
@@ -32,7 +33,13 @@
     border-radius: 100%;
     cursor: pointer;
     height: 32px;
-    margin-left: $space-32;
+    margin-left: $space-16;
     width: 32px;
+  }
+
+  @media (max-width: $mobile) {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(84, 98, 124, 0.12);
+    padding: $space-8 $space-16;
   }
 }
