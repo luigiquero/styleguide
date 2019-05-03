@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .menu {
   &__logo {
     height: 32px;
@@ -23,6 +25,10 @@
   &__logo-wrapper {
     display: flex;
     height: 32px;
+
+    @include mobile {
+      display: none;
+    }
 
     &--collapsed {
       width: 32px;

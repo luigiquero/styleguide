@@ -9,6 +9,7 @@ import BurguerIcon from './burguer-icon.svg';
 import useExpanded from '../../hooks/useExpanded';
 import MenuContext from './context';
 import SubItem from './sub-item';
+import FullScreenOverlay from '../fullscreen-overlay';
 
 const { Provider } = MenuContext;
 
@@ -46,6 +47,13 @@ const Menu = ({
           {children}
         </ul>
       </div>
+      <FullScreenOverlay
+        className={classNames(
+          'menu__fullscreen_overlay',
+          { 'menu__fullscreen_overlay--visible': expanded },
+        )}
+        onClick={toggle}
+      />
     </Provider>
   );
 };
@@ -63,7 +71,7 @@ Menu.propTypes = {
 
 Menu.defaultProps = {
   className: null,
-  onToggle: () => {},
+  onToggle: () => { },
   initialState: {
     expanded: true,
   },

@@ -21,29 +21,58 @@
   }
 
   &__nav {
+    left: 0;
     margin: 0;
     min-width: 190px;
     padding: $space-16 $space-24 0;
+    top: 0;
+
+    @include mobile {
+      background-color: white;
+      position: absolute;
+      transition: 1s;
+      z-index: 1000;
+    }
   }
 
   &--collapsed {
-    transition: width 0.2s ease-in-out 0.2s;
-    width: 64px;
+    @include desktop {
+      transition: width 0.2s ease-in-out 0.2s;
+      width: 64px;
 
-    .menu__burguer,
-    .menu__item-text {
-      opacity: 0;
+      .menu__burguer,
+      .menu__item-text {
+        opacity: 0;
+      }
+
+      .menu__logo--deva {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      .menu__dropdown,
+      .menu__dropdown--active {
+        max-height: 0;
+        opacity: 0;
+      }
     }
 
-    .menu__logo--deva {
-      opacity: 0;
-      transform: scale(0);
+    @include mobile {
+      width: 0;
     }
+  }
 
-    .menu__dropdown,
-    .menu__dropdown--active {
-      max-height: 0;
-      opacity: 0;
+  &__fullscreen_overlay {
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s ease-in-out;
+    visibility: hidden;
+
+    @include mobile {
+      &--visible {
+        opacity: 0.6;
+        visibility: visible;
+        z-index: 999;
+      }
     }
   }
 }

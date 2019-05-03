@@ -1,253 +1,265 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu should render minified properly 1`] = `
-<div
-  className="class menu"
->
+Array [
   <div
-    className="menu__header"
-    onClick={[Function]}
-    role="presentation"
+    className="class menu"
   >
     <div
-      className="menu__logo-wrapper"
+      className="menu__header"
+      onClick={[Function]}
+      role="presentation"
     >
+      <div
+        className="menu__logo-wrapper"
+      >
+        <img
+          className="menu__logo topbar__logo--in"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          src="logo-in.svg"
+        />
+        <img
+          className="menu__logo topbar__logo--deva"
+          src="logo-deva.svg"
+        />
+      </div>
       <img
-        className="menu__logo topbar__logo--in"
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        src="logo-in.svg"
-      />
-      <img
-        className="menu__logo topbar__logo--deva"
-        src="logo-deva.svg"
+        alt="Minificar menu"
+        className="menu__burguer"
+        src="burguer-icon.svg"
       />
     </div>
-    <img
-      alt="Minificar menu"
-      className="menu__burguer"
-      src="burguer-icon.svg"
-    />
-  </div>
-  <ul
-    className="menu__nav"
-  >
-    <li
-      className="menu__item"
+    <ul
+      className="menu__nav"
     >
-      <span
-        className="menu__link"
-        onClick={[Function]}
-        role="presentation"
+      <li
+        className="menu__item"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-store fa-w-20 menu__icon"
-          data-icon="store"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 616 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
         <span
-          className="menu__item-text"
+          className="menu__link"
+          onClick={[Function]}
+          role="presentation"
         >
-          Visão Geral
-        </span>
-      </span>
-    </li>
-    <li
-      className="menu__item"
-    >
-      <span
-        className="menu__link menu__link--active"
-        onClick={[Function]}
-        role="presentation"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-analytics fa-w-18 menu__icon menu__icon--active"
-          data-icon="analytics"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 576 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M510.62 92.63C516.03 94.74 521.85 96 528 96c26.51 0 48-21.49 48-48S554.51 0 528 0s-48 21.49-48 48c0 2.43.37 4.76.71 7.09l-95.34 76.27c-5.4-2.11-11.23-3.37-17.38-3.37s-11.97 1.26-17.38 3.37L255.29 55.1c.35-2.33.71-4.67.71-7.1 0-26.51-21.49-48-48-48s-48 21.49-48 48c0 4.27.74 8.34 1.78 12.28l-101.5 101.5C56.34 160.74 52.27 160 48 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-4.27-.74-8.34-1.78-12.28l101.5-101.5C199.66 95.26 203.73 96 208 96c6.15 0 11.97-1.26 17.38-3.37l95.34 76.27c-.35 2.33-.71 4.67-.71 7.1 0 26.51 21.49 48 48 48s48-21.49 48-48c0-2.43-.37-4.76-.71-7.09l95.32-76.28zM400 320h-64c-8.84 0-16 7.16-16 16v160c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V336c0-8.84-7.16-16-16-16zm160-128h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm-320 0h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zM80 352H16c-8.84 0-16 7.16-16 16v128c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V368c0-8.84-7.16-16-16-16z"
-            fill="currentColor"
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-store fa-w-20 menu__icon"
+            data-icon="store"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
             style={Object {}}
-          />
-        </svg>
-        <span
-          className="menu__item-text"
-        >
-          Relatórios
+            viewBox="0 0 616 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span
+            className="menu__item-text"
+          >
+            Visão Geral
+          </span>
         </span>
-      </span>
-      <ul
-        className="menu__dropdown menu__dropdown--active"
+      </li>
+      <li
+        className="menu__item"
       >
-        <li
-          className="menu__item menu__item--child"
+        <span
+          className="menu__link menu__link--active"
+          onClick={[Function]}
+          role="presentation"
         >
-          <span
-            className="menu__link menu__link--child"
-            onClick={null}
-            role="presentation"
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-analytics fa-w-18 menu__icon menu__icon--active"
+            data-icon="analytics"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Raio X
+            <path
+              d="M510.62 92.63C516.03 94.74 521.85 96 528 96c26.51 0 48-21.49 48-48S554.51 0 528 0s-48 21.49-48 48c0 2.43.37 4.76.71 7.09l-95.34 76.27c-5.4-2.11-11.23-3.37-17.38-3.37s-11.97 1.26-17.38 3.37L255.29 55.1c.35-2.33.71-4.67.71-7.1 0-26.51-21.49-48-48-48s-48 21.49-48 48c0 4.27.74 8.34 1.78 12.28l-101.5 101.5C56.34 160.74 52.27 160 48 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-4.27-.74-8.34-1.78-12.28l101.5-101.5C199.66 95.26 203.73 96 208 96c6.15 0 11.97-1.26 17.38-3.37l95.34 76.27c-.35 2.33-.71 4.67-.71 7.1 0 26.51 21.49 48 48 48s48-21.49 48-48c0-2.43-.37-4.76-.71-7.09l95.32-76.28zM400 320h-64c-8.84 0-16 7.16-16 16v160c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V336c0-8.84-7.16-16-16-16zm160-128h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm-320 0h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zM80 352H16c-8.84 0-16 7.16-16 16v128c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V368c0-8.84-7.16-16-16-16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span
+            className="menu__item-text"
+          >
+            Relatórios
           </span>
-        </li>
-        <li
-          className="menu__item menu__item--child"
+        </span>
+        <ul
+          className="menu__dropdown menu__dropdown--active"
         >
-          <span
-            className="menu__link menu__link--child menu__link--active"
-            onClick={null}
-            role="presentation"
+          <li
+            className="menu__item menu__item--child"
           >
-            Eventos e motivos
-          </span>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
+            <span
+              className="menu__link menu__link--child"
+              onClick={null}
+              role="presentation"
+            >
+              Raio X
+            </span>
+          </li>
+          <li
+            className="menu__item menu__item--child"
+          >
+            <span
+              className="menu__link menu__link--child menu__link--active"
+              onClick={null}
+              role="presentation"
+            >
+              Eventos e motivos
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="fullscreen-overlay menu__fullscreen_overlay menu__fullscreen_overlay--visible"
+    onClick={[Function]}
+  />,
+]
 `;
 
 exports[`Menu should render properly 1`] = `
-<div
-  className="class menu"
->
+Array [
   <div
-    className="menu__header"
-    onClick={[Function]}
-    role="presentation"
+    className="class menu"
   >
     <div
-      className="menu__logo-wrapper"
+      className="menu__header"
+      onClick={[Function]}
+      role="presentation"
     >
+      <div
+        className="menu__logo-wrapper"
+      >
+        <img
+          className="menu__logo topbar__logo--in"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          src="logo-in.svg"
+        />
+        <img
+          className="menu__logo topbar__logo--deva"
+          src="logo-deva.svg"
+        />
+      </div>
       <img
-        className="menu__logo topbar__logo--in"
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        src="logo-in.svg"
-      />
-      <img
-        className="menu__logo topbar__logo--deva"
-        src="logo-deva.svg"
+        alt="Minificar menu"
+        className="menu__burguer"
+        src="burguer-icon.svg"
       />
     </div>
-    <img
-      alt="Minificar menu"
-      className="menu__burguer"
-      src="burguer-icon.svg"
-    />
-  </div>
-  <ul
-    className="menu__nav"
-  >
-    <li
-      className="menu__item"
+    <ul
+      className="menu__nav"
     >
-      <span
-        className="menu__link"
-        onClick={[Function]}
-        role="presentation"
+      <li
+        className="menu__item"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-store fa-w-20 menu__icon"
-          data-icon="store"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 616 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
         <span
-          className="menu__item-text"
+          className="menu__link"
+          onClick={[Function]}
+          role="presentation"
         >
-          Visão Geral
-        </span>
-      </span>
-    </li>
-    <li
-      className="menu__item"
-    >
-      <span
-        className="menu__link menu__link--active"
-        onClick={[Function]}
-        role="presentation"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-analytics fa-w-18 menu__icon menu__icon--active"
-          data-icon="analytics"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 576 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M510.62 92.63C516.03 94.74 521.85 96 528 96c26.51 0 48-21.49 48-48S554.51 0 528 0s-48 21.49-48 48c0 2.43.37 4.76.71 7.09l-95.34 76.27c-5.4-2.11-11.23-3.37-17.38-3.37s-11.97 1.26-17.38 3.37L255.29 55.1c.35-2.33.71-4.67.71-7.1 0-26.51-21.49-48-48-48s-48 21.49-48 48c0 4.27.74 8.34 1.78 12.28l-101.5 101.5C56.34 160.74 52.27 160 48 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-4.27-.74-8.34-1.78-12.28l101.5-101.5C199.66 95.26 203.73 96 208 96c6.15 0 11.97-1.26 17.38-3.37l95.34 76.27c-.35 2.33-.71 4.67-.71 7.1 0 26.51 21.49 48 48 48s48-21.49 48-48c0-2.43-.37-4.76-.71-7.09l95.32-76.28zM400 320h-64c-8.84 0-16 7.16-16 16v160c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V336c0-8.84-7.16-16-16-16zm160-128h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm-320 0h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zM80 352H16c-8.84 0-16 7.16-16 16v128c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V368c0-8.84-7.16-16-16-16z"
-            fill="currentColor"
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-store fa-w-20 menu__icon"
+            data-icon="store"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
             style={Object {}}
-          />
-        </svg>
-        <span
-          className="menu__item-text"
-        >
-          Relatórios
+            viewBox="0 0 616 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span
+            className="menu__item-text"
+          >
+            Visão Geral
+          </span>
         </span>
-      </span>
-      <ul
-        className="menu__dropdown menu__dropdown--active"
+      </li>
+      <li
+        className="menu__item"
       >
-        <li
-          className="menu__item menu__item--child"
+        <span
+          className="menu__link menu__link--active"
+          onClick={[Function]}
+          role="presentation"
         >
-          <span
-            className="menu__link menu__link--child"
-            onClick={null}
-            role="presentation"
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-analytics fa-w-18 menu__icon menu__icon--active"
+            data-icon="analytics"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Raio X
+            <path
+              d="M510.62 92.63C516.03 94.74 521.85 96 528 96c26.51 0 48-21.49 48-48S554.51 0 528 0s-48 21.49-48 48c0 2.43.37 4.76.71 7.09l-95.34 76.27c-5.4-2.11-11.23-3.37-17.38-3.37s-11.97 1.26-17.38 3.37L255.29 55.1c.35-2.33.71-4.67.71-7.1 0-26.51-21.49-48-48-48s-48 21.49-48 48c0 4.27.74 8.34 1.78 12.28l-101.5 101.5C56.34 160.74 52.27 160 48 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-4.27-.74-8.34-1.78-12.28l101.5-101.5C199.66 95.26 203.73 96 208 96c6.15 0 11.97-1.26 17.38-3.37l95.34 76.27c-.35 2.33-.71 4.67-.71 7.1 0 26.51 21.49 48 48 48s48-21.49 48-48c0-2.43-.37-4.76-.71-7.09l95.32-76.28zM400 320h-64c-8.84 0-16 7.16-16 16v160c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V336c0-8.84-7.16-16-16-16zm160-128h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm-320 0h-64c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zM80 352H16c-8.84 0-16 7.16-16 16v128c0 8.84 7.16 16 16 16h64c8.84 0 16-7.16 16-16V368c0-8.84-7.16-16-16-16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span
+            className="menu__item-text"
+          >
+            Relatórios
           </span>
-        </li>
-        <li
-          className="menu__item menu__item--child"
+        </span>
+        <ul
+          className="menu__dropdown menu__dropdown--active"
         >
-          <span
-            className="menu__link menu__link--child menu__link--active"
-            onClick={null}
-            role="presentation"
+          <li
+            className="menu__item menu__item--child"
           >
-            Eventos e motivos
-          </span>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
+            <span
+              className="menu__link menu__link--child"
+              onClick={null}
+              role="presentation"
+            >
+              Raio X
+            </span>
+          </li>
+          <li
+            className="menu__item menu__item--child"
+          >
+            <span
+              className="menu__link menu__link--child menu__link--active"
+              onClick={null}
+              role="presentation"
+            >
+              Eventos e motivos
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="fullscreen-overlay menu__fullscreen_overlay menu__fullscreen_overlay--visible"
+    onClick={[Function]}
+  />,
+]
 `;

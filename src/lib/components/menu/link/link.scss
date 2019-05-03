@@ -27,5 +27,9 @@
     &.menu__link--active {
       color: $brand;
     }
+
+    @include mobile {
+      padding-left: 8px;
+    }
   }
 }

@@ -37,7 +37,7 @@
     width: 32px;
   }
 
-  @media (max-width: $mobile) {
+  @include mobile {
     background-color: $white;
     box-shadow: 0 2px 4px rgba(84, 98, 124, 0.12);
     padding: $space-8 $space-16;

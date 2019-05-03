@@ -22,10 +22,19 @@
     &--child {
       margin-top: $space-16;
     }
+
+    @include mobile {
+      padding-bottom: 8px;
+      padding-top: 8px;
+    }
   }
 
   &__item-text {
     opacity: 1;
     transition: all 0.05s ease-in-out;
+
+    @include mobile {
+      padding-left: 8px;
+    }
   }
 }
