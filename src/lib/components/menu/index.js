@@ -25,6 +25,7 @@ const Menu = ({
   const classes = classNames(
     className,
     'menu',
+    { 'menu--expanded': expanded },
     { 'menu--collapsed': !expanded },
   );
 
