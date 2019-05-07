@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import useMedia from '../../../hooks/useMedia';
+import { useMenuContext } from '../context';
 import './link.scss';
 
 const Link = ({
@@ -25,11 +27,24 @@ const Link = ({
 
   const linkTitle = title || children;
 
+  const menu = useMenuContext();
+  const isMobile = useMedia('mobile');
+
+  const handleOnClick = (event) => {
+    onClick(event);
+
+    if (event.defaultPrevented) return;
+
+    if (menu.expanded && isMobile) {
+      menu.collapse();
+    }
+  };
+
   return (
-    (url && !onClick) ? (
-      <a href={url} target={target} className={className}>{ linkTitle }</a>
+    url ? (
+      <a href={url} target={target} className={className} onClick={handleOnClick}>{ linkTitle }</a>
     ) : (
-      <span className={className} onClick={onClick} role="presentation">{ linkTitle }</span>
+      <span className={className} onClick={handleOnClick} role="presentation">{ linkTitle }</span>
     )
   );
 };
@@ -67,7 +82,7 @@ Link.defaultProps = {
   active: false,
   highlight: false,
   target: '_self',
-  onClick: null,
+  onClick: () => { },
 };
 
 export default Link;

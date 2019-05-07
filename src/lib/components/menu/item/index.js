@@ -51,7 +51,7 @@ const Item = ({
         active={active}
         highlight={active && !children}
         target={target}
-        onClick={url ? null : handleOnClick}
+        onClick={handleOnClick}
       >
         { icon && <Icon icon={icon} className={iconClassName} /> }
 
