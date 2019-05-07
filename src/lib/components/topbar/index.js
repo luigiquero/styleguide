@@ -44,7 +44,7 @@ class Topbar extends Component {
           {
             showFilterButton && (
               <Button secondary onClick={onFilterClick}>
-                <Icon icon={['fas', 'filter']} />
+                <Icon icon={['far', 'filter']} />
                 Filtros
               </Button>
             )

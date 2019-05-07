@@ -8,10 +8,10 @@ describe('Menu', () => {
     className: 'class',
     children: (
       <Fragment>
-        <Menu.Item title="Visão Geral" icon={['fas', 'store']} />
+        <Menu.Item title="Visão Geral" icon={['far', 'store']} />
         <Menu.Item
           title="Relatórios"
-          icon={['fas', 'analytics']}
+          icon={['far', 'analytics']}
           active
         >
           <Menu.SubItem title="Raio X" />

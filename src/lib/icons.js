@@ -2,20 +2,17 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Pro Solid
-import { faAnalytics as fasAnalytics } from '@fortawesome/pro-solid-svg-icons/faAnalytics';
-import { faCheckCircle as fasCheckCircle } from '@fortawesome/pro-solid-svg-icons/faCheckCircle';
-import { faComment as fasComment } from '@fortawesome/pro-solid-svg-icons/faComment';
-import { faFilter as fasFilter } from '@fortawesome/pro-solid-svg-icons/faFilter';
-import { faFolderOpen as fasFolderOpen } from '@fortawesome/pro-solid-svg-icons/faFolderOpen';
-import { faLightbulb as fasLightbulb } from '@fortawesome/pro-solid-svg-icons/faLightbulb';
-import { faSyncAlt as fasSyncAlt } from '@fortawesome/pro-solid-svg-icons/faSyncAlt';
-import { faStore as fasStore } from '@fortawesome/pro-solid-svg-icons/faStore';
-import { faTrophy as fasTrophy } from '@fortawesome/pro-solid-svg-icons/faTrophy';
-
 // Pro Regular
-import { faCheck as farCheck } from '@fortawesome/pro-regular-svg-icons/faCheck';
+import { faAnalytics as farAnalytics } from '@fortawesome/pro-regular-svg-icons/faAnalytics';
 import { faCheckCircle as farCheckCircle } from '@fortawesome/pro-regular-svg-icons/faCheckCircle';
+import { faComment as farComment } from '@fortawesome/pro-regular-svg-icons/faComment';
+import { faFilter as farFilter } from '@fortawesome/pro-regular-svg-icons/faFilter';
+import { faFolderOpen as farFolderOpen } from '@fortawesome/pro-regular-svg-icons/faFolderOpen';
+import { faLightbulb as farLightbulb } from '@fortawesome/pro-regular-svg-icons/faLightbulb';
+import { faSyncAlt as farSyncAlt } from '@fortawesome/pro-regular-svg-icons/faSyncAlt';
+import { faStore as farStore } from '@fortawesome/pro-regular-svg-icons/faStore';
+import { faTrophy as farTrophy } from '@fortawesome/pro-regular-svg-icons/faTrophy';
+import { faCheck as farCheck } from '@fortawesome/pro-regular-svg-icons/faCheck';
 import { faExclamationTriangle as farExclamationTriangle } from '@fortawesome/pro-regular-svg-icons/faExclamationTriangle';
 import { faTimes as farTimes } from '@fortawesome/pro-regular-svg-icons/faTimes';
 import { faTimesCircle as farTimesCircle } from '@fortawesome/pro-regular-svg-icons/faTimesCircle';
@@ -26,15 +23,15 @@ import { faSignOutAlt as farSignOutAlt } from '@fortawesome/pro-regular-svg-icon
 import { faIgloo as falIgloo } from '@fortawesome/pro-light-svg-icons/faIgloo';
 
 library.add(
-  fasAnalytics,
-  fasCheckCircle,
-  fasComment,
-  fasFilter,
-  fasFolderOpen,
-  fasLightbulb,
-  fasSyncAlt,
-  fasStore,
-  fasTrophy,
+  farAnalytics,
+  farCheckCircle,
+  farComment,
+  farFilter,
+  farFolderOpen,
+  farLightbulb,
+  farSyncAlt,
+  farStore,
+  farTrophy,
   farCheck,
   farCheckCircle,
   farExclamationTriangle,

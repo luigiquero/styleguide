@@ -5,6 +5,9 @@ route: /basics/icons
 ---
 
 import { Playground, PropsTable } from 'docz';
+import { faIgloo as fasIgloo } from '@fortawesome/free-solid-svg-icons/faIgloo';
+import { faIgloo as farIgloo } from '@fortawesome/pro-regular-svg-icons/faIgloo';
+import { faIgloo as falIgloo } from '@fortawesome/pro-light-svg-icons/faIgloo';
 import Icon from '../../../lib/icons';
 import './icons.scss';
 
@@ -40,9 +43,9 @@ You have another prefixes to use, see it:
 
 ### Examples:
 <Playground className="separate-icons">
-  <Icon icon={['fas', 'igloo']} size="3x" />
-  <Icon icon={['far', 'igloo']} size="3x" />
-  <Icon icon={['fal', 'igloo']} size="3x" />
+  <Icon icon={fasIgloo} size="3x" />
+  <Icon icon={farIgloo} size="3x" />
+  <Icon icon={falIgloo} size="3x" />
 </Playground>
 
 ## Features
