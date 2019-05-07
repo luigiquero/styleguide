@@ -24,8 +24,14 @@
     }
 
     @include mobile {
-      padding-bottom: 8px;
-      padding-top: 8px;
+      &--child {
+        &:first-child {
+          padding-top: $space-16;
+        }
+      }
+
+      padding-bottom: $space-8;
+      padding-top: $space-8;
     }
   }
 
@@ -34,7 +40,7 @@
     transition: all 0.05s ease-in-out;
 
     @include mobile {
-      padding-left: 8px;
+      padding-left: $space-8;
     }
   }
 }
