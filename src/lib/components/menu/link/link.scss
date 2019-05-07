@@ -10,11 +10,17 @@
   transition: color $transition-time;
 
   &:hover {
-    color: $neutral;
+    > span {
+      color: $brand-lighten-1;
+    }
+
+    > svg {
+      color: $brand-lighten-1;
+    }
   }
 
   &--active {
-    @include small-text(bold);
+    @include small-text;
 
     color: $neutral;
   }
@@ -25,11 +31,17 @@
 
   &--child {
     &.menu__link--active {
+      @include small-text(bold);
+
       color: $brand;
     }
 
     @include mobile {
       padding-left: $space-8;
+    }
+
+    &:hover {
+      color: $brand-lighten-1;
     }
   }
 }
