@@ -37,12 +37,14 @@ const Menu = ({
           role="presentation"
           onClick={toggle}
         >
+          <div className="menu__burguer">
+            <img
+              src={BurguerIcon}
+              alt="Minificar menu"
+              className="menu__burguer__image"
+            />
+          </div>
           <Logo collapsed={!expanded} />
-          <img
-            src={BurguerIcon}
-            alt="Minificar menu"
-            className="menu__burguer"
-          />
         </div>
         <ul className="menu__nav">
           {children}

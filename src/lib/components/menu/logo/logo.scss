@@ -2,28 +2,10 @@
 
 .menu {
   &__logo {
-    height: 32px;
-    transform-origin: left;
-
-    &:not(:hover) {
-      transition: all 0.5s ease-in-out;
-    }
-
-    &--deva {
-      max-width: 73px;
-    }
-  }
-
-  &__logo-burguer {
-    height: 32px;
-
-    &__image {
-      margin: 10px;
-    }
+    transition: width 0.3s ease-in-out;
   }
 
   &__logo-wrapper {
-    display: flex;
     height: 32px;
 
     @include mobile {
@@ -33,14 +15,9 @@
     &--collapsed {
       width: 32px;
 
-      .topbar__logo--deva {
+      .menu__logo {
         opacity: 0;
-        transform: scale(0);
-      }
-
-      &.menu__logo-wrapper--hover {
-        background-color: white;
-        border-radius: 50%;
+        transition: width 0.2s ease-in-out;
       }
     }
   }

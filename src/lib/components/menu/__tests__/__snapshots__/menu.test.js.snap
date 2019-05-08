@@ -11,24 +11,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -104,7 +102,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Raio X
@@ -115,7 +113,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child menu__link--active"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Eventos e motivos
@@ -143,24 +141,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -236,7 +232,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Raio X
@@ -247,7 +243,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child menu__link--active"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Eventos e motivos

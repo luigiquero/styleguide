@@ -11,24 +11,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -55,7 +53,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Test
@@ -66,7 +64,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child menu__link--active"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Test2
@@ -78,6 +76,7 @@ Array [
             <a
               className="menu__link menu__link--child"
               href="#"
+              onClick={[Function]}
               target="_self"
             >
               Test3
@@ -89,6 +88,7 @@ Array [
             <a
               className="menu__link menu__link--child"
               href="#"
+              onClick={[Function]}
               target="_blank"
             >
               Test4
@@ -116,24 +116,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -160,7 +158,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Test
@@ -171,7 +169,7 @@ Array [
           >
             <span
               className="menu__link menu__link--child menu__link--active"
-              onClick={null}
+              onClick={[Function]}
               role="presentation"
             >
               Test2
@@ -183,6 +181,7 @@ Array [
             <a
               className="menu__link menu__link--child"
               href="#"
+              onClick={[Function]}
               target="_self"
             >
               Test3
@@ -194,6 +193,7 @@ Array [
             <a
               className="menu__link menu__link--child"
               href="#"
+              onClick={[Function]}
               target="_blank"
             >
               Test4
@@ -221,24 +221,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -278,24 +276,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -335,24 +331,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -409,24 +403,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -437,6 +429,7 @@ Array [
         <a
           className="menu__link"
           href="#"
+          onClick={[Function]}
           target="_blank"
         >
           <span
@@ -466,24 +459,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"
@@ -494,6 +485,7 @@ Array [
         <a
           className="menu__link"
           href="#"
+          onClick={[Function]}
           target="_self"
         >
           <span
@@ -523,24 +515,22 @@ Array [
       role="presentation"
     >
       <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
         className="menu__logo-wrapper"
       >
         <img
-          className="menu__logo topbar__logo--in"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          src="logo-in.svg"
-        />
-        <img
-          className="menu__logo topbar__logo--deva"
-          src="logo-deva.svg"
+          className="menu__logo"
+          src="logo.svg"
         />
       </div>
-      <img
-        alt="Minificar menu"
-        className="menu__burguer"
-        src="burguer-icon.svg"
-      />
     </div>
     <ul
       className="menu__nav"

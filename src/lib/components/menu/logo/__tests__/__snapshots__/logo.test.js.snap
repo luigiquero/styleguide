@@ -5,14 +5,8 @@ exports[`Logo menu component should render properly when is minified 1`] = `
   className="menu__logo-wrapper menu__logo-wrapper--collapsed"
 >
   <img
-    className="menu__logo topbar__logo--in"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
-    src="logo-in.svg"
-  />
-  <img
-    className="menu__logo topbar__logo--deva"
-    src="logo-deva.svg"
+    className="menu__logo"
+    src="logo.svg"
   />
 </div>
 `;
@@ -22,14 +16,8 @@ exports[`Logo menu component should render properly when is not minified 1`] = `
   className="menu__logo-wrapper"
 >
   <img
-    className="menu__logo topbar__logo--in"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
-    src="logo-in.svg"
-  />
-  <img
-    className="menu__logo topbar__logo--deva"
-    src="logo-deva.svg"
+    className="menu__logo"
+    src="logo.svg"
   />
 </div>
 `;
