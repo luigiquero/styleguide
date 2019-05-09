@@ -18,14 +18,14 @@
     cursor: pointer;
     display: flex;
     margin-bottom: $space-16;
-    margin-left: $space-16;
+    margin-left: $space-16 + $space-8;
   }
 
   &__nav {
     left: 0;
     margin: 0;
     min-width: 190px;
-    padding: $space-16 $space-24 0;
+    padding: 0 $space-24;
     top: 0;
 
     @include mobile {
@@ -41,7 +41,7 @@
     margin-right: 6px;
 
     &__image {
-      margin: 10px;
+      padding: 10px;
     }
   }
 

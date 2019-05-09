@@ -2,7 +2,6 @@
 
 .menu__dropdown {
   margin: 0;
-  margin-left: $space-32;
   max-height: 0;
   min-width: 160px;
   opacity: 0;
@@ -15,7 +14,6 @@
 
   &--active {
     margin-bottom: $space-16;
-    margin-left: $space-32;
     max-height: 450px;
     opacity: 1;
   }

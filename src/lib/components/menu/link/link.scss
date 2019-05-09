@@ -6,6 +6,7 @@
   color: $neutral;
   cursor: pointer;
   outline: 0;
+  padding: $space-8;
   text-decoration: none;
   transition: color $transition-time;
 
@@ -30,6 +31,8 @@
   }
 
   &--child {
+    padding-left: $space-32 + $space-8;
+
     &.menu__link--active {
       @include small-text(bold);
 
@@ -37,7 +40,7 @@
     }
 
     @include mobile {
-      padding-left: $space-8;
+      padding-left: $space-32 + $space-16;
     }
 
     &:hover {

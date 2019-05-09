@@ -18,11 +18,6 @@
     flex-direction: column;
     list-style: none;
 
-    &:not(:first-child),
-    &--child {
-      margin-top: $space-16;
-    }
-
     @include mobile {
       &--child {
         &:first-child {
