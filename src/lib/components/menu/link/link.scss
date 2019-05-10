@@ -6,9 +6,10 @@
   color: $neutral;
   cursor: pointer;
   outline: 0;
-  padding: $space-8;
+  padding: $space-8 0 $space-8 $space-8;
   text-decoration: none;
   transition: color $transition-time;
+  white-space: nowrap;
 
   &:hover {
     > span {
