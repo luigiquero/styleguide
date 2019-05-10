@@ -7,7 +7,7 @@ describe('Topbar', () => {
   const defaultProps = {
     avatarURL: 'https://placekitten.com/32/32',
     name: 'Felino da Silva',
-    role: 'Gerente',
+    email: 'felino@teste.com',
     links: [
       { title: 'Editar perfil', icon: ['far', 'pen'], url: '#1' },
       { title: 'Sair', icon: ['far', 'sign-out-alt'], url: '#2' },

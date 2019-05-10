@@ -20,7 +20,7 @@ class Topbar extends Component {
     const {
       avatarURL,
       name,
-      role,
+      email,
       links,
       onFilterClick,
       showFilterButton,
@@ -62,7 +62,7 @@ class Topbar extends Component {
               settingsActive ? (
                 <Settings
                   name={name}
-                  role={role}
+                  email={email}
                   links={links}
                   active={settingsActive}
                   toggleSettings={this.toggleSettings}
@@ -79,7 +79,7 @@ class Topbar extends Component {
 Topbar.propTypes = {
   avatarURL: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
   links: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,

@@ -36,7 +36,7 @@ class Settings extends Component {
   render() {
     const {
       name,
-      role,
+      email,
       links,
     } = this.props;
 
@@ -53,7 +53,7 @@ class Settings extends Component {
       <div ref={this.setWrapperRef} className={className}>
         <header className="topbar-settings__header">
           { name }
-          <span>{ role }</span>
+          <span>{ email }</span>
         </header>
 
         <nav className="topbar-settings__nav">
@@ -73,7 +73,7 @@ class Settings extends Component {
 
 Settings.propTypes = {
   name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
   links: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,

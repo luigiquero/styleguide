@@ -9,7 +9,7 @@ exports[`Topbar Settings should render without active modifier 1`] = `
   >
     Felino de Santos
     <span>
-      Gerente
+      felino@teste.com
     </span>
   </header>
   <nav
@@ -74,7 +74,7 @@ exports[`Topbar Settings should renders properly 1`] = `
   >
     Felino de Santos
     <span>
-      Gerente
+      felino@teste.com
     </span>
   </header>
   <nav
