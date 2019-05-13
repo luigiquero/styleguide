@@ -3,25 +3,53 @@
 .menu__link {
   @include small-text;
 
-  color: $neutral-lighten-1;
+  color: $neutral;
   cursor: pointer;
   outline: 0;
+  padding: $space-8 0 $space-8 $space-8;
   text-decoration: none;
   transition: color $transition-time;
+  white-space: nowrap;
+
+  > svg {
+    transition: color $transition-time;
+  }
 
   &:hover {
-    color: $neutral;
+    > span {
+      color: $brand-lighten-1;
+    }
+
+    > svg {
+      color: $brand-lighten-1;
+    }
   }
 
   &--active {
-    @include small-text(bold);
+    @include small-text;
 
     color: $neutral;
   }
 
+  &--highlight {
+    color: $brand;
+  }
+
   &--child {
+    padding-left: $space-32 + $space-8;
+
     &.menu__link--active {
+      @include small-text(bold);
+
       color: $brand;
+    }
+
+    @include mobile {
+      padding-left: $space-48;
+    }
+
+    &:hover {
+      color: $brand-lighten-1;
     }
   }
 }

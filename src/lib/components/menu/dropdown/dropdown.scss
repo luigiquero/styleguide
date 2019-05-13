@@ -2,7 +2,6 @@
 
 .menu__dropdown {
   margin: 0;
-  margin-left: $space-32;
   max-height: 0;
   min-width: 160px;
   opacity: 0;
@@ -10,11 +9,12 @@
   padding: 0;
   transition:
     max-height 0.3s ease-in-out 0.03s,
+    margin 0.3s ease-in-out 0.03s,
     opacity 0.05s ease-in-out;
 
   &--active {
-    margin-left: $space-32;
-    max-height: 300px;
+    margin-bottom: $space-16;
+    max-height: 450px;
     opacity: 1;
   }
 }

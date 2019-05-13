@@ -4,61 +4,81 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Item from './item';
 import './menu.scss';
+import Logo from './logo';
+import BurguerIcon from './burguer-icon.svg';
+import useExpanded from '../../hooks/useExpanded';
+import MenuContext from './context';
+import SubItem from './sub-item';
+import FullScreenOverlay from '../fullscreen-overlay';
 
-const Menu = (props) => {
-  const menuItems = props.links;
-  const {
-    minified,
-    className,
-  } = props;
+const { Provider } = MenuContext;
+
+const Menu = ({
+  className,
+  children,
+  initialState,
+  onToggle,
+}) => {
+  const menu = useExpanded(initialState.expanded, onToggle);
+  const { expanded, toggle } = menu;
 
   const classes = classNames(
     className,
     'menu',
-    { 'menu--minified': minified },
+    { 'menu--expanded': expanded },
+    { 'menu--collapsed': !expanded },
   );
 
   return (
-    <div className={classes}>
-      <ul className="menu__nav">
-        {
-          menuItems.map(({
-            title,
-            url,
-            icon,
-            target,
-            active,
-            links,
-            onClick,
-          }) => (
-            <Item
-              title={title}
-              icon={icon}
-              url={url}
-              target={target}
-              active={active}
-              links={links}
-              key={title.toLowerCase()}
-              onClick={onClick}
+    <Provider value={menu}>
+      <div className={classes}>
+        <div
+          className="menu__header"
+          role="presentation"
+          onClick={toggle}
+        >
+          <div className="menu__burguer">
+            <img
+              src={BurguerIcon}
+              alt="Minificar menu"
+              className="menu__burguer__image"
             />
-          ))
-        }
-      </ul>
-    </div>
+          </div>
+          <Logo collapsed={!expanded} />
+        </div>
+        <ul className="menu__nav">
+          {children}
+        </ul>
+      </div>
+      <FullScreenOverlay
+        className={classNames(
+          'menu__fullscreen_overlay',
+          { 'menu__fullscreen_overlay--visible': expanded },
+        )}
+        onClick={toggle}
+      />
+    </Provider>
   );
 };
 
+Object.assign(Menu, { Item, SubItem });
+
 Menu.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.object,
-  ).isRequired,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  minified: PropTypes.bool,
+  onToggle: PropTypes.func,
+  initialState: PropTypes.shape({
+    expanded: PropTypes.bool,
+  }),
 };
 
 Menu.defaultProps = {
   className: null,
-  minified: false,
+  onToggle: () => { },
+  initialState: {
+    expanded: true,
+  },
 };
 
+export { MenuContext };
 export default Menu;

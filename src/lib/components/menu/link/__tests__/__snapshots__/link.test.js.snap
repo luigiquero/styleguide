@@ -3,7 +3,7 @@
 exports[`Link with modifiers with active and child truthy 1`] = `
 <span
   className="menu__link menu__link--child"
-  onClick={null}
+  onClick={[Function]}
   role="presentation"
 >
   test
@@ -13,7 +13,7 @@ exports[`Link with modifiers with active and child truthy 1`] = `
 exports[`Link with modifiers with active truthy 1`] = `
 <span
   className="menu__link menu__link--active"
-  onClick={null}
+  onClick={[Function]}
   role="presentation"
 >
   test
@@ -23,7 +23,7 @@ exports[`Link with modifiers with active truthy 1`] = `
 exports[`Link with modifiers with child truthy 1`] = `
 <span
   className="menu__link menu__link--child"
-  onClick={null}
+  onClick={[Function]}
   role="presentation"
 >
   test
@@ -34,6 +34,7 @@ exports[`Link with url should render link with href 1`] = `
 <a
   className="menu__link"
   href="/test"
+  onClick={[Function]}
   target="_self"
 >
   link with href
@@ -44,6 +45,7 @@ exports[`Link with url should render link with target 1`] = `
 <a
   className="menu__link"
   href="/test"
+  onClick={[Function]}
   target="_blank"
 >
   link
@@ -63,7 +65,7 @@ exports[`Link without onClick prop should render link properly 1`] = `
 exports[`Link without url should render link properly 1`] = `
 <span
   className="menu__link"
-  onClick={null}
+  onClick={[Function]}
   role="presentation"
 >
   my link
@@ -73,7 +75,7 @@ exports[`Link without url should render link properly 1`] = `
 exports[`Link without url should render link properly with title instead of children 1`] = `
 <span
   className="menu__link"
-  onClick={null}
+  onClick={[Function]}
   role="presentation"
 >
   my link

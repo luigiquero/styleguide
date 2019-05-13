@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.menu {
+  &__logo {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__logo-wrapper {
+    height: 32px;
+
+    @include mobile {
+      display: none;
+    }
+
+    &--collapsed {
+      width: 32px;
+
+      .menu__logo {
+        opacity: 0;
+      }
+    }
+  }
+}

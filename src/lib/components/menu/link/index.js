@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import useMedia from '../../../hooks/useMedia';
+import { useMenuContext } from '../context';
 import './link.scss';
 
 const Link = ({
@@ -10,21 +12,39 @@ const Link = ({
   url,
   child,
   active,
+  highlight,
   target,
   onClick,
 }) => {
   const className = classNames(
     'menu__link',
-    { 'menu__link--child': child, 'menu__link--active': active },
+    {
+      'menu__link--child': child,
+      'menu__link--active': active,
+      'menu__link--highlight': highlight,
+    },
   );
 
   const linkTitle = title || children;
 
+  const menu = useMenuContext();
+  const isMobile = useMedia('mobile');
+
+  const handleOnClick = (event) => {
+    onClick(event);
+
+    if (event.defaultPrevented) return;
+
+    if (menu.expanded && isMobile) {
+      menu.collapse();
+    }
+  };
+
   return (
-    (url && !onClick) ? (
-      <a href={url} target={target} className={className}>{ linkTitle }</a>
+    url ? (
+      <a href={url} target={target} className={className} onClick={handleOnClick}>{ linkTitle }</a>
     ) : (
-      <span className={className} onClick={onClick} role="presentation">{ linkTitle }</span>
+      <span className={className} onClick={handleOnClick} role="presentation">{ linkTitle }</span>
     )
   );
 };
@@ -45,6 +65,7 @@ Link.propTypes = {
   url: PropTypes.string,
   child: PropTypes.bool,
   active: PropTypes.bool,
+  highlight: PropTypes.bool,
   target: PropTypes.oneOf([
     '_blank',
     '_parent',
@@ -59,8 +80,9 @@ Link.defaultProps = {
   url: null,
   child: false,
   active: false,
+  highlight: false,
   target: '_self',
-  onClick: null,
+  onClick: () => { },
 };
 
 export default Link;

@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Link from '../link';
 import './dropdown.scss';
 
-const Dropdown = ({
-  active,
-  links,
-}) => {
+const Dropdown = ({ active, children }) => {
   const dropdownClassName = classNames(
     'menu__dropdown',
     { 'menu__dropdown--active': active },
@@ -15,25 +11,14 @@ const Dropdown = ({
 
   return (
     <ul className={dropdownClassName}>
-      {
-        links.map(childParams => (
-          <li
-            className="menu__item menu__item--child"
-            key={childParams.title.toLowerCase()}
-          >
-            <Link child {...childParams} />
-          </li>
-        ))
-      }
+      {children}
     </ul>
   );
 };
 
 Dropdown.propTypes = {
   active: PropTypes.bool,
-  links: PropTypes.arrayOf(
-    PropTypes.object,
-  ).isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 Dropdown.defaultProps = {

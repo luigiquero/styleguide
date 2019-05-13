@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo menu component should render properly when is minified 1`] = `
+<div
+  className="menu__logo-wrapper menu__logo-wrapper--collapsed"
+>
+  <img
+    className="menu__logo"
+    src="logo.svg"
+  />
+</div>
+`;
+
+exports[`Logo menu component should render properly when is not minified 1`] = `
+<div
+  className="menu__logo-wrapper"
+>
+  <img
+    className="menu__logo"
+    src="logo.svg"
+  />
+</div>
+`;

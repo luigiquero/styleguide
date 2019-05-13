@@ -16,33 +16,32 @@ This is the menu component.
 
 ## Menu example
 <Playground className="inline-menu">
-  <Menu
-    minified={false}
-    links={[
-      { title: 'Visão Geral', icon: ['fas', 'store'] },
-      {
-        title: 'Relatórios',
-        icon: ['fas', 'analytics'],
-        active: true,
-        links: [
-          { title: 'Raio X' },
-          { title: 'Evolução' },
-          { title: 'Eventos e motivos', active: true },
-          { title: 'Mural de vendas' },
-          { title: 'Comparador de períodos' },
-          { title: 'Fluxo e oportunidades', url: "javascript: alert('url')" },
-          { title: 'Lista da vez' },
-          { title: 'Feedbacks', onClick: () => alert('onClick prop') },
-        ]
-      },
-      { title: 'Ranking', icon: ['fas', 'trophy'] },
-      { title: 'Validação', icon: ['fas', 'check-circle'] },
-      { title: 'Feedback', icon: ['fas', 'sync-alt'] },
-      { title: 'Cadastros', icon: ['fas', 'folder-open'], url: "javascript: alert('url')" },
-      { title: 'Chat', icon: ['fas', 'comment'], onClick: () => alert('onClick prop') },
-      { title: 'Aprenda Indeva', icon: ['fas', 'lightbulb'], onClick: () => alert('onClick prop') },
-    ]}
-  />
+  <Menu>
+    <Menu.Item title="Visão Geral" icon={['far', 'store']} />
+    <Menu.Item
+      title="Relatórios"
+      icon={['far', 'analytics']}
+      active
+    >
+      <Menu.SubItem title="Raio X" />
+      <Menu.SubItem title="Eventos e motivos" active />
+      <Menu.SubItem title="Mural de vendas" />
+      <Menu.SubItem title="Comparador de períodos" />
+      <Menu.SubItem title="Fluxo e oportunidades" />
+      <Menu.SubItem title="Evolução" url="javascript: alert('url')" />
+      <Menu.SubItem title="Lista da vez" />
+      <Menu.SubItem title="Feedbacks" onClick={() => alert('onClick prop')} />
+    </Menu.Item>
+    <Menu.Item title="Ranking" icon={['far', 'trophy']} />
+    <Menu.Item title="Validação" icon={['far', 'check-circle']} />
+    <Menu.Item title="Feedback" icon={['far', 'sync-alt']}>
+      <Menu.SubItem title="Gerentes" />
+      <Menu.SubItem title="Vendedores" />
+    </Menu.Item>
+    <Menu.Item title="Cadastros" icon={['far', 'folder-open']} url="javascript: alert('url')" />
+    <Menu.Item title="Aprenda Indeva" icon={['far', 'lightbulb']} onClick={() => alert('onClick prop')} />
+    <Menu.Item title="Atendimento" icon={['far', 'comment-alt-lines']} onClick={() => alert('onClick prop')} />
+  </Menu>
 </Playground>
 
 ## Properties table

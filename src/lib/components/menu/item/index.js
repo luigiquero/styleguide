@@ -1,72 +1,73 @@
-import React, { Component } from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Link from '../link';
 import Dropdown from '../dropdown';
 import Icon from '../../../icons';
+import useExpanded from '../../../hooks/useExpanded';
+import { useMenuContext } from '../context';
 import './item.scss';
 
-class Item extends Component {
-  constructor(props) {
-    super(props);
+const Item = ({
+  forwardedRef,
+  onToggle,
+  onClick,
+  title,
+  icon,
+  url,
+  target,
+  active,
+  children,
+}) => {
+  const menu = useMenuContext();
+  const { expanded, toggle, expand } = useExpanded(active, onToggle);
 
-    this.state = {
-      expanded: props.active,
-    };
-  }
+  const handleOnClick = (event) => {
+    if (children) {
+      event.preventDefault();
 
-  handleOnClick = (e) => {
-    const { expanded } = this.state;
-    const {
-      onClick,
-      links,
-    } = this.props;
-
-    if (links) {
-      e.preventDefault();
-      this.setState({ expanded: !expanded });
+      if (menu.expanded) {
+        if (!active) {
+          toggle();
+        }
+      } else {
+        menu.expand();
+        expand();
+      }
     }
 
-    if (onClick) {
-      onClick(e);
-    }
-  }
+    onClick(event);
+  };
 
-  render() {
-    const { expanded } = this.state;
+  const iconClassName = classNames(
+    'menu__icon',
+    { 'menu__icon--active': active },
+  );
 
-    const {
-      title,
-      icon,
-      url,
-      target,
-      active,
-      links,
-    } = this.props;
+  return (
+    <li ref={forwardedRef} className="menu__item">
+      <Link
+        url={url}
+        active={active}
+        highlight={active && !children}
+        target={target}
+        onClick={handleOnClick}
+      >
+        { icon && <Icon icon={icon} className={iconClassName} /> }
 
-    const iconClassName = classNames(
-      'menu__icon',
-      { 'menu__icon--active': active },
-    );
+        <span className="menu__item-text">{ title }</span>
+      </Link>
 
-    return (
-      <li className="menu__item">
-        <Link
-          url={url}
-          active={active}
-          target={target}
-          onClick={!url && this.handleOnClick}
-        >
-          { icon && <Icon icon={icon} className={iconClassName} /> }
-
-          <span className="menu__item-text">{ title }</span>
-        </Link>
-
-        { links && <Dropdown active={expanded} links={links} /> }
-      </li>
-    );
-  }
-}
+      {
+        children && (
+          <Dropdown active={expanded}>
+            {children}
+          </Dropdown>
+        )
+      }
+    </li>
+  );
+};
 
 Item.propTypes = {
   title: PropTypes.string.isRequired,
@@ -83,8 +84,12 @@ Item.propTypes = {
     'framename',
   ]),
   active: PropTypes.bool,
-  links: PropTypes.arrayOf(PropTypes.object),
+  children: PropTypes.node,
+  onToggle: PropTypes.func,
   onClick: PropTypes.func,
+  forwardedRef: PropTypes.shape({
+    current: PropTypes.instanceOf(Element),
+  }),
 };
 
 Item.defaultProps = {
@@ -92,8 +97,15 @@ Item.defaultProps = {
   url: null,
   target: '_self',
   active: false,
-  links: null,
-  onClick: null,
+  children: null,
+  onToggle: () => {},
+  onClick: () => {},
+  forwardedRef: null,
 };
 
-export default Item;
+export default forwardRef((props, ref) => (
+  <Item
+    {...props}
+    forwardedRef={ref}
+  />
+));

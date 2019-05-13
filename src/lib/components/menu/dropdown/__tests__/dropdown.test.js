@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import renderer from 'react-test-renderer';
 import Dropdown from '..';
+import SubItem from '../../sub-item';
 
 describe('Link', () => {
   const defaultProps = {
     active: false,
-    links: [
-      { title: 'Test' },
-      { title: 'Test2', url: '#' },
-    ],
+    children: (
+      <Fragment>
+        <SubItem title="Test" />
+        <SubItem title="Test2" url="#" />
+      </Fragment>
+    ),
   };
 
   it('when is inactive', () => {

@@ -1,31 +1,92 @@
 @import '../../styles/variables.scss';
 
 .menu {
-  background-color: $action-lighten-6;
   box-sizing: border-box;
   overflow: hidden;
-  padding: $space-32 0;
-  transition: width 0.3s ease-in-out;
+  padding: $space-12 0;
   width: 260px;
 
+  @include desktop {
+    transition: width 0.3s ease-in-out;
+  }
+
+  @include mobile {
+    transition: 0.3s;
+  }
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: $space-16;
+    margin-left: $space-16 + $space-8;
+  }
+
   &__nav {
+    left: 0;
     margin: 0;
     min-width: 190px;
     padding: 0 $space-24;
+    top: 0;
+
+    @include mobile {
+      background-color: white;
+      position: absolute;
+      transition: 1s;
+      z-index: 1000;
+    }
   }
 
-  &--minified {
-    transition: width 0.2s ease-in-out 0.2s;
-    width: 64px;
+  &__burguer {
+    height: 32px;
+    margin-right: 6px;
 
-    .menu__item-text {
-      opacity: 0;
+    &__image {
+      padding: 10px;
+    }
+  }
+
+  &--expanded {
+    @include mobile {
+      left: 0;
+    }
+  }
+
+  &--collapsed {
+    @include desktop {
+      transition: width 0.2s ease-in-out 0.2s;
+      width: 64px;
+
+      .menu__item-text {
+        opacity: 0;
+      }
+
+      .menu__dropdown,
+      .menu__dropdown--active {
+        max-height: 0;
+        opacity: 0;
+      }
+
+      .menu__dropdown--active {
+        margin-bottom: 0;
+      }
     }
 
-    .menu__dropdown,
-    .menu__dropdown--active {
-      max-height: 0;
-      opacity: 0;
+    @include mobile {
+      left: -100%;
+    }
+  }
+
+  &__fullscreen_overlay {
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s ease-in-out;
+    visibility: hidden;
+
+    @include mobile {
+      &--visible {
+        opacity: 0.6;
+        visibility: visible;
+        z-index: 999;
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ exports[`Link when is active should have active modifier 1`] = `
   >
     <span
       className="menu__link menu__link--child"
-      onClick={null}
+      onClick={[Function]}
       role="presentation"
     >
       Test
@@ -21,6 +21,7 @@ exports[`Link when is active should have active modifier 1`] = `
     <a
       className="menu__link menu__link--child"
       href="#"
+      onClick={[Function]}
       target="_self"
     >
       Test2
@@ -38,7 +39,7 @@ exports[`Link when is inactive 1`] = `
   >
     <span
       className="menu__link menu__link--child"
-      onClick={null}
+      onClick={[Function]}
       role="presentation"
     >
       Test
@@ -50,6 +51,7 @@ exports[`Link when is inactive 1`] = `
     <a
       className="menu__link menu__link--child"
       href="#"
+      onClick={[Function]}
       target="_self"
     >
       Test2

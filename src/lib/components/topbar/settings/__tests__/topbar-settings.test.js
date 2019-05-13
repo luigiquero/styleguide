@@ -6,7 +6,7 @@ import Settings from '..';
 describe('Topbar Settings', () => {
   const defaultProps = {
     name: 'Felino de Santos',
-    role: 'Gerente',
+    email: 'felino@teste.com',
     links: [
       { title: 'Editar perfil', icon: ['far', 'pen'], url: 'https://indeva.com.br/' },
       { title: 'Sair', icon: ['far', 'sign-out-alt'], url: 'https://indeva.com.br/beneficios/' },

@@ -2,11 +2,11 @@
 
 .topbar {
   align-items: center;
-  background-color: $action-lighten-6;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: $space-16 $space-32;
+  padding: $space-16;
+  transition: all $transition-time;
   width: 100%;
 
   &--with-info {
@@ -16,15 +16,6 @@
   &__brand {
     cursor: pointer;
     display: flex;
-  }
-
-  &__burguer {
-    margin-left: $space-16;
-    transition: opacity 0.2s ease-in-out;
-
-    &--minified {
-      opacity: 0;
-    }
   }
 
   &__options {
@@ -41,7 +32,13 @@
     border-radius: 100%;
     cursor: pointer;
     height: 32px;
-    margin-left: $space-32;
+    margin-left: $space-16;
     width: 32px;
+  }
+
+  @include mobile {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(84, 98, 124, 0.12);
+    padding: $space-8 $space-16;
   }
 }
