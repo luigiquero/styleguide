@@ -5,21 +5,15 @@ const useExpanded = (initialValue, onUpdate = () => {}) => {
 
   return useMemo(() => {
     const update = (value) => {
+      if (value === expanded) return;
+
       setExpanded(value);
       onUpdate(value);
     };
 
-    const expand = () => {
-      if (expanded) return;
+    const expand = () => update(true);
 
-      update(true);
-    };
-
-    const collapse = () => {
-      if (!expanded) return;
-
-      update(false);
-    };
+    const collapse = () => update(false);
 
     const toggle = () => update(!expanded);
 

@@ -11,6 +11,10 @@
   transition: color $transition-time;
   white-space: nowrap;
 
+  > svg {
+    transition: color $transition-time;
+  }
+
   &:hover {
     > span {
       color: $brand-lighten-1;
@@ -41,7 +45,7 @@
     }
 
     @include mobile {
-      padding-left: $space-32 + $space-16;
+      padding-left: $space-48;
     }
 
     &:hover {
