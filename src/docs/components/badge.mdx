@@ -1,0 +1,27 @@
+---
+name: Badge
+menu: Components
+route: /components/badge
+---
+
+import { Badge } from '../../lib';
+import { Playground, PropsTable } from 'docz';
+import '../main.scss';
+
+# Badge Component
+
+This is the badge component.
+
+## Playground
+
+<Playground className="horizontal-spacing">
+  <Badge>Neutral</Badge>
+  <Badge type="brand">Brand</Badge>
+  <Badge type="success">Success</Badge>
+  <Badge type="warning">Warning</Badge>
+  <Badge type="danger">Danger</Badge>
+</Playground>
+
+## Properties Table
+
+<PropsTable of={Badge} />

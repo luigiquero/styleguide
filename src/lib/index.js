@@ -1,5 +1,6 @@
 import './styles/main.scss';
 import Alert from './components/alert';
+import Badge from './components/badge';
 import Button from './components/button';
 import Card from './components/card';
 import FormGroup from './components/form/form-group';
@@ -14,6 +15,7 @@ import Switch from './components/form/switch';
 
 export {
   Alert,
+  Badge,
   Button,
   Card,
   FormGroup,

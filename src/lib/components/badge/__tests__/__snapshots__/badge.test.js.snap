@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should render brand badge 1`] = `
+<span
+  className="badge badge--brand"
+>
+  test
+</span>
+`;
+
+exports[`Badge should render danger badge 1`] = `
+<span
+  className="badge badge--danger"
+>
+  test
+</span>
+`;
+
+exports[`Badge should render default badge as neutral 1`] = `
+<span
+  className="badge badge--neutral"
+>
+  test
+</span>
+`;
+
+exports[`Badge should render neutral badge 1`] = `
+<span
+  className="badge badge--neutral"
+>
+  test
+</span>
+`;
+
+exports[`Badge should render success badge 1`] = `
+<span
+  className="badge badge--success"
+>
+  test
+</span>
+`;
+
+exports[`Badge should render warning badge 1`] = `
+<span
+  className="badge badge--warning"
+>
+  test
+</span>
+`;
+
+exports[`Badge should render with className 1`] = `
+<span
+  className="badge badge--neutral test"
+>
+  test
+</span>
+`;

@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.badge {
+  @include mini-text;
+
+  border-radius: 14px;
+  color: $white;
+  padding: 2px 6px;
+
+  &--neutral {
+    background-color: $neutral-lighten-1;
+  }
+
+  &--brand {
+    background-color: $brand-lighten-1;
+  }
+
+  &--success {
+    background-color: $success-lighten-1;
+  }
+
+  &--warning {
+    background-color: $warning-lighten-1;
+  }
+
+  &--danger {
+    background-color: $danger-lighten-1;
+  }
+}

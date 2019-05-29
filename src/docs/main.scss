@@ -20,3 +20,14 @@
     }
   }
 }
+
+.horizontal-spacing {
+  /* stylelint-disable-next-line no-descending-specificity */
+  > * {
+    margin-left: 12px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
