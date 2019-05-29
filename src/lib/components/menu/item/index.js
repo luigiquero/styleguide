@@ -17,6 +17,7 @@ const Item = ({
   url,
   target,
   active,
+  badge,
   children,
 }) => {
   const menu = useMenuContext();
@@ -51,6 +52,7 @@ const Item = ({
         active={active}
         highlight={active && !children}
         target={target}
+        badge={badge}
         onClick={handleOnClick}
       >
         { icon && <Icon icon={icon} className={iconClassName} /> }
@@ -90,6 +92,7 @@ Item.propTypes = {
   forwardedRef: PropTypes.shape({
     current: PropTypes.instanceOf(Element),
   }),
+  badge: PropTypes.string,
 };
 
 Item.defaultProps = {
@@ -101,6 +104,7 @@ Item.defaultProps = {
   onToggle: () => {},
   onClick: () => {},
   forwardedRef: null,
+  badge: null,
 };
 
 export default forwardRef((props, ref) => (

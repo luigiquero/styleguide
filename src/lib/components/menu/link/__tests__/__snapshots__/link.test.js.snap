@@ -1,8 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link with badge should render badge inside link 1`] = `
+<span
+  className="menu__link"
+  onClick={[Function]}
+  role="presentation"
+>
+  test
+  <span
+    className="badge badge--brand menu__link__badge"
+  >
+    yep
+  </span>
+</span>
+`;
+
 exports[`Link with modifiers with active and child truthy 1`] = `
 <span
-  className="menu__link menu__link--child"
+  className="menu__link menu__link--child menu__link--active"
   onClick={[Function]}
   role="presentation"
 >

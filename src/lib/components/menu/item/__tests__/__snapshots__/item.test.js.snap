@@ -1,5 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Item with badge should render badge inside item link 1`] = `
+Array [
+  <div
+    className="menu menu--expanded"
+  >
+    <div
+      className="menu__header"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <div
+        className="menu__burguer"
+      >
+        <img
+          alt="Minificar menu"
+          className="menu__burguer__image"
+          src="burguer-icon.svg"
+        />
+      </div>
+      <div
+        className="menu__logo-wrapper"
+      >
+        <img
+          className="menu__logo"
+          src="logo.svg"
+        />
+      </div>
+    </div>
+    <ul
+      className="menu__nav"
+    >
+      <li
+        className="menu__item"
+      >
+        <span
+          className="menu__link"
+          onClick={[Function]}
+          role="presentation"
+        >
+          <span
+            className="menu__item-text"
+          >
+            Test
+          </span>
+          <span
+            className="badge badge--brand menu__link__badge"
+          >
+            yep
+          </span>
+        </span>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="fullscreen-overlay menu__fullscreen_overlay menu__fullscreen_overlay--visible"
+    onClick={[Function]}
+  />,
+]
+`;
+
 exports[`Item with links should render properly 1`] = `
 Array [
   <div
