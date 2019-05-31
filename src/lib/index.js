@@ -1,4 +1,4 @@
-import './styles/main.scss';
+import 'circular-std';
 import Alert from './components/alert';
 import Button from './components/button';
 import Card from './components/card';
