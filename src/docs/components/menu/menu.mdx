@@ -30,10 +30,14 @@ This is the menu component.
       <Menu.SubItem title="Fluxo e oportunidades" />
       <Menu.SubItem title="Evolução" url="javascript: alert('url')" />
       <Menu.SubItem title="Lista da vez" />
-      <Menu.SubItem title="Feedbacks" onClick={() => alert('onClick prop')} />
+      <Menu.SubItem
+        title="Feedbacks"
+        badge="Novo"
+        onClick={() => alert('onClick prop')}
+      />
     </Menu.Item>
     <Menu.Item title="Ranking" icon={['far', 'trophy']} />
-    <Menu.Item title="Validação" icon={['far', 'check-circle']} />
+    <Menu.Item title="Validação" icon={['far', 'check-circle']} badge="3" />
     <Menu.Item title="Feedback" icon={['far', 'sync-alt']}>
       <Menu.SubItem title="Gerentes" />
       <Menu.SubItem title="Vendedores" />

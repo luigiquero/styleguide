@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import useMedia from '../../../hooks/useMedia';
 import { useMenuContext } from '../context';
+import { Badge } from '../../..';
 import './link.scss';
 
 const Link = ({
@@ -14,6 +15,7 @@ const Link = ({
   active,
   highlight,
   target,
+  badge,
   onClick,
 }) => {
   const className = classNames(
@@ -40,11 +42,20 @@ const Link = ({
     }
   };
 
+  const badgeComponent = (badge)
+    ? <Badge type="brand" className="menu__link__badge">{ badge }</Badge> : null;
+
   return (
     url ? (
-      <a href={url} target={target} className={className} onClick={handleOnClick}>{ linkTitle }</a>
+      <a href={url} target={target} className={className} onClick={handleOnClick}>
+        { linkTitle }
+        { badgeComponent }
+      </a>
     ) : (
-      <span className={className} onClick={handleOnClick} role="presentation">{ linkTitle }</span>
+      <span className={className} onClick={handleOnClick} role="presentation">
+        { linkTitle }
+        { badgeComponent }
+      </span>
     )
   );
 };
@@ -74,6 +85,7 @@ Link.propTypes = {
     'framename',
   ]),
   onClick: PropTypes.func,
+  badge: PropTypes.string,
 };
 
 Link.defaultProps = {
@@ -83,6 +95,7 @@ Link.defaultProps = {
   highlight: false,
   target: '_self',
   onClick: () => { },
+  badge: null,
 };
 
 export default Link;

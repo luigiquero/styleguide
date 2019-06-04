@@ -64,9 +64,16 @@ describe('Link', () => {
     });
 
     it('with active and child truthy', () => {
-      const component = renderer.create(<Link child>test</Link>);
+      const component = renderer.create(<Link active child>test</Link>);
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe('with badge', () => {
+    it('should render badge inside link', () => {
+      const component = renderer.create(<Link badge="yep">test</Link>);
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

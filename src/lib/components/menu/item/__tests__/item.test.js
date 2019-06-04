@@ -197,4 +197,11 @@ describe('Item', () => {
       });
     });
   });
+
+  describe('with badge', () => {
+    it('should render badge inside item link', () => {
+      const component = renderWithMenu(<Item title="Test" badge="yep" />);
+      expect(component.toJSON()).toMatchSnapshot();
+    });
+  });
 });
