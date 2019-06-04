@@ -34,15 +34,41 @@ exports[`Topbar should renders properly 1`] = `
       Filtros
     </button>
     <div
-      className="topbar__settings"
+      className="topbar__user-settings"
     >
-      <img
-        alt="Felino da Silva"
-        className="topbar__avatar"
+      <span
+        className="topbar__user-settings-link"
         onClick={[Function]}
         role="presentation"
-        src="https://placekitten.com/32/32"
-      />
+      >
+        <img
+          alt="Felino da Silva"
+          className="topbar__user-avatar"
+          src="https://placekitten.com/32/32"
+        />
+        <span
+          className="topbar__user-name left-8"
+        >
+          Felino da Silva
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down fa-w-14 fa-inverse fa-xs left-16"
+            data-icon="chevron-down"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+      </span>
     </div>
   </div>
 </div>
@@ -57,15 +83,41 @@ exports[`Topbar showFilterButton when it is false should include Settings 1`] = 
     className="topbar__options"
   >
     <div
-      className="topbar__settings"
+      className="topbar__user-settings"
     >
-      <img
-        alt="Felino da Silva"
-        className="topbar__avatar"
+      <span
+        className="topbar__user-settings-link"
         onClick={[Function]}
         role="presentation"
-        src="https://placekitten.com/32/32"
-      />
+      >
+        <img
+          alt="Felino da Silva"
+          className="topbar__user-avatar"
+          src="https://placekitten.com/32/32"
+        />
+        <span
+          className="topbar__user-name left-8"
+        >
+          Felino da Silva
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down fa-w-14 fa-inverse fa-xs left-16"
+            data-icon="chevron-down"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+      </span>
     </div>
   </div>
 </div>
@@ -105,15 +157,41 @@ exports[`Topbar showFilterButton when it is true should include Settings 1`] = `
       Filtros
     </button>
     <div
-      className="topbar__settings"
+      className="topbar__user-settings"
     >
-      <img
-        alt="Felino da Silva"
-        className="topbar__avatar"
+      <span
+        className="topbar__user-settings-link"
         onClick={[Function]}
         role="presentation"
-        src="https://placekitten.com/32/32"
-      />
+      >
+        <img
+          alt="Felino da Silva"
+          className="topbar__user-avatar"
+          src="https://placekitten.com/32/32"
+        />
+        <span
+          className="topbar__user-name left-8"
+        >
+          Felino da Silva
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down fa-w-14 fa-inverse fa-xs left-16"
+            data-icon="chevron-down"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+      </span>
     </div>
   </div>
 </div>
@@ -157,15 +235,41 @@ exports[`Topbar when there is children renders children with with-info modifier 
       Filtros
     </button>
     <div
-      className="topbar__settings"
+      className="topbar__user-settings"
     >
-      <img
-        alt="Felino da Silva"
-        className="topbar__avatar"
+      <span
+        className="topbar__user-settings-link"
         onClick={[Function]}
         role="presentation"
-        src="https://placekitten.com/32/32"
-      />
+      >
+        <img
+          alt="Felino da Silva"
+          className="topbar__user-avatar"
+          src="https://placekitten.com/32/32"
+        />
+        <span
+          className="topbar__user-name left-8"
+        >
+          Felino da Silva
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down fa-w-14 fa-inverse fa-xs left-16"
+            data-icon="chevron-down"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+      </span>
     </div>
   </div>
 </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import Button from '../button';
 import Icon from '../../icons';
 import Settings from './settings';
@@ -29,13 +28,8 @@ class Topbar extends Component {
 
     const { settingsActive } = this.state;
 
-    const className = classNames(
-      'topbar',
-      { 'topbar--with-info': !!children },
-    );
-
     return (
-      <div className={className}>
+      <div className="topbar">
         <div>
           {children}
         </div>
@@ -49,15 +43,29 @@ class Topbar extends Component {
               </Button>
             )
           }
-          <div className="topbar__settings">
-            <img
-              alt={name}
-              src={avatarURL}
-              className="topbar__avatar"
-              role="presentation"
+          <div className="topbar__user-settings">
+            <span
+              className="topbar__user-settings-link"
               onClick={this.toggleSettings}
-            />
+              role="presentation"
+            >
+              <img
+                alt={name}
+                src={avatarURL}
+                className="topbar__user-avatar"
+              />
 
+              <span className="topbar__user-name left-8">
+                {name}
+                <Icon
+                  icon={['far', 'chevron-down']}
+                  className="left-16"
+                  size="xs"
+                  inverse
+                />
+              </span>
+
+            </span>
             {
               settingsActive ? (
                 <Settings
@@ -83,13 +91,14 @@ Topbar.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.object,
   ).isRequired,
-  onFilterClick: PropTypes.func.isRequired,
+  onFilterClick: PropTypes.func,
   showFilterButton: PropTypes.bool,
   children: PropTypes.node,
 };
 
 Topbar.defaultProps = {
   showFilterButton: true,
+  onFilterClick: null,
   children: null,
 };
 
