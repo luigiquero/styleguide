@@ -1,14 +1,19 @@
 @import '../../styles/variables.scss';
 
-.topbar {
+@mixin topbar {
   @include small-text;
 
   align-items: center;
   background-color: $action-darken-1;
-  box-sizing: border-box;
   color: $white;
   display: flex;
   height: 56px;
+}
+
+.topbar {
+  @include topbar;
+
+  box-sizing: border-box;
   justify-content: space-between;
   padding: 0 $space-32;
   transition: all $transition-time;

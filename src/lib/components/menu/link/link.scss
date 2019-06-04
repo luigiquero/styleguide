@@ -36,7 +36,7 @@
   }
 
   &--child {
-    padding-left: $space-32 + $space-8;
+    padding-left: $space-32 + $space-4;
 
     &.menu__link--active {
       @include small-text(bold);

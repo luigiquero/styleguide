@@ -1,9 +1,10 @@
 @import '../../styles/variables.scss';
+@import '../topbar/topbar.scss';
 
 .menu {
   box-sizing: border-box;
   overflow: hidden;
-  padding: $space-12 0;
+  padding-bottom: $space-12;
   width: 260px;
 
   @include desktop {
@@ -15,21 +16,33 @@
   }
 
   &__header {
-    cursor: pointer;
-    display: flex;
-    margin-bottom: $space-16;
-    margin-left: $space-16 + $space-8;
+    @include topbar;
+
+    padding-left: $space-16;
+
+    &--wrapper {
+      align-items: center;
+      display: flex;
+      white-space: nowrap;
+    }
+
+    &__link {
+      cursor: pointer;
+      display: flex;
+    }
   }
 
   &__nav {
+    border-right: 1px solid $neutral-lighten-4;
     left: 0;
     margin: 0;
     min-width: 190px;
-    padding: 0 $space-24;
+    padding: $space-16 $space-16 $space-16 $space-16+$space-2;
     top: 0;
 
     @include mobile {
       background-color: white;
+      margin: 0;
       position: absolute;
       transition: 1s;
       z-index: 1000;
@@ -54,10 +67,18 @@
   &--collapsed {
     @include desktop {
       transition: width 0.2s ease-in-out 0.2s;
-      width: 64px;
+      width: 72px;
+
+      .menu__nav {
+        min-width: 15px;
+      }
 
       .menu__item-text {
         opacity: 0;
+      }
+
+      .menu__link__badge {
+        display: none;
       }
 
       .menu__dropdown,

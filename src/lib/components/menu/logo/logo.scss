@@ -6,11 +6,7 @@
   }
 
   &__logo-wrapper {
-    height: 32px;
-
-    @include mobile {
-      display: none;
-    }
+    display: flex;
 
     &--collapsed {
       width: 32px;

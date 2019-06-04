@@ -7,25 +7,40 @@ Array [
   >
     <div
       className="menu__header"
-      onClick={[Function]}
-      role="presentation"
     >
       <div
-        className="menu__burguer"
+        className="menu__header--wrapper"
       >
-        <img
-          alt="Minificar menu"
-          className="menu__burguer__image"
-          src="burguer-icon.svg"
-        />
-      </div>
-      <div
-        className="menu__logo-wrapper"
-      >
-        <img
-          className="menu__logo"
-          src="logo.svg"
-        />
+        <div
+          className="menu__header__link"
+          onClick={[Function]}
+          role="presentation"
+        >
+          <div
+            className="menu__burguer"
+          >
+            <img
+              alt="Minificar menu"
+              className="menu__burguer__image"
+              src="burguer-icon.svg"
+            />
+          </div>
+          <div
+            className="menu__logo-wrapper"
+          >
+            <img
+              className="menu__logo"
+              src="logo.svg"
+            />
+          </div>
+        </div>
+        <div
+          className="left-16"
+        >
+          <span>
+            My header
+          </span>
+        </div>
       </div>
     </div>
     <ul
@@ -137,25 +152,40 @@ Array [
   >
     <div
       className="menu__header"
-      onClick={[Function]}
-      role="presentation"
     >
       <div
-        className="menu__burguer"
+        className="menu__header--wrapper"
       >
-        <img
-          alt="Minificar menu"
-          className="menu__burguer__image"
-          src="burguer-icon.svg"
-        />
-      </div>
-      <div
-        className="menu__logo-wrapper"
-      >
-        <img
-          className="menu__logo"
-          src="logo.svg"
-        />
+        <div
+          className="menu__header__link"
+          onClick={[Function]}
+          role="presentation"
+        >
+          <div
+            className="menu__burguer"
+          >
+            <img
+              alt="Minificar menu"
+              className="menu__burguer__image"
+              src="burguer-icon.svg"
+            />
+          </div>
+          <div
+            className="menu__logo-wrapper"
+          >
+            <img
+              className="menu__logo"
+              src="logo.svg"
+            />
+          </div>
+        </div>
+        <div
+          className="left-16"
+        >
+          <span>
+            My header
+          </span>
+        </div>
       </div>
     </div>
     <ul

@@ -21,7 +21,11 @@ const Logo = ({ collapsed }) => {
 };
 
 Logo.propTypes = {
-  collapsed: PropTypes.bool.isRequired,
+  collapsed: PropTypes.bool,
+};
+
+Logo.defaultProps = {
+  collapsed: false,
 };
 
 export default Logo;

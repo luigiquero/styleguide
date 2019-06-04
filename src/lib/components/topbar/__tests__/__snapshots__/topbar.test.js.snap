@@ -199,7 +199,7 @@ exports[`Topbar showFilterButton when it is true should include Settings 1`] = `
 
 exports[`Topbar when there is children renders children with with-info modifier 1`] = `
 <div
-  className="topbar topbar--with-info"
+  className="topbar"
 >
   <div>
     <span>

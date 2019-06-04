@@ -6,6 +6,9 @@ import Menu from '..';
 describe('Menu', () => {
   const defaultProps = {
     className: 'class',
+    header: (
+      <span>My header</span>
+    ),
     children: (
       <Fragment>
         <Menu.Item title="Visão Geral" icon={['far', 'store']} />
@@ -33,10 +36,10 @@ describe('Menu', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('should minify on click on  toggle', () => {
+  it('should minify on click on toggle', () => {
     const onToggle = jest.fn();
     const wrapper = mount(<Menu onToggle={onToggle} {...defaultProps} />);
-    wrapper.find('.menu__header').simulate('click');
+    wrapper.find('.menu__header__link').simulate('click');
     expect(wrapper.find('.menu').hasClass('menu--collapsed')).toBeTruthy();
     expect(onToggle).toHaveBeenCalledTimes(1);
   });
@@ -44,7 +47,7 @@ describe('Menu', () => {
   it('should back minification on second click on minified toggle', () => {
     const onToggle = jest.fn();
     const wrapper = mount(<Menu onToggle={onToggle} {...defaultProps} />);
-    const menuHeader = wrapper.find('.menu__header');
+    const menuHeader = wrapper.find('.menu__header__link');
     menuHeader.simulate('click');
     menuHeader.simulate('click');
     expect(wrapper.find('.menu').hasClass('menu--collapsed')).toBeFalsy();

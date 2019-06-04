@@ -4,7 +4,7 @@
   &__icon {
     color: $neutral-lighten-1;
     font-size: 14px;
-    margin-right: $space-16;
+    margin-right: $space-12;
     transition: margin 0, color $transition-time;
     width: 16px !important;
 
@@ -32,7 +32,7 @@
 
   &__item-text {
     opacity: 1;
-    transition: all 0.05s ease-in-out, color $transition-time;
+    transition: all $transition-time ease-in-out;
 
     @include mobile {
       padding-left: $space-8;
