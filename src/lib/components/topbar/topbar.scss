@@ -1,17 +1,23 @@
 @import '../../styles/variables.scss';
 
-.topbar {
+@mixin topbar {
+  @include small-text;
+
   align-items: center;
-  box-sizing: border-box;
+  background-color: $action-darken-1;
+  color: $white;
   display: flex;
+  height: 56px;
+}
+
+.topbar {
+  @include topbar;
+
+  box-sizing: border-box;
   justify-content: space-between;
-  padding: $space-16;
+  padding: 0 $space-32;
   transition: all $transition-time;
   width: 100%;
-
-  &--with-info {
-    justify-content: space-between;
-  }
 
   &__brand {
     cursor: pointer;
@@ -23,22 +29,29 @@
     display: flex;
   }
 
-  &__settings {
-    display: flex;
+  &__user-settings {
     position: relative;
   }
 
-  &__avatar {
-    border-radius: 100%;
+  &__user-settings-link {
+    align-items: center;
     cursor: pointer;
+    display: flex;
+  }
+
+  &__user-avatar {
+    border-radius: 100%;
     height: 32px;
     margin-left: $space-16;
     width: 32px;
   }
 
   @include mobile {
-    background-color: $white;
     box-shadow: 0 2px 4px rgba(84, 98, 124, 0.12);
     padding: $space-8 $space-16;
+
+    &__user-name {
+      display: none;
+    }
   }
 }

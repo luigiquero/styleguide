@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Pro Regular
 import { faAnalytics as farAnalytics } from '@fortawesome/pro-regular-svg-icons/faAnalytics';
 import { faCheckCircle as farCheckCircle } from '@fortawesome/pro-regular-svg-icons/faCheckCircle';
+import { faChevronDown as farChevronDown } from '@fortawesome/pro-regular-svg-icons/faChevronDown';
 import { faCommentAltLines as farCommentAltLines } from '@fortawesome/pro-regular-svg-icons/faCommentAltLines';
 import { faFilter as farFilter } from '@fortawesome/pro-regular-svg-icons/faFilter';
 import { faFolderOpen as farFolderOpen } from '@fortawesome/pro-regular-svg-icons/faFolderOpen';
@@ -25,6 +26,7 @@ import { faIgloo as falIgloo } from '@fortawesome/pro-light-svg-icons/faIgloo';
 library.add(
   farAnalytics,
   farCheckCircle,
+  farChevronDown,
   farCommentAltLines,
   farFilter,
   farFolderOpen,

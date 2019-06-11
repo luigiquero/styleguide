@@ -16,6 +16,7 @@ const { Provider } = MenuContext;
 const Menu = ({
   className,
   children,
+  header,
   initialState,
   onToggle,
 }) => {
@@ -32,19 +33,30 @@ const Menu = ({
   return (
     <Provider value={menu}>
       <div className={classes}>
-        <div
-          className="menu__header"
-          role="presentation"
-          onClick={toggle}
-        >
-          <div className="menu__burguer">
-            <img
-              src={BurguerIcon}
-              alt="Minificar menu"
-              className="menu__burguer__image"
-            />
+        <div className="menu__header">
+          <div className="menu__header--wrapper">
+            <div
+              className="menu__header__link"
+              role="presentation"
+              onClick={toggle}
+            >
+              <div className="menu__burguer">
+                <img
+                  src={BurguerIcon}
+                  alt="Minificar menu"
+                  className="menu__burguer__image"
+                />
+              </div>
+              <Logo />
+            </div>
+            {
+              header && (
+                <div className="left-16">
+                  {header}
+                </div>
+              )
+            }
           </div>
-          <Logo collapsed={!expanded} />
         </div>
         <ul className="menu__nav">
           {children}
@@ -65,6 +77,7 @@ Object.assign(Menu, { Item, SubItem });
 
 Menu.propTypes = {
   children: PropTypes.node.isRequired,
+  header: PropTypes.node,
   className: PropTypes.string,
   onToggle: PropTypes.func,
   initialState: PropTypes.shape({
@@ -74,6 +87,7 @@ Menu.propTypes = {
 
 Menu.defaultProps = {
   className: null,
+  header: null,
   onToggle: () => { },
   initialState: {
     expanded: true,
