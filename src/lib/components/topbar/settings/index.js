@@ -33,6 +33,11 @@ class Settings extends Component {
     }
   }
 
+  handleNavClick = navData => () => {
+    const { onSettingsNavClick } = this.props;
+    return onSettingsNavClick(navData);
+  }
+
   render() {
     const {
       name,
@@ -59,7 +64,12 @@ class Settings extends Component {
         <nav className="topbar-settings__nav">
           {
             links.map(({ url, icon, title }) => (
-              <a href={url} className="topbar-settings__link" key={url}>
+              <a
+                href={url}
+                className="topbar-settings__link"
+                key={url}
+                onClick={this.handleNavClick({ url, icon, title })}
+              >
                 <Icon icon={icon} />
                 { title }
               </a>
@@ -78,6 +88,11 @@ Settings.propTypes = {
     PropTypes.object,
   ).isRequired,
   toggleSettings: PropTypes.func.isRequired,
+  onSettingsNavClick: PropTypes.func,
+};
+
+Settings.defaultProps = {
+  onSettingsNavClick: () => {},
 };
 
 export default Settings;

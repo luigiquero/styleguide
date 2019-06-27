@@ -11,8 +11,16 @@ class Topbar extends Component {
   };
 
   toggleSettings = () => {
-    const { settingsActive } = this.state;
-    this.setState({ settingsActive: !settingsActive });
+    const { onSettingsOpen } = this.props;
+    this.setState((prevState) => {
+      const active = !prevState.settingsActive;
+      if (active) {
+        onSettingsOpen();
+      }
+      return {
+        settingsActive: active,
+      };
+    });
   }
 
   render() {
@@ -23,6 +31,7 @@ class Topbar extends Component {
       links,
       onFilterClick,
       showFilterButton,
+      onSettingsNavClick,
       children,
     } = this.props;
 
@@ -74,6 +83,7 @@ class Topbar extends Component {
                   links={links}
                   active={settingsActive}
                   toggleSettings={this.toggleSettings}
+                  onSettingsNavClick={onSettingsNavClick}
                 />
               ) : null
             }
@@ -93,12 +103,16 @@ Topbar.propTypes = {
   ).isRequired,
   onFilterClick: PropTypes.func,
   showFilterButton: PropTypes.bool,
+  onSettingsOpen: PropTypes.func,
+  onSettingsNavClick: PropTypes.func,
   children: PropTypes.node,
 };
 
 Topbar.defaultProps = {
   showFilterButton: true,
   onFilterClick: null,
+  onSettingsOpen: () => {},
+  onSettingsNavClick: () => {},
   children: null,
 };
 
