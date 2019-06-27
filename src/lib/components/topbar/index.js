@@ -11,10 +11,10 @@ class Topbar extends Component {
   };
 
   toggleSettings = () => {
-    const { onSettingsOpen } = this.props;
-    this.setState((prevState) => {
-      const active = !prevState.settingsActive;
+    this.setState(({ settingsActive }) => {
+      const active = !settingsActive;
       if (active) {
+        const { onSettingsOpen } = this.props;
         onSettingsOpen();
       }
       return {
